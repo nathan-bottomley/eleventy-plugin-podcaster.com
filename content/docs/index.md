@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   key: Documentation
-  order: 5
+  order: 2
 ---
 
 # eleventy-plugin-podcaster 🕚⚡️🎈🐀🎤📲
