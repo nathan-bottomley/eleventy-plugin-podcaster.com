@@ -7,9 +7,12 @@
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<meta name="generator" content="{{ eleventy.generator }}">
-		<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-		<link rel="stylesheet" href="/css/index.css">
+		{%- css %}{% include "node_modules/simpledotcss/simple.min.css" %}{% endcss %}
+		{%- css %}{% include "node_modules/markdown-it-github-alerts/styles/github-base.css" %}{% endcss %}
+		{%- css %}{% include "public/css/colours.css" %}{% endcss %}
+		{%- css %}{% include "public/css/prism-colours.css" %}{% endcss %}
 		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
