@@ -2,9 +2,14 @@
 title: Podcaster Blog
 eleventyNavigation:
   key: "Blog"
-  order: 1
+  order: 2
 ---
 <h1>Podcaster Blog</h1>
 
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+{% for post in collections.post | reverse %}
+<article>
+  <h2>{{ post.data.title }}</h2>
+  <p class="post-date">{{ post.date | readableDate }}</p>
+  {{ post.content | safe }}
+</article>
+{% endfor %}

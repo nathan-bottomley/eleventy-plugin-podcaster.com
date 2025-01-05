@@ -1,3 +1,7 @@
+---
+eleventyNavigation:
+  key: Size and duration
+---
 # Size and duration
 
 The simplest way of telling **Podcaster** the size and duration of your podcast episode files is by including that information in the front matter of each episode's post, like this:

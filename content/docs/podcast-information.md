@@ -1,4 +1,6 @@
-# Podcast information
+---
+title: Podcast information
+---
 
 The important information about your podcast — the title, the owner, the category, the subcategory and so on — should be made available as fields in a `podcast` object in the data cascade. The easiest way to do this is to put all the required information in your data directory in a `podcast.json` file, like this:
 

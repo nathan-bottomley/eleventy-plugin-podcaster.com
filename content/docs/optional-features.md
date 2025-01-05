@@ -1,4 +1,6 @@
-# Optional features
+---
+title: Optional features
+---
 
 **Podcaster** includes some optional features which you might find useful for your podcasting website. These features are turned off by default, in case you want to implement them some other way. You can enable some or all of them when you include the plugin in your eleventy configuration file, like this:
 

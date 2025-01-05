@@ -1,6 +1,8 @@
-# Hosting your podcast episode files
+---
+title: Hosting your podcast episode files
+---
 
-As it says in [README.md](README.md), you should probably host your podcast files separately from your website. I host my podcast episode files in [Digital Ocean Spaces][], which is inexpensive and not particularly difficult to set up. But there are many other options available, including [Linode Object Storage][], [Backblaze B2 Cloud Storage][] and [Cloudflare R2][].
+As it says on [the main documentation page](docs/index.md), you should probably host your podcast files separately from your website. I host my podcast episode files in [Digital Ocean Spaces][], which is inexpensive and not particularly difficult to set up. But there are many other options available, including [Linode Object Storage][], [Backblaze B2 Cloud Storage][] and [Cloudflare R2][].
 
 [Digital Ocean Spaces]: https://www.digitalocean.com/products/spaces
 [Linode Object Storage]: https://www.linode.com/products/object-storage/

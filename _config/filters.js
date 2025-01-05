@@ -1,10 +1,15 @@
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {
-	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
-		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
-	});
+	eleventyConfig.addFilter('readableDate', function (date) {
+		if (date instanceof Date) {
+			date = date.toISOString()
+		}
+		const result = DateTime.fromISO(date, {
+			zone: 'UTC'
+		})
+		return result.setLocale('en-GB').toLocaleString(DateTime.DATE_HUGE)
+	})
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string

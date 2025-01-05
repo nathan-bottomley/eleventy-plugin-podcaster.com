@@ -1,0 +1,18 @@
+---
+layout: 'layouts/base.njk'
+---
+
+{% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true }) %}
+<ol class="breadcrumbs">
+  {% for link in breadcrumbs %}
+  {% if link.url == page.url %}
+  <li><a aria-current="true" href="{{ link.url }}">{{ link.title }}</a></li>
+  {% else %}
+  <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+  {% endif %}
+  {% endfor %}
+</ol>
+
+<h1>{{ title }}</h1>
+
+{{ content | safe }}
