@@ -22,7 +22,11 @@ Detailed and specific information about how to install and use **Podcaster** can
 
 Once you do this, **Podcaster** can create the RSS feed for your podcast. You can also create templates for various pages on your website and include on those pages the information you have provided about the podcast and its episodes.
 
-## Latest Post
+## On this site
+
+This site hosts [the **Podcaster** documentation](/docs). But it also hosts [the **Podcaster** blog](/blog), where I'll be posting tips and ideas about how you can use **Podcaster** and Eleventy to create an online presence for your podcast.
+
+## Recently on the blog
 
 {% set latestPost = collections.post | reverse | first %}
 

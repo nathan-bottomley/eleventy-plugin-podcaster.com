@@ -60,7 +60,8 @@
     --bg: var(--baseA0);
     --accent-bg: var(--baseA1);
     --text: var(--baseC6);
-    --text-light: var(--baseC3);
+    --text-light: var(--baseC1);
+    --border: var(--baseA2);
     --accent: var(--baseB3);
     --accent-hover: var(--baseB5);
     --accent-text: var(--bg);
@@ -72,12 +73,14 @@
 
 /* Customised colour theme for GitHub colors */
 :root {
-  --color-tip: var(--baseD0);
+  --color-tip: var(--baseB0);
+  --color-note: var(--baseD0);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --color-tip: var(--baseD2);
+    --color-tip: var(--baseB2);
+    --color-note: var(--baseD2);
   }
 }

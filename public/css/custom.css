@@ -9,6 +9,8 @@
 	width: 1px;
 }
 
+/* Main heading link */
+
 header h1 a:not(:hover) {
 	text-decoration: none;
 }
@@ -53,4 +55,16 @@ header h1 a:hover {
 
 .links-nextprev-next {
 	text-align: right;
+}
+
+/* Post date */
+
+.post-date {
+  color: var(--text-light);
+}
+
+/* Code block */
+
+pre {
+	font-size: 1rem;
 }

@@ -18,6 +18,7 @@ Here's a Liquid template that creates a list of episodes.
 ```liquid
 ---
 title: Maximum Power
+layout: layouts/base.html
 ---
 {% for post in collections.podcastEpisode %}
 <article>
@@ -32,4 +33,8 @@ title: Maximum Power
 
 {% endraw %}
 
-This appr
+The list this produces will contain each episode's title, episode number, date and show notes, as well as an audio player to play the episode on.
+
+As it is, this template doesn't scale to podcasts with many episodes, and it might not include quite enough information about each episode. The first problem can be solved by using [Eleventy's pagination feature](https://www.11ty.dev/docs/pagination/); the second could be solved by adding more details, like [the information enumerated here](docs/podcast-information.md).
+
+In any case, this approach is the approach I have taken on all of my podcast websites. There's [a list of them here](/docs/#podcaster-in-action), so take a look if you want to see it in action.
