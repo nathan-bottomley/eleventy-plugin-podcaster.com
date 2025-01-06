@@ -1,17 +1,18 @@
 <!doctype html>
-<html lang="{{ metadata.language }}">
+<html lang="{{ site.language }}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ title or metadata.title }}</title>
-		<meta name="description" content="{{ description or metadata.description }}">
-		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		<title>{{ pageTitle | safe }}</title>
+		<meta name="description" content="{{ description or site.description }}">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ site.title }}">
 		<meta name="generator" content="{{ eleventy.generator }}">
+		{% include "og-data.njk" %}
 		{%- css %}{% include "node_modules/simpledotcss/simple.min.css" %}{% endcss %}
 		{%- css %}{% include "node_modules/markdown-it-github-alerts/styles/github-base.css" %}{% endcss %}
 		{%- css %}{% include "public/css/colours.css" %}{% endcss %}
-		{%- css %}{% include "public/css/prism-colours.css" %}{% endcss %}
 		{%- css %}{% include "public/css/custom.css" %}{% endcss %}
+		{%- css %}{% include "public/css/prism-colours.css" %}{% endcss %}
 		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
 		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 	</head>
@@ -28,7 +29,7 @@
 				</ul>
 			</nav>
 			<h1><a href="/">Podcaster</a></h1>
-			<p>Hosting a podcast and creating its website with Eleventy.</p>
+			<p class="strapline">Hosting a podcast and creating its website with Eleventy.</p>
 		</header>
 
 		<main id="skip">

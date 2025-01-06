@@ -107,6 +107,16 @@ export default async function(eleventyConfig) {
 		// selector: "h1,h2,h3,h4,h5,h6", // default
 	});
 
+  eleventyConfig.addGlobalData('eleventyComputed.pageTitle', () => {
+    return data => {
+      if (data.title && data.title.length > 0 && data.title !== data.site.title) {
+        return `${data.title} &middot; ${data.site.title}`
+      } else {
+        return data.site.title
+      }
+    }
+  })
+
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toISOString();
 	});

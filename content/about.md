@@ -1,4 +1,5 @@
 ---
+title: About
 eleventyNavigation:
   key: About
   order: 9
@@ -26,3 +27,7 @@ This site was made using [Eleventy][], specifically the [eleventy-base-blog][] s
 [Simple.css]: https://simplecss.org
 [Prism.js]: https://prismjs.com
 [Base2Tone Mall]: https://base2t.one/demo/mall/
+
+The [Open Graph image for the site][og-image] is by Richard Khuptong.
+
+[og-image]: https://www.pexels.com/photo/microphone-and-headphones-18486641/.

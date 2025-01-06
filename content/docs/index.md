@@ -1,5 +1,5 @@
 ---
-title: 'eleventy-plugin-podcaster 🕚⚡️🎈🐀🎤📲'
+title: 'eleventy-plugin-podcaster'
 eleventyNavigation:
   key: Documentation
   order: 1
