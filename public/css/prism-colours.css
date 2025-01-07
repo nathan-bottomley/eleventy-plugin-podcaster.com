@@ -18,33 +18,28 @@ pre[class*="language-"] {
   word-spacing: normal;
   word-break: normal;
 
-  /* -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4; */
-
   -moz-tab-size: 2;
   -o-tab-size: 2;
   tab-size: 2;
-
 
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: #f8fafc;
-  color: #b294ff;
+  background: #fbf9f9;
+  color: #767693;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: #f8fafc;
+  background: #fbf9f9;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
-  background: #f8fafc;
+  background: #fbf9f9;
 }
 
 /* Code blocks */
@@ -64,11 +59,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #b5bdc4;
+  color: #c3bbb7;
 }
 
 .token.punctuation {
-  color: #b5bdc4;
+  color: #c3bbb7;
 }
 
 .token.namespace {
@@ -78,23 +73,23 @@ pre[class*="language-"] {
 .token.tag,
 .token.operator,
 .token.number {
-  color: #855ee8;
+  color: #5151e6;
 }
 
 .token.property,
 .token.function {
-  color: #5aabf2;
+  color: #dd672c;
 }
 
 .token.tag-id,
 .token.selector,
 .token.atrule-id {
-  color: #3692e2;
+  color: #b25424;
 }
 
 code.language-javascript,
 .token.attr-name {
-  color: #5aabf2;
+  color: #dd672c;
 }
 
 code.language-css,
@@ -114,12 +109,12 @@ code.language-scss,
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: #a17efc;
+  color: #7676f4;
 }
 
 .token.placeholder,
 .token.variable {
-  color: #d3c2ff;
+  color: #aaaaca;
 }
 
 .token.deleted {
@@ -127,7 +122,7 @@ code.language-scss,
 }
 
 .token.inserted {
-  border-bottom: 1px dotted #3692e2;
+  border-bottom: 1px dotted #b25424;
   text-decoration: none;
 }
 
@@ -141,7 +136,7 @@ code.language-scss,
 }
 
 .token.important {
-  color: #5aabf2;
+  color: #dd672c;
 }
 
 .token.entity {
@@ -149,7 +144,7 @@ code.language-scss,
 }
 
 pre > code.highlight {
-  outline: .4em solid #5aabf2;
+  outline: .4em solid #dd672c;
   outline-offset: .4em;
 }
 
@@ -157,11 +152,11 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers .line-numbers-rows {
-  border-right-color: #dee6ed;
+  border-right-color: #eae4e1;
 }
 
 .line-numbers-rows > span:before {
-  color: #c8d2da;
+  color: #d8cfcb;
 }
 
 /* overrides color-values for the Line Highlight plugin
@@ -170,8 +165,8 @@ pre > code.highlight {
  * https://drafts.csswg.org/css-color/#hex-notation
  */
 .line-highlight {
-  background: #3692e233;
-  background: linear-gradient(to right, #3692e233 70%, #3692e200);
+  background: #b2542433;
+  background: linear-gradient(to right, #b2542433 70%, #b2542400);
 }
 
 /* Dark theme */
@@ -179,20 +174,20 @@ pre > code.highlight {
 @media (prefers-color-scheme: dark) {
   code[class*="language-"],
   pre[class*="language-"] {  
-    background: #1e1e1f;
-    color: #b294ff;
+    background: #24242e;
+    color: #767693;
   }
 
   pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
   code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
     text-shadow: none;
-    background: #855ee8;
+    background: #5151e6;
   }
 
   pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
   code[class*="language-"]::selection, code[class*="language-"] ::selection {
     text-shadow: none;
-    background: #855ee8;
+    background: #5151e6;
   }
 
   /* Code blocks */
@@ -212,11 +207,11 @@ pre > code.highlight {
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: #5e5c60;
+    color: #5b5b76;
   }
 
   .token.punctuation {
-    color: #5e5c60;
+    color: #5b5b76;
   }
 
   .token.namespace {
@@ -226,23 +221,23 @@ pre > code.highlight {
   .token.tag,
   .token.operator,
   .token.number {
-    color: #5aabf2;
+    color: #dd672c;
   }
 
   .token.property,
   .token.function {
-    color: #b294ff;
+    color: #767693;
   }
 
   .token.tag-id,
   .token.selector,
   .token.atrule-id {
-    color: #f4f0ff;
+    color: #ebebff;
   }
 
   code.language-javascript,
   .token.attr-name {
-    color: #d3c2ff;
+    color: #aaaaca;
   }
 
   code.language-css,
@@ -262,12 +257,12 @@ pre > code.highlight {
   .token.statement,
   .token.regex,
   .token.atrule {
-    color: #b3dbff;
+    color: #fe8c52;
   }
 
   .token.placeholder,
   .token.variable {
-    color: #b3dbff;
+    color: #fe8c52;
   }
 
   .token.deleted {
@@ -275,7 +270,7 @@ pre > code.highlight {
   }
 
   .token.inserted {
-    border-bottom: 1px dotted #f4f0ff;
+    border-bottom: 1px dotted #ebebff;
     text-decoration: none;
   }
 
@@ -289,7 +284,7 @@ pre > code.highlight {
   }
 
   .token.important {
-    color: #d3c2ff;
+    color: #aaaaca;
   }
 
   .token.entity {
@@ -297,7 +292,7 @@ pre > code.highlight {
   }
 
   pre > code.highlight {
-    outline: .4em solid #a17efc;
+    outline: .4em solid #7676f4;
     outline-offset: .4em;
   }
 
@@ -305,11 +300,11 @@ pre > code.highlight {
   * http://prismjs.com/plugins/line-numbers/
   */
   .line-numbers .line-numbers-rows {
-    border-right-color: #2b2b2c;
+    border-right-color: #333342;
   }
 
   .line-numbers-rows > span:before {
-    color: #2b2b2c;
+    color: #333342;
   }
 
   /* overrides color-values for the Line Highlight plugin
@@ -318,7 +313,7 @@ pre > code.highlight {
   * https://drafts.csswg.org/css-color/#hex-notation
   */
   .line-highlight {
-    background: #5aabf233;
-    background: linear-gradient(to right, #5aabf233 70%, #5aabf200);
+    background: #dd672c33;
+    background: linear-gradient(to right, #dd672c33 70%, #dd672c00);
   }
 }

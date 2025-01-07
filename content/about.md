@@ -26,13 +26,13 @@ I hope you find it useful. [Let me know if you do](https://bsky.app/profile/nath
 
 ## Colophon
 
-This site was made using [Eleventy][], specifically the [eleventy-base-blog][] starter. It's styled using [Simple.css][]. The syntax highlighting on the code samples is courtesy of [Prism.js][], and the site's colour scheme is based on the [Base2Tone Mall][] theme.
+This site was made using [Eleventy][], specifically the [eleventy-base-blog][] starter. It's styled using [Simple.css][]. The syntax highlighting on the code samples is courtesy of [Prism.js][], and the site's colour scheme is based on the [Base2Tone Space][] theme by Bram de Haan.
 
 [Eleventy]: https://11ty.dev
 [eleventy-base-blog]: https://github.com/11ty/eleventy-base-blog
 [Simple.css]: https://simplecss.org
 [Prism.js]: https://prismjs.com
-[Base2Tone Mall]: https://base2t.one/demo/mall/
+[Base2Tone Space]: https://base2t.one/demo/space/
 
 The [Open Graph image for the site][og-image] is by Richard Khuptong.
 
