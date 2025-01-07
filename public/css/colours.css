@@ -70,8 +70,8 @@
     --accent: var(--baseB5);
     --accent-hover: var(--baseB7);
     --accent-text: var(--bg);
-    --code: var(--baseD1);
-    --preformatted: var(--baseD3);
+    --code: var(--baseD5);
+    --preformatted: var(--baseD7);
     --disabled: var(--baseA2);
   }
 }
