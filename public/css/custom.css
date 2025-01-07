@@ -63,12 +63,8 @@ nav *, footer * {
 	font-size: var(--step--1);
 }
 
-pre * {
+pre, pre * {
 	font-size: var(--step--1);
-}
-
-code {
-  font-size: inherit;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
