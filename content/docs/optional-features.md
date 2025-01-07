@@ -15,7 +15,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(Podcaster, {
     handleDrafts: true,
     handleExcerpts: true,
-    readableDateLocale: 'en-GB'
+    readableDateLocale: 'en-GB',
+    calculatePageTitle: true
   })
   .
   .
@@ -30,7 +31,7 @@ If `handleDrafts` is set to `true`, the plugin will allow you to designate posts
 
 If `handleExcerpts` is set to `true`, the plugin will create excerpts for your podcast episode posts. Excerpts are shortened versions of your final content, which you can use on index pages or topic pages or guest pages instead of your complete post.
 
-Excerpts are available in a template as `{{ excerpt }}`, but you will probably access them from a collection item, where they are available as `{{ item.data.excerpt }}`. Excerpts are HTML fragments.
+Excerpts are available in a template as {% raw %}`{{ excerpt }}`{% endraw %}, but you will probably access them from a collection item, where they are available as {% raw %}`{{ item.data.excerpt }}`{% endraw %}. Excerpts are HTML fragments.
 
 **Podcaster** defines the excerpt in one of three ways, in order of priority.
 
@@ -43,3 +44,40 @@ Excerpts are available in a template as `{{ excerpt }}`, but you will probably a
 **Podcaster** optionally provides a `readableDate` filter, to match `readableDuration` and `readableSize`. It transforms a date into a localised string, which usually includes weekday, day of month, month and year.
 
 To make **Podcaster** provide this filter, pass a locale string as one of the options when you're adding the plugin to your config file. In English, the two most common locale strings are `'en-GB'` and `'en-US'`.
+
+## `pageTitle` attribute
+
+**Podcaster** also supplies a `pageTitle` attribute, which will consist of the title of the page, a separator, and the title of the site. It can be used in the `<title>` tag in the `<head>` of a page, and it might also be useful in a page's Open Graph data. Like this:
+
+```html
+<head>
+  .
+  .
+  <title>{{ pageTitle }}</title>
+  .
+  <meta property="og:title" content="{{ pageTitle }}">
+  .
+  .
+</head>
+```
+
+For the site title, **Podcaster** uses `site.title` from the data cascade; if that's missing, it uses `podcast.title`. The default separator is `&middot;`; you can specify your own separator when you add **Podcaster** to your config file like this.
+
+```js
+
+// eleventy.config.js
+
+import Podcaster from 'eleventy-plugin-podcaster'
+
+export default function (eleventyConfig) {
+  .
+  .
+  eleventyConfig.addPlugin(Podcaster, {
+    calculatePageTitle: '|'  // specifies the pipe character as a separator
+  })
+  .
+  .
+}
+```
+> [!Note]
+> These features aren't specific to the task of creating a podcast website, and so it's completely safe to ignore them. However, I use each of them in some or all of my podcasting websites, so I've decided to include them.

@@ -141,14 +141,16 @@ To find out how to set this up and how to make this work with **Podcaster**, [re
 
 ## Optional features
 
-**Podcaster** also implements some optional features which are useful for creating podcast websites — **drafts** and **excerpts**.
+**Podcaster** also implements some optional features which are useful for creating podcast websites — **drafts**,  **excerpts**, a **`readableDate` filter**, and a **`pageTitle`** attribute.
 
-These are not fundamental features of a podcast website, which is why they are opt-in. You activate them by passing options to the `addPlugin` method in your configuration file.
+These are not fundamental features of a podcast website, which is why they are opt-in. You can activate them by passing options to the `addPlugin` method in your configuration file.
 
 ```js
     eleventyConfig.addPlugin(podcaster, {
       handleDrafts: true,
-      handleExcerpts: true
+      handleExcerpts: true,
+      readableDateLocale: 'en-GB',
+      calculatePageTitle: true
     })
 ```
 
