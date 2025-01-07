@@ -26,147 +26,156 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: #fbf9f9;
-  color: #767693;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  text-shadow: none;
-  background: #fbf9f9;
-}
+/* Light theme */
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-  text-shadow: none;
-  background: #fbf9f9;
-}
+@media (prefers-color-scheme: light) {
 
-/* Code blocks */
-pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
-  overflow: auto;
-}
+  code[class*="language-"],
+  pre[class*="language-"] {
+    background: #fbf9f9;
+    color: #767693;
+  }
 
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-}
+  pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    text-shadow: none;
+    background: #fbf9f9;
+  }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #c3bbb7;
-}
+  pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    text-shadow: none;
+    background: #fbf9f9;
+  }
 
-.token.punctuation {
-  color: #c3bbb7;
-}
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+  }
 
-.token.namespace {
-  opacity: .7;
-}
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+  }
 
-.token.tag,
-.token.operator,
-.token.number {
-  color: #5151e6;
-}
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: #c3bbb7;
+  }
 
-.token.property,
-.token.function {
-  color: #dd672c;
-}
+  .token.punctuation {
+    color: #c3bbb7;
+  }
 
-.token.tag-id,
-.token.selector,
-.token.atrule-id {
-  color: #b25424;
-}
+  .token.namespace {
+    opacity: .7;
+  }
 
-code.language-javascript,
-.token.attr-name {
-  color: #dd672c;
-}
+  .token.tag,
+  .token.operator,
+  .token.number {
+    color: #5151e6;
+  }
 
-code.language-css,
-code.language-scss,
-.token.boolean,
-.token.string,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.language-scss .token.string,
-.style .token.string,
-.token.attr-value,
-.token.keyword,
-.token.control,
-.token.directive,
-.token.unit,
-.token.statement,
-.token.regex,
-.token.atrule {
-  color: #7676f4;
-}
+  .token.property,
+  .token.function {
+    color: #dd672c;
+  }
 
-.token.placeholder,
-.token.variable {
-  color: #aaaaca;
-}
+  .token.tag-id,
+  .token.selector,
+  .token.atrule-id {
+    color: #b25424;
+  }
 
-.token.deleted {
-  text-decoration: line-through;
-}
+  code.language-javascript,
+  .token.attr-name {
+    color: #dd672c;
+  }
 
-.token.inserted {
-  border-bottom: 1px dotted #b25424;
-  text-decoration: none;
-}
+  code.language-css,
+  code.language-scss,
+  .token.boolean,
+  .token.string,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .language-scss .token.string,
+  .style .token.string,
+  .token.attr-value,
+  .token.keyword,
+  .token.control,
+  .token.directive,
+  .token.unit,
+  .token.statement,
+  .token.regex,
+  .token.atrule {
+    color: #7676f4;
+  }
 
-.token.italic {
-  font-style: italic;
-}
+  .token.placeholder,
+  .token.variable {
+    color: #aaaaca;
+  }
 
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
+  .token.deleted {
+    text-decoration: line-through;
+  }
 
-.token.important {
-  color: #dd672c;
-}
+  .token.inserted {
+    border-bottom: 1px dotted #b25424;
+    text-decoration: none;
+  }
 
-.token.entity {
-  cursor: help;
-}
+  .token.italic {
+    font-style: italic;
+  }
 
-pre > code.highlight {
-  outline: .4em solid #dd672c;
-  outline-offset: .4em;
-}
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
 
-/* overrides color-values for the Line Numbers plugin
- * http://prismjs.com/plugins/line-numbers/
- */
-.line-numbers .line-numbers-rows {
-  border-right-color: #eae4e1;
-}
+  .token.important {
+    color: #dd672c;
+  }
 
-.line-numbers-rows > span:before {
-  color: #d8cfcb;
-}
+  .token.entity {
+    cursor: help;
+  }
 
-/* overrides color-values for the Line Highlight plugin
- * http://prismjs.com/plugins/line-highlight/
- * alpha transparency in 8 digits hex notation coming to a browser near you soon:
- * https://drafts.csswg.org/css-color/#hex-notation
- */
-.line-highlight {
-  background: #b2542433;
-  background: linear-gradient(to right, #b2542433 70%, #b2542400);
+  pre > code.highlight {
+    outline: .4em solid #dd672c;
+    outline-offset: .4em;
+  }
+
+  /* overrides color-values for the Line Numbers plugin
+  * http://prismjs.com/plugins/line-numbers/
+  */
+  .line-numbers .line-numbers-rows {
+    border-right-color: #eae4e1;
+  }
+
+  .line-numbers-rows > span:before {
+    color: #d8cfcb;
+  }
+
+  /* overrides color-values for the Line Highlight plugin
+  * http://prismjs.com/plugins/line-highlight/
+  * alpha transparency in 8 digits hex notation coming to a browser near you soon:
+  * https://drafts.csswg.org/css-color/#hex-notation
+  */
+  .line-highlight {
+    background: #b2542433;
+    background: linear-gradient(to right, #b2542433 70%, #b2542400);
+  }
 }
 
 /* Dark theme */
