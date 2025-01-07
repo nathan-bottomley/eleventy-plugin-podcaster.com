@@ -76,7 +76,7 @@ A big week for beginnings this week, with a new Doctor, a new origin story for t
 
 To create your podcast feed, **Podcaster** needs both the information you've provided about your podcast and the information you've provided about your individual episodes.
 
-By default, your podcast feed will be located at `/feed/podcast.xml`, which means that the URL you submit to Apple Podcasts or Spotify (or wherever) will be `{{ podcast.siteUrl }}/feed/podcast.xml`
+By default, your podcast feed will be located at `/feed/podcast.xml`, which means that the URL you submit to Apple Podcasts or Spotify (or wherever) will be `{% raw %}{{ podcast.siteUrl }}{% endraw %}/feed/podcast.xml`
 
 ## Using podcast information and episode information in templates
 
