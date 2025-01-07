@@ -30,7 +30,7 @@ export default function (eleventyConfig) {
 
 ## Podcast information
 
-Once you've installed **Podcaster** in your Eleventy project, the next step is to provide it with information about your podcast — the title, the owner, the category, the subcategory and so on. The easiest way to do this is to put all the information in your data directory in a `podcast.json` file.
+Once you've installed **Podcaster** in your Eleventy project, the next step is to provide it with information about your podcast — the title, the owner, the category, the subcategory and so on. The easiest way to do this is to put the information in your data directory in a `podcast.json` file.
 
 Here's an example.
 
@@ -66,7 +66,10 @@ episode:
   size: 61231442 # bytes
   duration: 3778.482 # seconds
 ---
-A big week for beginnings this week, with a new Doctor, a new origin story for the Daleks, and a whole new approach to defeating the bad guys. Oh, and a new podcast to discuss them all on. So let's welcome Patrick Troughton to the studio floor, as we discuss _The Power of the Daleks_.
+A big week for beginnings this week, with a new Doctor, a new origin story
+for the Daleks, and a whole new approach to defeating the bad guys. Oh, and
+a new podcast to discuss them all on. So let's welcome Patrick Troughton 
+to the studio floor, as we discuss _The Power of the Daleks_.
 
 ```
 
@@ -74,15 +77,15 @@ A big week for beginnings this week, with a new Doctor, a new origin story for t
 
 ## The podcast feed
 
-To create your podcast feed, **Podcaster** needs both the information you've provided about your podcast and the information you've provided about your individual episodes.
+**Podcaster** uses the information you've provided about your podcast and about its individual episodes to create the podcast feed.
 
 By default, your podcast feed will be located at `/feed/podcast.xml`, which means that the URL you submit to Apple Podcasts or Spotify (or wherever) will be `{% raw %}{{ podcast.siteUrl }}{% endraw %}/feed/podcast.xml`
 
 ## Using podcast information and episode information in templates
 
-All the podcast and episode information you provide are made available to your templates through the data cascade, including `title` and `date`, as well as fields in the `podcast` and `episode` objects.
+All the podcast and episode information you provide is made available to your templates through the data cascade, including `title` and `date`, as well as fields in the `podcast` and `episode` objects.
 
-Here's how you could use this information to describe a single podcast episode in a Liquid template.
+Here's how you might use this information to describe a single podcast episode in a Liquid template.
 
 {% raw %}
 
@@ -116,7 +119,7 @@ All podcast episode templates belong to the `collections.podcastEpisode` collect
 > `episode.size` gives you the podcast's size in bytes and `episode.duration`
 > gives you the duration in seconds. To include size and duration
 > in your templates in a human-readable format, use **Podcaster**’s filters
-> `readableSize` and `readableDuration`.
+> `readableSize` and `readableDuration`, as in the example above.
 
 ## Hosting
 
@@ -126,14 +129,7 @@ You can host your podcast site — along with its feed — [the same way you w
 [a Jamstack provider]: https://www.11ty.dev/docs/deployment/#jamstack-providers
 [a classic web host]: https://www.11ty.dev/docs/deployment/#classic-web-hosts
 
-However, your podcast episode files should probably be hosted somewhere else, preferably on a Content Delivery Network (CDN), which will let your listeners download your episodes promptly and quickly.
-
-There are many options available, including [Digital Ocean Spaces][], [Linode Object Storage][], [Backblaze B2 Cloud Storage][] and [Cloudflare R2][].
-
-[Digital Ocean Spaces]: https://www.digitalocean.com/products/spaces
-[Linode Object Storage]: https://www.linode.com/products/object-storage/
-[Backblaze B2 Cloud Storage]: https://www.backblaze.com/cloud-storage
-[Cloudflare R2]: https://developers.cloudflare.com/r2/
+However, your podcast episode files should be hosted somewhere else, preferably on a Content Delivery Network (CDN), which will let your listeners download your episodes promptly and quickly.
 
 To find out how to set this up and how to make this work with **Podcaster**, [read more about hosting your podcast episode files][episode-file-hosting].
 
@@ -162,7 +158,7 @@ I started podcasting and creating podcasting websites in 2014. At first I used S
 
 I now have seven podcast websites powered by Eleventy, and **Podcaster** was derived from the code I used to create them.
 
-Here's a list:
+Here's the list:
 
 - [Flight Through Entirety](https://flightthroughentirety.com), a _Doctor Who_ podcast flying through the entirety of the show's 60-something-year history.
 - [Untitled Star Trek Project](https://untitledstartrekproject.com), a _Star Trek_ commentary podcast, where two friends watch _Star Trek_ episodes from across the franchise, chosen (nearly) at random using [a page on the podcast website](https://untitledstartrekproject.com/randomiser).

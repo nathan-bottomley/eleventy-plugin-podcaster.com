@@ -66,7 +66,7 @@ And here's a detailed description of all of this information.
 | `block` |  If the value here is true or truthy, the podcast will be blocked from appearing in the Apple Podcasts Directory. | no |
 | `owner` | An optional object in the form `{ name, email }` You might want to omit this: Apple Podcasts has deprecated it, and an email in a podcast feed will attract some spam. However, some podcast directories, like Castbox, will use the email address to identify you when you try to claim ownership of a podcast in their directory. | no |
 | `complete` | Indicates that a podcast is complete and that no new episodes should be expected, in which case it should have the value `true`. Should be omitted otherwise. | no |
-| `episodeUrlBase` | If you store your podcast episodes on a CDN, or if you use a podcast analytics service, this is where you specify the base URL for them. If you don't specify this, it defaults to `https://{{ podcast.siteUrl }}/episodes/` | no |
+| `episodeUrlBase` | If you store your podcast episodes on a CDN, or if you use a podcast analytics service, this is where you specify the base URL for them. If you don't specify this, it defaults to `https://{% raw %}{{ podcast.siteUrl }}{% endraw %}/episodes/` | no |
 
 [categories]: https://podcasters.apple.com/support/1691-apple-podcasts-categories
 [lang]: https://www.rssboard.org/rss-language-codes
@@ -87,7 +87,9 @@ However, if you want to, you can override either of these textual descriptions b
 These templates must be Nunjucks templates, and the post for the episode must be referred to by the variable `post`. Here's a sample content template from one of my podcast websites.
 
 ```njk
+{% raw %}
 <p class="diary-date">{{ post.data.diaryDate | readableDate }}</p>
 <p class="topic">{{ post.data.topic }}</p>
 {{ post.content | safe }}
+{% endraw %}
 ```
