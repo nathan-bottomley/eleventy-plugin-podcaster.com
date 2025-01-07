@@ -85,7 +85,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --color-tip: var(--baseB2);
+    --color-tip: var(--baseB3);
     --color-note: var(--baseD2);
   }
 }

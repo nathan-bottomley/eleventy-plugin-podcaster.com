@@ -34,20 +34,20 @@ pre[class*="language-"] {
 
   code[class*="language-"],
   pre[class*="language-"] {
-    background: #fbf9f9;
-    color: #767693;
+    background: #fbf9f9; /* C7 */
+    color: #767693; /* B3 */
   }
 
   pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
   code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
     text-shadow: none;
-    background: #fbf9f9;
+    background: #fbf9f9; /* C7 */
   }
 
   pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
   code[class*="language-"]::selection, code[class*="language-"] ::selection {
     text-shadow: none;
-    background: #fbf9f9;
+    background: #fbf9f9; /* C7 */
   }
 
   /* Code blocks */
@@ -67,11 +67,13 @@ pre[class*="language-"] {
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: #c3bbb7;
+  /*  color: #c3bbb7; C4 */
+  color: var(--base-C2);
   }
-
+C
   .token.punctuation {
-    color: #c3bbb7;
+    /* color: #c3bbb7; C4 */
+    color: var(--base-C2);
   }
 
   .token.namespace {
@@ -81,23 +83,23 @@ pre[class*="language-"] {
   .token.tag,
   .token.operator,
   .token.number {
-    color: #5151e6;
+    color: #5151e6; /* B0 */
   }
 
   .token.property,
   .token.function {
-    color: #dd672c;
+    color: #dd672c; /* D2 */
   }
 
   .token.tag-id,
   .token.selector,
   .token.atrule-id {
-    color: #b25424;
+    color: #b25424; /* D0 */
   }
 
   code.language-javascript,
   .token.attr-name {
-    color: #dd672c;
+    color: #dd672c; /* D2 */
   }
 
   code.language-css,
@@ -117,12 +119,12 @@ pre[class*="language-"] {
   .token.statement,
   .token.regex,
   .token.atrule {
-    color: #7676f4;
+    color: #7676f4; /* B2 */
   }
 
   .token.placeholder,
   .token.variable {
-    color: #aaaaca;
+    color: #aaaaca; /* B5 */
   }
 
   .token.deleted {
@@ -130,7 +132,7 @@ pre[class*="language-"] {
   }
 
   .token.inserted {
-    border-bottom: 1px dotted #b25424;
+    border-bottom: 1px dotted #b25424; /* D0 */
     text-decoration: none;
   }
 
@@ -144,7 +146,7 @@ pre[class*="language-"] {
   }
 
   .token.important {
-    color: #dd672c;
+    color: #dd672c; /* D2 */
   }
 
   .token.entity {
@@ -152,7 +154,7 @@ pre[class*="language-"] {
   }
 
   pre > code.highlight {
-    outline: .4em solid #dd672c;
+    outline: .4em solid #dd672c; /* D2 */
     outline-offset: .4em;
   }
 
@@ -160,11 +162,11 @@ pre[class*="language-"] {
   * http://prismjs.com/plugins/line-numbers/
   */
   .line-numbers .line-numbers-rows {
-    border-right-color: #eae4e1;
+    border-right-color: #eae4e1; /* C6 */
   }
 
   .line-numbers-rows > span:before {
-    color: #d8cfcb;
+    color: #d8cfcb; /* C5 */
   }
 
   /* overrides color-values for the Line Highlight plugin
@@ -173,8 +175,8 @@ pre[class*="language-"] {
   * https://drafts.csswg.org/css-color/#hex-notation
   */
   .line-highlight {
-    background: #b2542433;
-    background: linear-gradient(to right, #b2542433 70%, #b2542400);
+    background: #b2542433; /* D0 */
+    background: linear-gradient(to right, #b2542433 70%, #b2542400); /* D0 */
   }
 }
 
@@ -183,20 +185,21 @@ pre[class*="language-"] {
 @media (prefers-color-scheme: dark) {
   code[class*="language-"],
   pre[class*="language-"] {  
-    background: #24242e;
-    color: #767693;
+    background: #24242e; /* A0 */
+    /* color: #767693; B3 */
+    color: var(--base-B4);
   }
 
   pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
   code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
     text-shadow: none;
-    background: #5151e6;
+    background: #5151e6; /* B0 */
   }
 
   pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
   code[class*="language-"]::selection, code[class*="language-"] ::selection {
     text-shadow: none;
-    background: #5151e6;
+    background: #5151e6; /* B0 */
   }
 
   /* Code blocks */
@@ -216,11 +219,13 @@ pre[class*="language-"] {
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: #5b5b76;
+    /* color: #5b5b76; A3 */
+    color: var(--base-A7);
   }
 
   .token.punctuation {
-    color: #5b5b76;
+    /* color: #5b5b76; A3 */
+    color: var(--base-A7);
   }
 
   .token.namespace {
@@ -230,23 +235,24 @@ pre[class*="language-"] {
   .token.tag,
   .token.operator,
   .token.number {
-    color: #dd672c;
+    color: #dd672c; /* D2 */
   }
 
   .token.property,
   .token.function {
-    color: #767693;
+    /* color: #767693; B3 */
+    color: var(--base-B4);
   }
 
   .token.tag-id,
   .token.selector,
   .token.atrule-id {
-    color: #ebebff;
+    color: #ebebff; /* B7 */
   }
 
   code.language-javascript,
   .token.attr-name {
-    color: #aaaaca;
+    color: #aaaaca; /* B5 */
   }
 
   code.language-css,
@@ -266,12 +272,12 @@ pre[class*="language-"] {
   .token.statement,
   .token.regex,
   .token.atrule {
-    color: #fe8c52;
+    color: #fe8c52; /* D7 */
   }
 
   .token.placeholder,
   .token.variable {
-    color: #fe8c52;
+    color: #fe8c52; /* D7 */
   }
 
   .token.deleted {
@@ -279,7 +285,7 @@ pre[class*="language-"] {
   }
 
   .token.inserted {
-    border-bottom: 1px dotted #ebebff;
+    border-bottom: 1px dotted #ebebff; /* B7 */
     text-decoration: none;
   }
 
@@ -293,7 +299,7 @@ pre[class*="language-"] {
   }
 
   .token.important {
-    color: #aaaaca;
+    color: #aaaaca; /* B5 */
   }
 
   .token.entity {
@@ -301,7 +307,7 @@ pre[class*="language-"] {
   }
 
   pre > code.highlight {
-    outline: .4em solid #7676f4;
+    outline: .4em solid #7676f4; /* B2 */
     outline-offset: .4em;
   }
 
@@ -309,11 +315,11 @@ pre[class*="language-"] {
   * http://prismjs.com/plugins/line-numbers/
   */
   .line-numbers .line-numbers-rows {
-    border-right-color: #333342;
+    border-right-color: #333342; /* A1 */
   }
 
   .line-numbers-rows > span:before {
-    color: #333342;
+    color: #333342; /* A1 */
   }
 
   /* overrides color-values for the Line Highlight plugin
@@ -323,6 +329,6 @@ pre[class*="language-"] {
   */
   .line-highlight {
     background: #dd672c33;
-    background: linear-gradient(to right, #dd672c33 70%, #dd672c00);
+    background: linear-gradient(to right, #dd672c33 70%, #dd672c00); /* D2 */
   }
 }
