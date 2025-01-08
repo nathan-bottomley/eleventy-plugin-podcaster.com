@@ -72,8 +72,8 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Podcaster Blog",
-			subtitle: "The Podcaster blog: how to use the Podcaster plugin to create your podcast website.",
+			title: "The Podcaster Blog",
+			subtitle: "Using the Podcaster plugin to create your podcast site",
 			base: "https://eleventy-plugin-podcaster.com/",
 			author: {
 				name: "Nathan Bottomley"
