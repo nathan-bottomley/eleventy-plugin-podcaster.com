@@ -72,11 +72,11 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Blog Title",
-			subtitle: "This is a longer description about your blog.",
-			base: "https://example.com/",
+			title: "Podcaster Blog",
+			subtitle: "The Podcaster blog: how to use the Podcaster plugin to create your podcast website.",
+			base: "https://eleventy-plugin-podcast.com/",
 			author: {
-				name: "Your Name"
+				name: "Nathan Bottomley"
 			}
 		}
 	});
