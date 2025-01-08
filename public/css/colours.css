@@ -79,13 +79,15 @@
 /* Customised colour theme for GitHub colors */
 :root {
   --color-tip: var(--baseB0);
-  --color-note: var(--baseD0);
+  --color-note: var(--baseB0);
+  --color-warning: var(--baseD4);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
     --color-tip: var(--baseB3);
-    --color-note: var(--baseD2);
+    --color-note: var(--baseB3);
+    --color-warning: var(--baseD7);
   }
 }
