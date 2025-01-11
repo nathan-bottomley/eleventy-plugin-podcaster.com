@@ -156,7 +156,7 @@ These are not fundamental features of a podcast website, which is why they are o
 
 I started podcasting and creating podcasting websites in 2014. At first I used Squarespace, then WordPress, and then Jekyll, before finally settling on Eleventy late in 2022.
 
-I now have seven podcast websites powered by Eleventy, and **Podcaster** was derived from the code I used to create them.
+I now have seven podcast websites powered by Eleventy and **Podcaster**;  **Podcaster** itself was derived from the code I used to create them.
 
 Here's the list:
 
