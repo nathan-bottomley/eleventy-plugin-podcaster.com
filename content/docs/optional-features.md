@@ -53,9 +53,9 @@ To make **Podcaster** provide this filter, pass a locale string as one of the op
 <head>
   .
   .
-  <title>{{ pageTitle }}</title>
+  <title>{% raw %}{{ pageTitle }}{% endraw %}</title>
   .
-  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:title" content="{% raw %}{{ pageTitle }}{% endraw %}">
   .
   .
 </head>
