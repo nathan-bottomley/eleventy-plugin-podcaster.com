@@ -168,3 +168,9 @@ pre {
 .markdown-alert {
   margin-block-start: var(--space-m); 
 }
+
+/* Footer */
+
+footer p {
+  text-wrap: balance;
+}
