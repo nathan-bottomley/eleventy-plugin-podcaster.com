@@ -4,6 +4,7 @@ eleventyNavigation:
   key: Documentation
   order: 1
 ---
+
 ## Installation
 
 To install the npm package, type this at the command line:
@@ -49,7 +50,7 @@ Here's an example.
 
 ## Episode information
 
-For each podcast episode you create, you will also create a corresponding Eleventy template. This template will have the tag `podcastEpisode`; its front matter will contain the information about the episode — the title, the release date, the episode number, the filename and so on — and its content will contain the episode's show notes.
+For each podcast episode you create, you will also create a corresponding Eleventy template. This template will have the tag `podcastEpisode`, and its front matter will contain the information about the episode — the title, the release date, the episode number, the filename and so on. Its content will contain the episode's show notes.
 
 Here's an example.
 
@@ -70,14 +71,21 @@ A big week for beginnings this week, with a new Doctor, a new origin story
 for the Daleks, and a whole new approach to defeating the bad guys. Oh, and
 a new podcast to discuss them all on. So let's welcome Patrick Troughton 
 to the studio floor, as we discuss _The Power of the Daleks_.
-
 ```
 
 [Read more about episode information.](episode-information.md)
 
+### Getting **Podcaster** to work out your episode information
+
+That seems like quite a lot of information to supply for each episode. But **Podcaster** can workout `episode.filename`, `episode.size` and `episode.duration` for you.
+
+To allow it to do this, you need to have a single local directory that contains all of your podcast's MP3 files. You provide **Podcaster** with the path to that directory, and it can do the rest.
+
+[Read more about getting **Podcaster** to work out your episode information.](filename-size-and-duration.md)
+
 ## The podcast feed
 
-**Podcaster** uses the information you've provided about your podcast and about its individual episodes to create the podcast feed.
+**Podcaster** uses the information you have provided about your podcast and its episodes to create the podcast feed.
 
 By default, your podcast feed will be located at `/feed/podcast.xml`, which means that the URL you submit to Apple Podcasts or Spotify (or wherever) will be `{% raw %}{{ podcast.siteUrl }}{% endraw %}/feed/podcast.xml`
 
@@ -115,11 +123,7 @@ All podcast episode templates belong to the `collections.podcastEpisode` collect
 [pagination]: https://www.11ty.dev/docs/pagination/
 [item]: https://www.11ty.dev/docs/collections/#collection-item-data-structure
 
-> [!TIP]
-> `episode.size` gives you the podcast's size in bytes and `episode.duration`
-> gives you the duration in seconds. To include size and duration
-> in your templates in a human-readable format, use **Podcaster**’s filters
-> `readableSize` and `readableDuration`, as in the example above.
+[Read more about using podcast information and episode information in templates.](information-in-templates.md)
 
 ## Hosting
 

@@ -1,7 +1,6 @@
 ---
 title: Optional features
 ---
-
 **Podcaster** includes some optional features which you might find useful for your podcasting website. These features are turned off by default, in case you want to implement them some other way. You can enable some or all of them when you include the plugin in your eleventy configuration file, like this:
 
 ```js
@@ -79,5 +78,6 @@ export default function (eleventyConfig) {
   .
 }
 ```
+
 > [!Note]
-> These features aren't specific to the task of creating a podcast website, and so it's completely safe to ignore them. However, I use each of them in some or all of my podcasting websites, so I've decided to include them.
+> These features aren't specific to podcast websites, and it's completely safe to ignore them. However, I use some of them in all of my podcasting websites, so I've decided to include them.
