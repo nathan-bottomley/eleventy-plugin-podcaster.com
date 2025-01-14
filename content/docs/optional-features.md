@@ -1,7 +1,7 @@
 ---
 title: Optional features
 ---
-**Podcaster** includes some optional features which you might find useful for your podcasting website. These features are turned off by default, in case you want to implement them some other way. You can enable some or all of them when you include the plugin in your eleventy configuration file, like this:
+**Podcaster** includes some optional features which you might find useful for your podcasting website. These features are turned off by default, because they're not specific to podcast website, and because you might want to implement them some other way. You can enable some or all of them when you include the plugin in your eleventy configuration file, like this:
 
 ```js
 // eleventy.config.js
@@ -42,11 +42,11 @@ Excerpts are available in a template as {% raw %}`{{ excerpt }}`{% endraw %}, bu
 
 **Podcaster** optionally provides a `readableDate` filter, to match `readableDuration` and `readableSize`. It transforms a date into a localised string, which usually includes weekday, day of month, month and year.
 
-To make **Podcaster** provide this filter, pass a locale string as one of the options when you're adding the plugin to your config file. In English, the two most common locale strings are `'en-GB'` and `'en-US'`.
+To make **Podcaster** provide this filter, pass a locale string as the `readableDateLocale` option when you're adding the plugin to your config file. In English, the two most common locale strings are `'en-GB'` and `'en-US'`.
 
 ## `pageTitle` attribute
 
-**Podcaster** also supplies a `pageTitle` attribute, which will consist of the title of the page, a separator, and the title of the site. It can be used in the `<title>` tag in the `<head>` of a page, and it might also be useful in a page's Open Graph data. Like this:
+**Podcaster** can also supply a `pageTitle` attribute, which will consist of the title of the page, a separator, and the title of the site. It can be used in the `<title>` tag in the `<head>` of a page, and it might also be useful in a page's Open Graph data. Like this:
 
 ```html
 <head>
@@ -60,7 +60,7 @@ To make **Podcaster** provide this filter, pass a locale string as one of the op
 </head>
 ```
 
-For the site title, **Podcaster** uses `site.title` from the data cascade; if that's missing, it uses `podcast.title`. The default separator is `&middot;`; you can specify your own separator when you add **Podcaster** to your config file like this.
+For the site title, **Podcaster** uses `site.title` from the data cascade; if that's missing, it uses `podcast.title`. The default separator is `&middot;`, but you can specify your own separator when you add **Podcaster** to your config file like this.
 
 ```js
 
@@ -72,12 +72,9 @@ export default function (eleventyConfig) {
   .
   .
   eleventyConfig.addPlugin(Podcaster, {
-    calculatePageTitle: '|'  // specifies the pipe character as a separator
+    calculatePageTitle: ':'  // specifies a colon as the separator
   })
   .
   .
 }
 ```
-
-> [!Note]
-> These features aren't specific to podcast websites, and it's completely safe to ignore them. However, I use some of them in all of my podcasting websites, so I've decided to include them.
