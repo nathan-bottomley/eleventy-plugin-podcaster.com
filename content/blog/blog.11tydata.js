@@ -16,7 +16,7 @@ export default {
 				return data.permalink
 			}
 			const { date, fileSlug } = data.page
-			const dateURL = date.toISOString().split('T')[0].split('-').join('/')
+			const dateURL = `${date.getFullYear()}/${String(date.getMonth() + 1).padStart(2, '0')}`
 			return `${dateURL}/${fileSlug}/`
 		},
 		excerpt(data) {
