@@ -11,6 +11,16 @@ export default function(eleventyConfig) {
 		return result.setLocale('en-GB').toLocaleString(DateTime.DATE_HUGE)
 	})
 
+	eleventyConfig.addFilter('shortDate', function (date) {
+		if (date instanceof Date) {
+			date = date.toISOString()
+		}
+		const result = DateTime.fromISO(date, {
+			zone: 'UTC'
+		})
+		return result.setLocale('en-GB').toLocaleString(DateTime.DATE_MED)
+	})
+
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('yyyy-LL-dd');

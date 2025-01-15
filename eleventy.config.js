@@ -1,19 +1,20 @@
 import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
-import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
-import pluginNavigation from "@11ty/eleventy-navigation";
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss"
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
+import pluginNavigation from "@11ty/eleventy-navigation"
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img"
 import MarkdownIt from 'markdown-it'
 import MarkdownItGitHubAlerts from 'markdown-it-github-alerts'
+import MarkdownItAttrs from 'markdown-it-attrs'
 
-import pluginFilters from "./_config/filters.js";
+import pluginFilters from "./_config/filters.js"
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
-			return false;
+			return false
 		}
 	})
 
@@ -22,7 +23,7 @@ export default async function(eleventyConfig) {
 	const markdownLibrary = MarkdownIt({    
 		html: true,
     typographer: true
-  }).use(MarkdownItGitHubAlerts)
+  }).use(MarkdownItGitHubAlerts).use(MarkdownItAttrs)
 	eleventyConfig.setLibrary("md", markdownLibrary)
 
 	// Copy the contents of the `public` folder to the output folder

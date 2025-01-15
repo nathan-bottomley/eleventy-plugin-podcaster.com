@@ -33,10 +33,26 @@ This site hosts [the **Podcaster** documentation](/docs). But it also hosts [the
 
 {% set latestPost = collections.post | reverse | first %}
 
-### {{ latestPost.data.title }}
+### [{{ latestPost.data.title }}]({{ latestPost.url }})
 
-<p class="post-date">{{ latestPost.date | readableDate }}</p>
+{{ latestPost.date | readableDate }}{ .post-date }
 
 {{ latestPost.data.excerpt | safe }}
 
-[Continue reading…]({{ latestPost.data.permalink }})
+[Continue reading…]({{ latestPost.url }})
+
+{% if collections.post.length > 1 %}
+
+## Previously on the blog
+
+<!--markdownlint-disable MD033-->
+<ul class="previous-posts">
+{%- for post in collections.post | reverse %}
+  {%- if not loop.first %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a> ({{ post.date | shortDate }})</li>
+  {%- endif %}
+{%- endfor %}
+</ul>
+<!--markdownlint-enable MD033-->
+
+{% endif %}
