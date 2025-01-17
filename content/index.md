@@ -6,7 +6,7 @@ numberOfLatestPostsToShow: 5
 
 Plenty of services exist that will host your podcast online — [Spotify][], [Acast][], [Podbean][], [Buzzsprout][], [Blubrry][]. But none of these will allow you to own your podcast's presence on the web, and none of them will give you the freedom to create a site that presents your podcast in a way that reflects its premise, tone and style.
 
-But **Podcaster** will.
+But Eleventy and **Podcaster** will.
 
 [Spotify]: https://podcasters.spotify.com
 [Acast]: https://www.acast.com
