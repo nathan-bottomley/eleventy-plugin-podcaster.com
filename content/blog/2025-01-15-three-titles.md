@@ -11,10 +11,11 @@ episode:
   itunesTitle: Entering a new phase (The Power of the Daleks)
 ---
 ```
-
+<!---excerpt-->
 If you've read [the documentation page about how to provide episode information to **Podcaster**][episode-information], you might have noticed that **Podcaster** offers three different titles that you could provide for a given podcast episode.
 
 [episode-information]: docs/episode-information.md
+<!---endexcerpt-->
 
 Here's how the docs describe them:
 
