@@ -2,6 +2,7 @@
 title: Describing a podcast episode
 date: 2025-01-26
 ---
+<!---excerpt-->
 Podcasts are an audio medium, of course, but your listeners' podcast players  describe each of your episodes using text — a title, a short description and a long description.
 
 And so **Podcaster** lets you provide all three of those.
@@ -9,7 +10,7 @@ And so **Podcaster** lets you provide all three of those.
 I've [posted about titles already][titles] — so let's talk about the short and long descriptions.
 
 [titles]: 2025-01-15-three-titles.md
-
+<!---endexcerpt-->
 ## Short description
 
 **Podcaster** lets you provide the short description for your episode in the front matter of that episode's post as `episode.description`. This is plain text, and podcast players usually show it — or the start of it — in list views.
