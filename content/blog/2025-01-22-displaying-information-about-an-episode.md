@@ -154,7 +154,7 @@ I will undoubtedly add more information to it later. (If I don't, I guess I coul
 
 {% endraw %}
 
-This part of the partial displays the show notes. If `excerptOnly` is set to `true`, only the first paragraph of the show notes is included; otherwise the page includes the complete shownotes.
+This part of the partial displays the show notes. If `excerptOnly` is set to `true`, only the first paragraph of the show notes is included; otherwise the page includes the complete show notes.
 
 On [the _500 Year Diary_ website][500yd], the index pages and the episode pages contain the complete show notes. Season pages contain the excerpt only, and so they include `excerptOnly: true` in their front matter.
 
