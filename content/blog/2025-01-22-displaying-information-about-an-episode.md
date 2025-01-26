@@ -112,7 +112,7 @@ The first two child elements of that `<article>` are information specific to the
 
 Here's where we put the post's title, which is usually (but not always) the same as the title of the podcast episode.
 
-On an index page or a tag page, you can include `linkInTitle: true` in the front matter, and the title will be a link to the episode's own page. If you omit `linkInTitle` the title will just be text, which is what you want on 
+On an index page or a tag page, you can include `linkInTitle: true` in the front matter, and the title will be a link to the episode's own page. If you omit `linkInTitle`, the title will just be text, which is what you want on an episode page.
 
 ***
 

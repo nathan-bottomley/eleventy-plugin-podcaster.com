@@ -58,4 +58,3 @@ The episode description template and the episode content template both need to b
 > [!NOTE] Unnecessary technical detail
 > **Podcaster** includes the short description in the feed as the contents of the `<itunes:summary>` and `<description>` tags.
 > It includes the long description in the feed as the content of the `<content:encoded>` tag, inside a CDATA section.
-> 

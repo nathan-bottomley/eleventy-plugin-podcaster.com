@@ -4,8 +4,6 @@ eleventyNavigation:
   key: About
   order: 9
 ---
-# About
-
 ## About **Podcaster**
 
 **Podcaster** was created by me, Nathan Bottomley, a Latin teacher and podcaster living in Sydney, Australia. You can find out more about me [on my personal website][].
@@ -18,11 +16,11 @@ You can contact me on [Bluesky][] or on [Mastodon][], or on the [**Podcaster** G
 [Mastodon]: https://aus.social/@nathanbottomley
 [github]: https://github.com/nathan-bottomley/eleventy-plugin-podcaster
 
-**Podcaster** is based on code I wrote as I created [a series of podcasting websites][] over a number of years. It doesn't solve any very complex problems, but I needed to extract the podcasting code from my websites and put it somewhere where it can be used by all (or most) of them.
+**Podcaster** is based on code I wrote as I created [a series of podcast websites][] over a few years. It doesn't solve any very complex problems, but I needed to extract all the duplicate podcast-related code from my various podcast websites and put somewhere where all of them could access it.
 
 I hope you find it useful. [Let me know if you do](https://bsky.app/profile/nathanbottomley.com).
 
-[a series of podcasting websites]: /docs/#podcaster-in-action
+[a series of podcast websites]: /docs/#podcaster-in-action
 
 ## Colophon
 
