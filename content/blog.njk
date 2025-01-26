@@ -10,6 +10,11 @@ eleventyNavigation:
 <article>
   <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
   <p class="post-date"><time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time></p>
+  {% if loop.index < 3 %}
   {{ post.content | safe }}
+  {% else %}
+  {{ post.data.excerpt | safe }}
+  <p><a href="{{ post.url }}">Continue reading…</a></p>
+  {% endif %}
 </article>
 {% endfor %}
