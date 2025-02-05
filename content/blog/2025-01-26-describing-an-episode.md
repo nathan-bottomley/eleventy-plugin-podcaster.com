@@ -46,7 +46,7 @@ And here's a sample _episode content template_ based on the one from my _Star Tr
     Stardate: {{ post.data.starTrek.stardate }}.{% endraw %}
   </em>
 </p>
-{{ post.content | safe }}
+{% raw %}{{ post.content | safe }}{% endraw %}
 ```
 
 The episode description template and the episode content template both need to be Nunjucks templates, and both need to refer to the podcast episode's post as `post`, using [the collection item data structure][collection-item].
