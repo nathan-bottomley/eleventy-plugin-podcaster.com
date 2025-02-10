@@ -25,9 +25,9 @@ export default function (eleventyConfig) {
 }
 ```
 
-Before Eleventy starts building your site, **Podcaster** will go through the episode's directory and gather information about the filenames, the durations and the sizes of the files.
+Before Eleventy starts building your site, **Podcaster** will go through your episodes directory gathering a list of filenames and working out the durations and sizes of the files.
 
-It will save the information it gathers as a JSON file in your project's data directory: `episodesData.json`. However, you never need to refer to this file yourself — **Podcaster** [makes the information available to your templates](information-in-templates.md) as `episode.filename`, `episode.size` and `episode.duration` for each episode.
+It will save that information as a JSON file in your project's data directory: `episodesData.json`. However, you never need to refer to this file yourself — **Podcaster** [makes the information available to your templates](information-in-templates.md) as `episode.filename`, `episode.size` and `episode.duration` for each episode.
 
 ## Filenames **(new in version 1.2.0)**
 
