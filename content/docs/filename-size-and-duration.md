@@ -29,7 +29,7 @@ Before Eleventy starts building your site, **Podcaster** will go through your ep
 
 It will save that information as a JSON file in your project's data directory: `episodesData.json`. However, you never need to refer to this file yourself — **Podcaster** [makes the information available to your templates](information-in-templates.md) as `episode.filename`, `episode.size` and `episode.duration` for each episode.
 
-## Filenames **(new in version 1.2.0)**
+## Filenames
 
 So that **Podcaster** can work out which filename goes with which episode, your files need to be named with some kind of consistent naming convention, which includes the episode number and the season number, if applicable. Here are some examples.
 
