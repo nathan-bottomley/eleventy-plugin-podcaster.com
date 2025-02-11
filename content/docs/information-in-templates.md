@@ -25,6 +25,6 @@ It also provides two filters that you might find helpful.
 | `readableDuration` | Converts a number of seconds into a human-readable form — `h:mm:ss`. Suitable for displaying `episode.duration`. If `true` is provided as an argument to the filter, any leading zero for hours will be omitted (`mm:ss`). |
 
 >[!NOTE]
-> **Podcaster** can also provide [an optional `readableDate` value][readableDate] which displays a date in the fullest possible localised format, and which is suitable for displaying post dates or recording dates.
+> **Podcaster** can also provide [an optional `readableDate` filter][readableDate] which displays a date in the fullest possible localised format, and which is suitable for displaying post dates or recording dates.
 
 [readableDate]: /docs/optional-features/#readabledate-filter
