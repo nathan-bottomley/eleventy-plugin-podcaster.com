@@ -21,8 +21,8 @@ It also provides two filters that you might find helpful.
 
 | filter | function |
 | ----- | ----- |
-| `readableSize` | Converts a number of bytes into a human-readable form, probably in megabytes to one or two decimal places. Suitable for displaying `episode.size`. |
-| `readableDuration` | Converts a number of seconds into a human-readable form, `h:mm:ss`or `mm:ss`. Suitable for displaying `episode.duration`. |
+| `readableSize` | Converts a number of bytes into a human-readable form — in megabytes to two decimal places. Suitable for displaying `episode.size`. If a number is provided as an argument to the filter, that number will be the number of decimal places shown. |
+| `readableDuration` | Converts a number of seconds into a human-readable form — `h:mm:ss`. Suitable for displaying `episode.duration`. If `true` is provided as an argument to the filter, any leading zero for hours will be omitted (`mm:ss`). |
 
 >[!NOTE]
 > **Podcaster** can also provide [an optional `readableDate` value][readableDate] which displays a date in the fullest possible localised format, and which is suitable for displaying post dates or recording dates.
