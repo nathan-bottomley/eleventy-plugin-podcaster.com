@@ -15,7 +15,7 @@ npm install eleventy-plugin-podcaster
 
 And then include the plugin in your Eleventy configuration file.
 
-```js
+```javascript
 // eleventy.config.js
 
 import Podcaster from 'eleventy-plugin-podcaster'
@@ -145,7 +145,7 @@ To find out how to set this up and how to make this work with **Podcaster**, [re
 
 These are not fundamental features of a podcast website, which is why they are opt-in. You can activate them by passing options to the `addPlugin` method in your configuration file.
 
-```js
+```javascript
     eleventyConfig.addPlugin(Podcaster, {
       handleDrafts: true,
       handleExcerpts: true,

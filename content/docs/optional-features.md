@@ -3,7 +3,7 @@ title: Optional features
 ---
 **Podcaster** includes some optional features which you might find useful for your podcasting website. These features are turned off by default, because they're not specific to podcast website, and because you might want to implement them some other way. You can enable some or all of them when you include the plugin in your eleventy configuration file, like this:
 
-```js
+```javascript
 // eleventy.config.js
 
 import Podcaster from 'eleventy-plugin-podcaster'
@@ -62,7 +62,7 @@ To make **Podcaster** provide this filter, pass a locale string as the `readable
 
 For the site title, **Podcaster** uses `site.title` from the data cascade; if that's missing, it uses `podcast.title`. The default separator is `&middot;`, but you can specify your own separator when you add **Podcaster** to your config file like this.
 
-```js
+```javascript
 
 // eleventy.config.js
 

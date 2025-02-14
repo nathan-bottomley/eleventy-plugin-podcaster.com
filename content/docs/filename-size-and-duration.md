@@ -9,7 +9,7 @@ eleventyNavigation:
 
 You do this when you add **Podcaster** to your config file, by supplying a relative or absolute path to the `episodesDir` option. By default, **Podcaster** assumes that this directory is called `episodes` and that it is at the top level of your project directory.
 
-```js
+```javascript
 // eleventy.config.js
 
 import Podcaster from 'eleventy-plugin-podcaster'
@@ -40,7 +40,7 @@ FTE 296, Plummeting Towards Sheffield (Twice upon a Time).mp3
 
 You create a specification of this convention to **Podcaster** when as a regular expression and pass it as an `episodeFilenamePattern` option to the `addPlugin` call in your configuration file.
 
-```js
+```javascript
   eleventyConfig.addPlugin(Podcaster, {
     episodeFilenamePattern: /FTE (?<episodeNumber>\d+), .*\.mp3/
   })
@@ -48,7 +48,7 @@ You create a specification of this convention to **Podcaster** when as a regular
 
 or
 
-```js
+```javascript
   eleventyConfig.addPlugin(Podcaster, {
     episodeFilenamePattern: /500YD S(?<seasonNumber>\d+)E(?<episodeNumber>\d+), .*\.mp3/
   })

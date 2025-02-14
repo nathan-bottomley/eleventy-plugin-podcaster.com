@@ -33,13 +33,13 @@ If `podcast.episodeDescriptionTemplate` exists, it's assumed to contain the name
 
 Here's a sample _episode description template_ that reduces the length of the short description to 255 characters. Remember, the short description produced by this template needs to be plain text.
 
-```liquid
+```nunjucks
 {% raw %}{{ post.content | safe | striptags(true) | truncate(255) }}{% endraw %}
 ```
 
 And here's a sample _episode content template_ based on the one from my _Star Trek_ podcast site. It includes the stardate and first broadcast date of the _Star Trek_ episode we discuss in a given podcast episode. The long description produced here is in HTML.
 
-```liquid
+```nunjucks
 <p>
   <em>
     {% raw %}First broadcast on {{ post.data.starTrek.broadcast | readableDate }}.  
