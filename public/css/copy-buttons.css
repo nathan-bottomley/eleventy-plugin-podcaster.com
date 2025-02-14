@@ -4,6 +4,7 @@
   border-radius: 5px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  border-bottom-style: dashed;
   line-height: 1;
   display: flex;
   justify-content: space-between;
