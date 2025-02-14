@@ -60,9 +60,6 @@ And so the post on the site will have the title _Plummeting Towards Sheffield_, 
 [a directory data file]: https://www.11ty.dev/docs/data-template-dir/
 [the `eleventyComputed` property]: https://www.11ty.dev/docs/data-computed/
 
-> [!NOTE]
-> Some podcatchers, like Apple Podcasts and Pocket Casts, don't actually show the part of the title in parentheses, even though it's there in the feed. Overcast and Castbox do show the entire title.
-
 ## `episode.itunesTitle`
 
 Some podcasts include the episode number in their episode titles, but Apple Podcasts doesn't want you to do that. And so you can provide a separate Apple Podcasts--only title as `episode.itunesTitle`.
