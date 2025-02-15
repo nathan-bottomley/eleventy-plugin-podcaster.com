@@ -26,7 +26,7 @@ layout: layouts/base.html
   <p class="episode-number">{{ post.data.episode.episodeNumber }}</p>
   <p class="publication-date">{{ post.date | date: "%A %e %B %Y" }}</p>
   {{ post.content }}
-  <audio controls src="{{ post.data.episode.url }}" preload="none" type="audio/mp3">
+  <audio controls src="{{ post.data.episode.url }}" preload="none">
 </article>
 {% endfor %}
 ```
