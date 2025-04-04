@@ -15,7 +15,8 @@ export default function (eleventyConfig) {
     handleDrafts: true,
     handleExcerpts: true,
     readableDateLocale: 'en-GB',
-    calculatePageTitle: true
+    calculatePageTitle: true,
+    handleEpisodePermalinks: true
   })
   .
   .
@@ -78,3 +79,32 @@ export default function (eleventyConfig) {
   .
 }
 ```
+
+## Episode permalinks
+
+It's best practice to give your podcast episode pages predictable URLs. Many podcast websites use URLs like this.
+
+- For a podcast without seasons, Episode 2 would be here: `https://example.com/2`
+- For a podcast _with_ seasons, Season 3, Episode 2 would be here: `https://example.com/s3/e2`
+
+**Podcaster** can set permalinks for your episodes pages so that they have simple URLs in this format. All you need to do is opt in to the feature, like this.
+
+```javascript
+
+// eleventy.config.js
+
+import Podcaster from 'eleventy-plugin-podcaster'
+
+export default function (eleventyConfig) {
+  .
+  .
+  eleventyConfig.addPlugin(Podcaster, {
+    handleEpisodePermalinks: true
+  })
+  .
+  .
+}
+```
+
+> [!NOTE]
+> This feature is available in **Podcaster** 1.4.1
