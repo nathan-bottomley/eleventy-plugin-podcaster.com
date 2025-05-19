@@ -5,7 +5,7 @@ Each episode of your podcast should have an associated Eleventy template, with a
 
 ## Front matter
 
-The important information about each of your podcast episodes — the title, the date, the filename, the episode number, the size, the duration — should be made available in an `episode` object in the front matter of a post with an `podcastEpisode` tag, like this:
+The important information about each of your podcast episodes — the title, the date, the filename, the episode number, the size, the duration — should be made available in the front matter of a post with an `podcastEpisode` tag, like this:
 
 ```yaml
 ---
