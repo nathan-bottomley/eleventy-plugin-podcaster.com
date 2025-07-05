@@ -3,13 +3,15 @@ const copyButtonLabel = "Copy Code"
 
 if (navigator.clipboard) {
   for (const block of blocks) {
+    let blockLanguage = [...block.classList].find(c => c.startsWith("language-"))
+    if (blockLanguage === 'language-no-copy') continue
+
     // only add button if browser supports Clipboard API
     const header = document.createElement("div")
     header.classList.add("block-header")
     block.parentElement.insertBefore(header, block)
 
     const label = document.createElement("span")
-    let blockLanguage = [...block.classList].find(c => c.startsWith("language-"))
     if (blockLanguage) {
       label.innerText = blockLanguage.replace("language-", "")
     }
