@@ -51,7 +51,7 @@ export default {
       }
       const matchResult = data.page.fileSlug.match(/^ep(\d+)/)
       if (matchResult) {
-        return matchResult[1]
+        return parseInt(matchResult[1])
       }
     }
   }
@@ -88,7 +88,7 @@ export default {
       }
       const matchResult = data.page.fileSlug.match(/^s(?:\d+)e(\d+)/)
       if (matchResult) {
-        return matchResult[1]
+        return parseInt(matchResult[1])
       }
     },
     'episode.seasonNumber' (data) {
@@ -97,7 +97,7 @@ export default {
       }
       const matchResult = data.page.fileSlug.match(/^s(\d+)/)
       if (matchResult) {
-        return matchResult[1]
+        return parseInt(matchResult[1])
       }
     }
   }
