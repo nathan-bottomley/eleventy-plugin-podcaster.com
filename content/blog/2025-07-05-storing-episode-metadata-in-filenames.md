@@ -6,7 +6,7 @@ Each podcast episode in **Podcaster** is represented by a template with the tag 
 
 So my `/src/posts` folder looks like this:
 
-```no-copy
+```tree
 # /src/posts
 
 .
@@ -64,7 +64,7 @@ export default {
 
 What about podcasts with seasons? Here's a file listing from the _500 Year Diary_ podcast website.
 
-```no-copy
+```tree
 # /src/posts
 
 .
