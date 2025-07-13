@@ -10,7 +10,7 @@ The important information about your podcast — the title, the owner, the cate
   "description": "Flying through the entirety of Doctor Who. Originally with cake, but now with guests.",
   "language": "en-AU",
   "author": "Flight Through Entirety",
-  "category": "TV & Film",
+  "category": "TV & Film"
 }
 ```
 
