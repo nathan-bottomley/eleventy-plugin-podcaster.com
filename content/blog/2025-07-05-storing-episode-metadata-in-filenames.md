@@ -3,6 +3,7 @@ title: Storing episode metadata in filenames
 ---
 <!---excerpt-->
 Each podcast episode in **Podcaster** is represented by a template with the tag `podcastEpisode`. On my podcast websites, I put all the podcast episode templates in a `/src/posts` folder, and I give each template the `podcastEpisode` tag by using a directory data file.
+<!---endexcerpt-->
 
 So my `/src/posts` folder looks like this:
 
@@ -17,7 +18,6 @@ So my `/src/posts` folder looks like this:
 ├── 2021-12-03-ep5-the-corbomite-maneuver.md
 └── posts.11tydata.js
 ```
-<!---endexcerpt-->
 
 And the directory data file looks like this:
 
