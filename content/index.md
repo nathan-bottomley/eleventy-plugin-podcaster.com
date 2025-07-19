@@ -16,19 +16,27 @@ But Eleventy and **Podcaster** will.
 
 ## Usage
 
-Detailed and specific information about how to install and use **Podcaster** can be found in [the Documentation section](docs/index.md) of the site, but here's a quick summary.
+Detailed and specific information about how to install and use **Podcaster** can be found in [the Documentation section](/docs) of the site, but here's a quick summary.
 
-1. **Podcaster** is an Eleventy plugin. Create an Eleventy site and install the `eleventy-plugin-podcaster` plugin in the usual way.
-2. In the data directory, create a `podcast.json` file. This will contain information about your podcast and its site — at the very least, its title, the URL of the site, a description, its language, and its category.
-3. In the input directory, create a `episodeFiles` directory and put your podcast MP3s in there.
-4. In the input directory, create a `episodePosts` directory. You will have a post for each episode, and that post will include information about the episode in its filename and front matter and will have as its content the episode description or show notes.
+1. Install the plugin
 
-> [!WARNING]
-> **Podcaster** requires Node 20 or later.
+   **Podcaster** is an Eleventy plugin. Create an Eleventy site and install the `eleventy-plugin-podcaster` plugin in the usual way.
+
+2. Provide information about your podcast
+
+   In the data directory, create a `podcast.json` file. This will contain information about your podcast and its site — at the very least, its title, the site URL, a description, its language, and its category.
+
+3. Create a place for your episode MP3 files
+
+   In the input directory, create a `episodeFiles` directory and put your episode MP3s in there.
+
+4. Create a place for your episode posts
+
+   In the input directory, create a `episodePosts` directory. This directory will contain a post for each episode, and that post will include information about the episode, including its title, date, episode number and show notes.
 
 ## On this site
 
-This site hosts [the **Podcaster** documentation](/docs). And it also hosts [the **Podcaster** blog](/blog), where I'll be posting tips and ideas about how you can use **Podcaster** and Eleventy to create an online presence for your podcast.
+This site hosts [the **Podcaster** documentation](/docs). It also hosts [the **Podcaster** blog](/blog), where I'll be posting tips and ideas about how you can use **Podcaster** and Eleventy to create an online presence for your podcast.
 
 {# ## Recently on the blog
 
