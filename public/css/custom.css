@@ -171,6 +171,7 @@ pre {
 
 /* Footer */
 
-footer p {
+footer {
   text-wrap: balance;
+  background-color: var(--accent-bg);
 }
