@@ -2,7 +2,7 @@
 title: Podcaster
 numberOfLatestPostsToShow: 5
 ---
-`eleventy-plugin-podcaster` — or **Podcaster**, as we will call it from now on — is an Eleventy plugin which lets you create a podcast and its accompanying website. **Podcaster** creates the podcast feed that you submit to Apple Podcasts, Spotify or any other podcast directory. And it provides information about your podcast to your Eleventy templates. This means that you can include information about the podcast and its episodes on your podcast's website, creating pages for individual episodes, guests, topics, seasons or anything else at all.
+`eleventy-plugin-podcaster` — or **Podcaster**, as we will call it from now on — is an Eleventy plugin which lets you create a podcast and its accompanying website. You provide **Podcaster** with information about your podcast and its episodes, and it creates the podcast feed that you submit to Apple Podcasts, Spotify or any other podcast directory. And you can use the information you have provided to create pages for individual episodes, guests, topics, seasons or anything else at all.
 
 Plenty of services exist that will host your podcast online — [Spotify][], [Acast][], [Podbean][], [Buzzsprout][], [Blubrry][]. But none of these will allow you to own your podcast's presence on the web, and none of them will give you the freedom to create a site that presents your podcast in a way that reflects its premise, tone and style.
 
@@ -18,18 +18,19 @@ But Eleventy and **Podcaster** will.
 
 Detailed and specific information about how to install and use **Podcaster** can be found in [the Documentation section](docs/index.md) of the site, but here's a quick summary.
 
-**Podcaster** is an Eleventy plugin. You install it in your config file in the usual way. You usually provide it with information about your podcast — like its title, description and category — by creating a `podcast.json` file in the data directory. For each episode, you create a template with information in the front matter about that episode — its name, release date, filename, duration and so on.
-
-Once you do this, **Podcaster** can create the RSS feed for your podcast. You can also create templates for various pages on your website and include on those pages the information you have provided about the podcast and its episodes.
+1. **Podcaster** is an Eleventy plugin. Create an Eleventy site and install the `eleventy-plugin-podcaster` plugin in the usual way.
+2. In the data directory, create a `podcast.json` file. This will contain information about your podcast and its site — at the very least, its title, the URL of the site, a description, its language, and its category.
+3. In the input directory, create a `episodeFiles` directory and put your podcast MP3s in there.
+4. In the input directory, create a `episodePosts` directory. You will have a post for each episode, and that post will include information about the episode in its filename and front matter and will have as its content the episode description or show notes.
 
 > [!WARNING]
 > **Podcaster** requires Node 20 or later.
 
 ## On this site
 
-This site hosts [the **Podcaster** documentation](/docs). But it also hosts [the **Podcaster** blog](/blog), where I'll be posting tips and ideas about how you can use **Podcaster** and Eleventy to create an online presence for your podcast.
+This site hosts [the **Podcaster** documentation](/docs). And it also hosts [the **Podcaster** blog](/blog), where I'll be posting tips and ideas about how you can use **Podcaster** and Eleventy to create an online presence for your podcast.
 
-## Recently on the blog
+{# ## Recently on the blog
 
 {% set latestPost = collections.post | reverse | first %}
 
@@ -55,4 +56,4 @@ This site hosts [the **Podcaster** documentation](/docs). But it also hosts [the
 </ul>
 <!--markdownlint-enable MD033-->
 
-{% endif %}
+{% endif %} #}

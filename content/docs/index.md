@@ -1,10 +1,9 @@
 ---
-title: 'eleventy-plugin-podcaster'
+title: Getting started
 eleventyNavigation:
   key: Documentation
   order: 1
 ---
-
 ## Installation
 
 To install the npm package, type this at the command line:
