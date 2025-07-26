@@ -18,21 +18,21 @@ But Eleventy and **Podcaster** will.
 
 Detailed and specific information about how to install and use **Podcaster** can be found in [the Documentation section](/docs) of the site, but here's a quick summary.
 
-1. Install the plugin
+### 1. Install the plugin
 
-   **Podcaster** is an Eleventy plugin. Create an Eleventy site and install the `eleventy-plugin-podcaster` plugin in the usual way.
+**Podcaster** is an Eleventy plugin. Create an Eleventy site and install the `eleventy-plugin-podcaster` plugin in the usual way.
 
-2. Provide information about your podcast
+### 2. Provide information about your podcast
 
-   In the data directory, create a `podcast.json` file. This will contain information about your podcast and its site — at the very least, its title, the site URL, a description, its language, and its category.
+In the data directory, create a `podcast.json` file. This will contain information about your podcast and its site — at the very least, its title, the site URL, a description, its language, and its category.
 
-3. Create a place for your episode MP3 files
+### 3. Create a place for your episode MP3 files
 
-   In the input directory, create a `episodeFiles` directory and put your episode MP3s in there.
+In the input directory, create an `episodeFiles` directory for your episode MP3 files.
 
-4. Create a place for your episode posts
+### 4. Create a place for your episode posts
 
-   In the input directory, create a `episodePosts` directory. This directory will contain a post for each episode, and that post will include information about the episode, including its title, date, episode number and show notes.
+In the input directory, create an `episodePosts` directory. This directory will contain a post for each episode, and that post will include information about the episode, including its title, date, episode number and show notes.
 
 ## On this site
 

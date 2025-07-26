@@ -1,5 +1,5 @@
 /*
-Name:   Base2Tone-Lake Light
+Name:   Base2Tone-Pool Light
 Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
 http://atelierbram.github.io/Base2Tone-prism/demo/evening/light/
@@ -26,20 +26,20 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: #fafaf9;
-  color: #499fbc;
+  background: #fbf9f9;
+  color: #b886fd;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: #fafaf9;
+  background: #fbf9f9;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
-  background: #fafaf9;
+  background: #fbf9f9;
 }
 
 /* Code blocks */
@@ -59,11 +59,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #c2c1b7;
+  color: #c2b8b7;
 }
 
 .token.punctuation {
-  color: #c2c1b7;
+  color: #c2b8b7;
 }
 
 .token.namespace {
@@ -73,23 +73,23 @@ pre[class*="language-"] {
 .token.tag,
 .token.operator,
 .token.number {
-  color: #2f7289;
+  color: #8f51e6;
 }
 
 .token.property,
 .token.function {
-  color: #b7a21a;
+  color: #ed655e;
 }
 
 .token.tag-id,
 .token.selector,
 .token.atrule-id {
-  color: #84740b;
+  color: #cf504a;
 }
 
 code.language-javascript,
 .token.attr-name {
-  color: #b7a21a;
+  color: #ed655e;
 }
 
 code.language-css,
@@ -109,12 +109,12 @@ code.language-scss,
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: #3e91ac;
+  color: #aa75f5;
 }
 
 .token.placeholder,
 .token.variable {
-  color: #7dc2d9;
+  color: #d6b9fe;
 }
 
 .token.deleted {
@@ -122,7 +122,7 @@ code.language-scss,
 }
 
 .token.inserted {
-  border-bottom: 1px dotted #84740b;
+  border-bottom: 1px dotted #cf504a;
   text-decoration: none;
 }
 
@@ -136,7 +136,7 @@ code.language-scss,
 }
 
 .token.important {
-  color: #b7a21a;
+  color: #ed655e;
 }
 
 .token.entity {
@@ -144,7 +144,7 @@ code.language-scss,
 }
 
 pre > code.highlight {
-  outline: .4em solid #b7a21a;
+  outline: .4em solid #ed655e;
   outline-offset: .4em;
 }
 
@@ -152,11 +152,11 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers .line-numbers-rows {
-  border-right-color: #e8e7e3;
+  border-right-color: #eae1e1;
 }
 
 .line-numbers-rows > span:before {
-  color: #d5d4cd;
+  color: #d7cccb;
 }
 
 /* overrides color-values for the Line Highlight plugin
@@ -165,15 +165,16 @@ pre > code.highlight {
  * https://drafts.csswg.org/css-color/#hex-notation
  */
 .line-highlight {
-  background: #84740b33;
-  background: linear-gradient(to right, #84740b33 70%, #84740b00);
+  background: #cf504a33;
+  background: linear-gradient(to right, #cf504a33 70%, #cf504a00);
 }
+
 
 /* Dark theme */
 
 @media (prefers-color-scheme: dark) {
   /*
-  Name:   Base2Tone-Lake Dark
+  Name:   Base2Tone-Pool Dark
   Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
   http://atelierbram.github.io/Base2Tone-prism/demo/evening/dark/
@@ -184,7 +185,7 @@ pre > code.highlight {
   code[class*="language-"],
   pre[class*="language-"] {
     font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-    font-size: 14px;
+    /* font-size: 14px; */
     line-height: 1.375;
     direction: ltr;
     text-align: left;
@@ -200,20 +201,20 @@ pre > code.highlight {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    background: #192d34;
-    color: #499fbc;
+    background: #2a2433;
+    color: #b886fd;
   }
 
   pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
   code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
     text-shadow: none;
-    background: #2f7289;
+    background: #8f51e6;
   }
 
   pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
   code[class*="language-"]::selection, code[class*="language-"] ::selection {
     text-shadow: none;
-    background: #2f7289;
+    background: #8f51e6;
   }
 
   /* Code blocks */
@@ -233,11 +234,11 @@ pre > code.highlight {
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: #3d6876;
+    color: #635775;
   }
 
   .token.punctuation {
-    color: #3d6876;
+    color: #635775;
   }
 
   .token.namespace {
@@ -247,23 +248,23 @@ pre > code.highlight {
   .token.tag,
   .token.operator,
   .token.number {
-    color: #b7a21a;
+    color: #ed655e;
   }
 
   .token.property,
   .token.function {
-    color: #499fbc;
+    color: #b886fd;
   }
 
   .token.tag-id,
   .token.selector,
   .token.atrule-id {
-    color: #e1f7ff;
+    color: #f3ebff;
   }
 
   code.language-javascript,
   .token.attr-name {
-    color: #7dc2d9;
+    color: #d6b9fe;
   }
 
   code.language-css,
@@ -283,12 +284,12 @@ pre > code.highlight {
   .token.statement,
   .token.regex,
   .token.atrule {
-    color: #ffeb66;
+    color: #ffb6b3;
   }
 
   .token.placeholder,
   .token.variable {
-    color: #ffeb66;
+    color: #ffb6b3;
   }
 
   .token.deleted {
@@ -296,7 +297,7 @@ pre > code.highlight {
   }
 
   .token.inserted {
-    border-bottom: 1px dotted #e1f7ff;
+    border-bottom: 1px dotted #f3ebff;
     text-decoration: none;
   }
 
@@ -310,7 +311,7 @@ pre > code.highlight {
   }
 
   .token.important {
-    color: #7dc2d9;
+    color: #d6b9fe;
   }
 
   .token.entity {
@@ -318,7 +319,7 @@ pre > code.highlight {
   }
 
   pre > code.highlight {
-    outline: .4em solid #3e91ac;
+    outline: .4em solid #aa75f5;
     outline-offset: .4em;
   }
 
@@ -326,11 +327,11 @@ pre > code.highlight {
   * http://prismjs.com/plugins/line-numbers/
   */
   .line-numbers .line-numbers-rows {
-    border-right-color: #223c44;
+    border-right-color: #372f42;
   }
 
   .line-numbers-rows > span:before {
-    color: #223c44;
+    color: #372f42;
   }
 
   /* overrides color-values for the Line Highlight plugin
@@ -339,7 +340,7 @@ pre > code.highlight {
   * https://drafts.csswg.org/css-color/#hex-notation
   */
   .line-highlight {
-    background: #b7a21a33;
-    background: linear-gradient(to right, #b7a21a33 70%, #b7a21a00);
+    background: #ed655e33;
+    background: linear-gradient(to right, #ed655e33 70%, #ed655e00);
   }
 }

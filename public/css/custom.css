@@ -43,6 +43,7 @@
 	font-family: system-ui, sans-serif;
 
   --standard-border-radius: 5px;
+  --border-width: 1px;
 }
 
 pre, code {
@@ -51,6 +52,8 @@ pre, code {
 
 body {
 	font-size: var(--step-0);
+  line-height: 1.5;
+  margin: 0;
 }
 
 h1, header h1 * {
@@ -65,12 +68,17 @@ h3, h3 * {
 	font-size: var(--step-1);
 }
 
-nav *, footer * {
+header *, footer * {
 	font-size: var(--step--1);
 }
 
 pre, pre * {
 	font-size: var(--step--1);
+}
+
+/* Reset box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -85,10 +93,36 @@ pre, pre * {
 }
 
 /* Page size */
+
 body {
 	display: flex;
 	flex-direction: column;
 	min-block-size: 100vh;
+}
+
+body > header, body > footer {
+  background-color: var(--accent-bg);
+  text-align: center;
+}
+
+body > header {
+  border-bottom: var(--border-width) solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-m);
+  gap: var(--space-xs);
+
+  > * {
+    margin-block: 0;
+    padding-block: 0;
+  }
+}
+
+body > footer {
+  border-top: var(--border-width) solid var(--border);
+  padding: var(--space-m);
+  margin-block-start: var(--space-l);
 }
 
 main {
@@ -132,6 +166,34 @@ header h1 a:hover {
 	text-wrap: balance;
 }
 
+/* Nav */
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+/* Links */
+
+a,
+a:visited {
+  color: var(--accent);
+}
+
+/* Code */
+
+code,
+pre,
+pre span,
+kbd,
+samp {
+  color: var(--code);
+}
+
 /* Blog next/previous links */
 
 .links-nextprev {
@@ -169,9 +231,63 @@ pre {
   margin-block-start: var(--space-m); 
 }
 
+/* pre */
+
+pre {
+  border: var(--border-width) solid var(--border);
+  border-radius: var(--standard-border-radius);
+}
+
+/* Format tables */
+table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+figure > table {
+  width: max-content;
+  margin: 0;
+}
+
+td,
+th {
+  border: var(--border-width) solid var(--border);
+  text-align: start;
+  padding: 0.5rem;
+}
+
+th {
+  background-color: var(--accent-bg);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  /* Set every other cell slightly darker. Improves readability. */
+  background-color: var(--accent-bg);
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
 /* Footer */
 
 footer {
   text-wrap: balance;
   background-color: var(--accent-bg);
+}
+
+/* Underlines */
+
+a {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 2.5px;
+}
+
+a:not(:is(:hover, :focus)) {
+  text-decoration-color: 
+    color-mix(in srgb, currentColor, transparent 75%);
 }
