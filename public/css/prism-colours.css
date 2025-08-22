@@ -1,5 +1,5 @@
 /*
-Name:   Base2Tone-Pool Light
+Name:   Base2Tone-Garden Light
 Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
 http://atelierbram.github.io/Base2Tone-prism/demo/evening/light/
@@ -26,20 +26,20 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: #fbf9f9;
-  color: #b886fd;
+  background: #fbfaf8;
+  color: #4cb946;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: #fbf9f9;
+  background: #fbfaf8;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
-  background: #fbf9f9;
+  background: #fbfaf8;
 }
 
 /* Code blocks */
@@ -59,11 +59,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #c2b8b7;
+  color: #c7bcb2;
 }
 
 .token.punctuation {
-  color: #c2b8b7;
+  color: #c7bcb2;
 }
 
 .token.namespace {
@@ -73,23 +73,23 @@ pre[class*="language-"] {
 .token.tag,
 .token.operator,
 .token.number {
-  color: #8f51e6;
+  color: #1c8217;
 }
 
 .token.property,
 .token.function {
-  color: #ed655e;
+  color: #d97726;
 }
 
 .token.tag-id,
 .token.selector,
 .token.atrule-id {
-  color: #cf504a;
+  color: #bd5d0f;
 }
 
 code.language-javascript,
 .token.attr-name {
-  color: #ed655e;
+  color: #d97726;
 }
 
 code.language-css,
@@ -109,12 +109,12 @@ code.language-scss,
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: #aa75f5;
+  color: #3fac39;
 }
 
 .token.placeholder,
 .token.variable {
-  color: #d6b9fe;
+  color: var(--baseB3);
 }
 
 .token.deleted {
@@ -122,7 +122,7 @@ code.language-scss,
 }
 
 .token.inserted {
-  border-bottom: 1px dotted #cf504a;
+  border-bottom: 1px dotted #bd5d0f;
   text-decoration: none;
 }
 
@@ -136,7 +136,7 @@ code.language-scss,
 }
 
 .token.important {
-  color: #ed655e;
+  color: #d97726;
 }
 
 .token.entity {
@@ -144,7 +144,7 @@ code.language-scss,
 }
 
 pre > code.highlight {
-  outline: .4em solid #ed655e;
+  outline: .4em solid #d97726;
   outline-offset: .4em;
 }
 
@@ -152,11 +152,11 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers .line-numbers-rows {
-  border-right-color: #eae1e1;
+  border-right-color: #ece5df;
 }
 
 .line-numbers-rows > span:before {
-  color: #d7cccb;
+  color: #dbd0c7;
 }
 
 /* overrides color-values for the Line Highlight plugin
@@ -165,8 +165,8 @@ pre > code.highlight {
  * https://drafts.csswg.org/css-color/#hex-notation
  */
 .line-highlight {
-  background: #cf504a33;
-  background: linear-gradient(to right, #cf504a33 70%, #cf504a00);
+  background: #bd5d0f33;
+  background: linear-gradient(to right, #bd5d0f33 70%, #bd5d0f00);
 }
 
 
@@ -174,7 +174,7 @@ pre > code.highlight {
 
 @media (prefers-color-scheme: dark) {
   /*
-  Name:   Base2Tone-Pool Dark
+  Name:   Base2Tone-Garden Dark
   Author: by Bram de Haan, adapted from DuoTone themes by Simurai (http://simurai.com/projects/2016/01/01/duotone-themes)
 
   http://atelierbram.github.io/Base2Tone-prism/demo/evening/dark/
@@ -201,20 +201,20 @@ pre > code.highlight {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    background: #2a2433;
-    color: #b886fd;
+    background: #1e1f1e;
+    color: #4cb946;
   }
 
   pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
   code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
     text-shadow: none;
-    background: #8f51e6;
+    background: #1c8217;
   }
 
   pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
   code[class*="language-"]::selection, code[class*="language-"] ::selection {
     text-shadow: none;
-    background: #8f51e6;
+    background: #1c8217;
   }
 
   /* Code blocks */
@@ -234,11 +234,11 @@ pre > code.highlight {
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: #635775;
+    color: #5d605c;
   }
 
   .token.punctuation {
-    color: #635775;
+    color: #5d605c;
   }
 
   .token.namespace {
@@ -248,23 +248,23 @@ pre > code.highlight {
   .token.tag,
   .token.operator,
   .token.number {
-    color: #ed655e;
+    color: #d97726;
   }
 
   .token.property,
   .token.function {
-    color: #b886fd;
+    color: #4cb946;
   }
 
   .token.tag-id,
   .token.selector,
   .token.atrule-id {
-    color: #f3ebff;
+    color: #dcf0db;
   }
 
   code.language-javascript,
   .token.attr-name {
-    color: #d6b9fe;
+    color: #90d98c;
   }
 
   code.language-css,
@@ -284,12 +284,12 @@ pre > code.highlight {
   .token.statement,
   .token.regex,
   .token.atrule {
-    color: #ffb6b3;
+    color: #e0cab8;
   }
 
   .token.placeholder,
   .token.variable {
-    color: #ffb6b3;
+    color: #e0cab8;
   }
 
   .token.deleted {
@@ -297,7 +297,7 @@ pre > code.highlight {
   }
 
   .token.inserted {
-    border-bottom: 1px dotted #f3ebff;
+    border-bottom: 1px dotted #dcf0db;
     text-decoration: none;
   }
 
@@ -311,7 +311,7 @@ pre > code.highlight {
   }
 
   .token.important {
-    color: #d6b9fe;
+    color: #90d98c;
   }
 
   .token.entity {
@@ -319,7 +319,7 @@ pre > code.highlight {
   }
 
   pre > code.highlight {
-    outline: .4em solid #aa75f5;
+    outline: .4em solid #3fac39;
     outline-offset: .4em;
   }
 
@@ -327,11 +327,11 @@ pre > code.highlight {
   * http://prismjs.com/plugins/line-numbers/
   */
   .line-numbers .line-numbers-rows {
-    border-right-color: #372f42;
+    border-right-color: #2b2c2a;
   }
 
   .line-numbers-rows > span:before {
-    color: #372f42;
+    color: #2b2c2a;
   }
 
   /* overrides color-values for the Line Highlight plugin
@@ -340,7 +340,7 @@ pre > code.highlight {
   * https://drafts.csswg.org/css-color/#hex-notation
   */
   .line-highlight {
-    background: #ed655e33;
-    background: linear-gradient(to right, #ed655e33 70%, #ed655e00);
+    background: #d9772633;
+    background: linear-gradient(to right, #d9772633 70%, #d9772600);
   }
 }
