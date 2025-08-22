@@ -1,7 +1,10 @@
 ---
-title: Information about your podcast
+title: About your podcast
+eleventyNavigation:
+  parent: Documentation
+  order: 2
 ---
-Here's the example provided on the [Getting Started Page](docs/index.md#2-provide-information-about-your-podcast). It includes all of the information required to create a valid podcast feed.
+Here's the example provided on the [Getting Started Page](docs/index.md#about-your-podcast). It includes all of the information required to create a valid podcast feed.
 
 ```json
 {
@@ -14,7 +17,7 @@ Here's the example provided on the [Getting Started Page](docs/index.md#2-provid
 }
 ```
 
-However, `eleventy-plugin-podcast` can do more than this. He's another `podcast.json` file, with all of the valid fields included.
+However, you can — and probably should — tell **Podcaster** even more than this. He's another `podcast.json` file, with all of the valid fields included.
 
 ```json
 {

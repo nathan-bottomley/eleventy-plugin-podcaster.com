@@ -24,11 +24,10 @@ I hope you find it useful. [Let me know if you do](https://bsky.app/profile/nath
 
 ## Colophon
 
-This site was made using [Eleventy][], specifically the [eleventy-base-blog][] starter. It's styled using [Simple.css][]. The syntax highlighting on the code samples is courtesy of [Prism.js][], and the site's colour scheme is based on the [Base2Tone Pool][] theme by Bram de Haan.
+This site was made using [Eleventy][], specifically the [eleventy-base-blog][] starter. The syntax highlighting on the code samples is courtesy of [Prism.js][], and the site's colour scheme is based on the [Base2Tone Pool][] theme by Bram de Haan.
 
 [Eleventy]: https://11ty.dev
 [eleventy-base-blog]: https://github.com/11ty/eleventy-base-blog
-[Simple.css]: https://simplecss.org
 [Prism.js]: https://prismjs.com
 [Base2Tone Pool]: https://base2t.one/demo/pool/
 

@@ -18,21 +18,25 @@ But Eleventy and **Podcaster** will.
 
 Detailed and specific information about how to install and use **Podcaster** can be found in [the Documentation section](/docs) of the site, but here's a quick summary.
 
-### 1. Install the plugin
+### 1. Install Podcaster
 
 **Podcaster** is an Eleventy plugin. Create an Eleventy site and install the `eleventy-plugin-podcaster` plugin in the usual way.
 
-### 2. Provide information about your podcast
+### 2. Provide information to the plugin
 
-In the data directory, create a `podcast.json` file. This will contain information about your podcast and its site — at the very least, its title, the site URL, a description, its language, and its category.
+- In the data directory, create a `podcast.json` file. This will contain information about your podcast and its site — at the very least, its title, the site URL, a description, its language, and its category.
 
-### 3. Create a place for your episode MP3 files
+- In the input directory, create an `episodePosts` directory. This directory will contain a post for each episode, a post which includes information about the episode, including its title, date, episode number and show notes.
 
-In the input directory, create an `episodeFiles` directory for your episode MP3 files.
+- Optionally, in the input directory, create an `episodeFiles` directory for your episode MP3 files.
 
-### 4. Create a place for your episode posts
+### 3. Create the website pages
 
-In the input directory, create an `episodePosts` directory. This directory will contain a post for each episode, and that post will include information about the episode, including its title, date, episode number and show notes.
+A podcast website will usually have an index page or pages, which list and describe all the episodes as well as pages for individual episodes. You can use the information you've provided — including the posts you've made for each episode — to create these pages and many more.
+
+### 4. Host the website
+
+You can host a **Podcaster** site wherever you host an Eleventy site. But your podcast episode files will need to be hosted on a CDN, and you will need to include a URL prefix for that CDN in your `podcast.json` data file.
 
 ## On this site
 
