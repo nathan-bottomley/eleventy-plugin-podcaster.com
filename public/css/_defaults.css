@@ -56,6 +56,10 @@ body {
   margin: 0;
 }
 
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
 h1, header h1 * {
 	font-size: var(--step-3);
 }
@@ -76,9 +80,14 @@ pre, pre * {
 	font-size: var(--step--1);
 }
 
-/* Reset box-sizing */
-*, *::before, *::after {
-  box-sizing: border-box;
+/* spacing */
+
+h1, h2, h3 {
+  margin-block-start: var(--space-l);
+  margin-block-end: var(--space-s);
+}
+p {
+  margin-block: var(--space-s);
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -284,10 +293,9 @@ footer {
 a {
   text-decoration: underline;
   text-decoration-color: currentColor;
-  text-underline-offset: 2.5px;
+  text-underline-offset: 0.25em;
 }
 
 a:not(:is(:hover, :focus)) {
-  text-decoration-color: 
-    color-mix(in srgb, currentColor, transparent 75%);
+  text-decoration-color: color-mix(in srgb, currentColor, transparent 75%);
 }

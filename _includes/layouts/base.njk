@@ -8,12 +8,7 @@
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ site.title }}">
 		<meta name="generator" content="{{ eleventy.generator }}">
 		{% include "og-data.njk" %}
-		{# {%- css %}{% include "node_modules/simpledotcss/simple.min.css" %}{% endcss %} #}
-		{%- css %}{% include "public/css/custom.css" %}{% endcss %}
-		{%- css %}{% include "node_modules/markdown-it-github-alerts/styles/github-base.css" %}{% endcss %}
-		{%- css %}{% include "public/css/colours.css" %}{% endcss %}
-		{%- css %}{% include "public/css/prism-colours.css" %}{% endcss %}
-		{%- css %}{% include "public/css/copy-buttons.css" %}{% endcss %}
+		<link rel="stylesheet" href="/css/index.css">
 		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
 		{%- js %}{% include "public/js/copy-buttons.js" %}{% endjs %}
 		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">

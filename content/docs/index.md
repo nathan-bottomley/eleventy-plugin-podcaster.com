@@ -30,7 +30,7 @@ export default function (eleventyConfig) {
 
 When you add **Podcaster** in your Eleventy configuration file, you can also provide a set of options to customise **Podcaster**’s behaviour. You can read more about these options here: [Installing Podcaster](installing-podcaster.md).
 
-## 2. Tell the plugin about your podcast and its episodes
+## 2. Tell Podcaster about your podcast and its episodes
 
 To create your podcast feed, **Podcaster** needs to know about your podcast and about its episodes. You tell it about your podcast by including a `podcast.json` file in your data directory. You tell it about your podcast's episodes by including a template for each episode in an `episodePosts` directory inside your input directory. Optionally, you can let **Podcaster** work out the filenames, sizes and durations of your audio files by putting them all in an `episodeFiles` directory inside your input directory.
 
@@ -121,3 +121,6 @@ But what if you are building your site remotely, using [a Jamstack provider][] t
 ## 3. Create the website pages
 
 ## 4. Host the website
+
+> [!note]
+> Some stuff

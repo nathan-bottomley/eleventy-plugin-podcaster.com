@@ -94,7 +94,7 @@ However, if you want to, you can override either of these textual descriptions b
 
 These templates must be Nunjucks templates, and the post for the episode must be referred to by the variable `post`. Here's a sample content template from one of my podcast websites.
 
-```njk
+```nunjucks
 {%- raw %}
 <p class="diary-date">{{ post.data.diaryDate | readableDate }}</p>
 <p class="topic">{{ post.data.topic }}</p>

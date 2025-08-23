@@ -6,8 +6,8 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img"
 import MarkdownIt from 'markdown-it'
 import MarkdownItGitHubAlerts from 'markdown-it-github-alerts'
 import MarkdownItAttrs from 'markdown-it-attrs'
-
-import pluginFilters from "./_config/filters.js"
+import cssPlugin from './_config/css-plugin.js'
+import pluginFilters from './_config/filters.js'
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -73,6 +73,7 @@ export default async function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(HtmlBasePlugin);
 	eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
+	eleventyConfig.addPlugin(cssPlugin);
 
 	eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"
