@@ -78,7 +78,7 @@ There's more information about an episode that you can include in its template's
 
 Instead of including publication date and episode number in the template's front matter, you can include it in its filename.
 
-```tree
+```plaintext
 episodePosts
 ├── 2021-11-04-ep1-yesterdays-enterprise.md
 ├── 2021-11-12-ep2-the-house-of-quark.md
@@ -108,7 +108,7 @@ But if you are developing your site locally, you can get **Podcaster** to work o
 
 When you build your site locally, **Podcaster** will analyse each audio file in the `episodeFiles` directory to calculate its size and duration. It will also work out which file belongs to each episode. It does this by checking every filename, assuming that the first free-standing number in the filename is the episode number (which you have already included in the template's filename or the template's front matter).
 
-```text
+```plaintext
 USTP 12, Descent, Descent, Part II.mp3     # episodeNumber = 12
 2GAB 12, Joy to the World.mp3              # episodeNumber = 12 (not 2)
 mp-12-a-very-servalan-plan.mp3             # episodeNumber = 12

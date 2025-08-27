@@ -5,17 +5,15 @@ if (navigator.clipboard) {
   for (const block of blocks) {
     let blockLanguage = [...block.classList].find(c => c.startsWith("language-"))
 
-    // only add button if browser supports Clipboard API
+    if (!blockLanguage || blockLanguage === "language-plaintext") continue
     
     const header = document.createElement("div")
     header.classList.add("block-header")
     block.parentElement.insertBefore(header, block) 
 
-    if (blockLanguage) {
-      const label = document.createElement("span")
-      label.innerText = blockLanguage.replace("language-", "")
-      header.appendChild(label)
-    }
+    const label = document.createElement("span")
+    label.innerText = blockLanguage.replace("language-", "")
+    header.appendChild(label)
 
     const button = document.createElement("button")
     block.setAttribute("tabindex", 0)
