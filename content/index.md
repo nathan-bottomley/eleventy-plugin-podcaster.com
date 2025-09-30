@@ -26,9 +26,9 @@ Detailed and specific information about how to install and use **Podcaster** can
 
 - In the data directory, create a `podcast.json` file. This will contain information about your podcast and its site — at the very least, its title, the site URL, a description, its language, and its category.
 
-- In the input directory, create an `episodePosts` directory. This directory will contain a post for each episode, a post which includes information about the episode, including its title, date, episode number and show notes.
+- In the input directory, create an `episode-posts` directory. This directory will contain a post for each episode, a post which includes information about the episode, including its title, date, episode number and show notes.
 
-- Optionally, in the input directory, create an `episodeFiles` directory for your episode MP3 files.
+- Optionally, in the input directory, create an `episode-files` directory for your episode MP3 files.
 
 ### 3. Create the website pages
 

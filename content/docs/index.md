@@ -32,7 +32,7 @@ When you add **Podcaster** in your Eleventy configuration file, you can also pro
 
 ## 2. Tell Podcaster about your podcast and its episodes
 
-To create your podcast feed, **Podcaster** needs to know about your podcast and about its episodes. You tell it about your podcast by including a `podcast.json` file in your data directory. You tell it about your podcast's episodes by including a template for each episode in an `episodePosts` directory inside your input directory. Optionally, you can let **Podcaster** work out the filenames, sizes and durations of your audio files by putting them all in an `episodeFiles` directory inside your input directory.
+To create your podcast feed, **Podcaster** needs to know about your podcast and about its episodes. You tell it about your podcast by including a `podcast.json` file in your data directory. You tell it about your podcast's episodes by including a template for each episode in an `episode-posts` directory inside your input directory. Optionally, you can let **Podcaster** work out the filenames, sizes and durations of your audio files by putting them all in an `episode-files` directory inside your input directory.
 
 ### About your podcast
 
@@ -57,7 +57,7 @@ There's a more information about your podcast that you can include in `podcast.j
 
 ### About your podcast's episodes
 
-To tell **Podcaster** about your podcast's episodes, you create a template for each episode and put it in an `episodePosts` directory inside your project's input directory. This template will include information about the episode in its front matter, such as its publication date, its episode number, the name of its audio file, the size of its audio file in bytes, and the duration of its audio file in seconds. The content of the template will be used as the episode's description or show notes.
+To tell **Podcaster** about your podcast's episodes, you create a template for each episode and put it in an `episode-posts` directory inside your project's input directory. This template will include information about the episode in its front matter, such as its publication date, its episode number, the name of its audio file, the size of its audio file in bytes, and the duration of its audio file in seconds. The content of the template will be used as the episode's description or show notes.
 
 Here's an example:
 
@@ -79,7 +79,7 @@ There's more information about an episode that you can include in its template's
 Instead of including publication date and episode number in the template's front matter, you can include it in its filename.
 
 ```plaintext
-episodePosts
+episode-posts
 ├── 2021-11-04-ep1-yesterdays-enterprise.md
 ├── 2021-11-12-ep2-the-house-of-quark.md
 └── 2021-11-19-ep3-lineage.md
@@ -104,9 +104,9 @@ episode:
 After the _Enterprise-C_ emerges from a mysteriously swirly space anomaly, Joe and Nathan find themselves in an alternate timeline where _Star Trek: The Next Generation_ is dramatically and impractically lit, full of incident, and sceptical about the 1990s belief in the End of History. _Star Trek: Discovery_ Series 1 arrives nearly 30 years too early, in _Yesterday’s Enterprise_.
 ```
 
-But if you are developing your site locally, you can get **Podcaster** to work out this information for you when it builds your site. To make this happen, create an `episodeFiles` directory inside your Eleventy project's input directory and put all your audio files in it.
+But if you are developing your site locally, you can get **Podcaster** to work out this information for you when it builds your site. To make this happen, create an `episode-files` directory inside your Eleventy project's input directory and put all your audio files in it.
 
-When you build your site locally, **Podcaster** will analyse each audio file in the `episodeFiles` directory to calculate its size and duration. It will also work out which file belongs to each episode. It does this by checking every filename, assuming that the first free-standing number in the filename is the episode number (which you have already included in the template's filename or the template's front matter).
+When you build your site locally, **Podcaster** will analyse each audio file in the `episode-files` directory to calculate its size and duration. It will also work out which file belongs to each episode. It does this by checking every filename, assuming that the first free-standing number in the filename is the episode number (which you have already included in the template's filename or the template's front matter).
 
 ```plaintext
 USTP 12, Descent, Descent, Part II.mp3     # episodeNumber = 12
