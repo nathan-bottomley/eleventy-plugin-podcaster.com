@@ -89,3 +89,97 @@
     --color-warning: var(--baseD7);
   }
 }
+
+/* version 1 */
+
+:root:has(h1.v1) {
+  --baseA0: #24242e;
+  --baseA1: #333342;
+  --baseA2: #515167;
+  --baseA3: #5b5b76;
+  --baseA4: #737391;
+  --baseA5: #8a8aa3;
+  --baseA6: #a1a1b5;
+  --baseA7: #b8b8c7;
+  --baseB0: #5151e6;
+  --baseB1: #6363ee;
+  --baseB2: #7676f4;
+  --baseB3: #767693;
+  --baseB4: #8a8aad;
+  --baseB5: #aaaaca;
+  --baseB6: #cecee3;
+  --baseB7: #ebebff;
+  --baseC0: #7b736f;
+  --baseC1: #8e8580;
+  --baseC2: #a09792;
+  --baseC3: #b1a9a5;
+  --baseC4: #c3bbb7;
+  --baseC5: #d8cfcb;
+  --baseC6: #eae4e1;
+  --baseC7: #fbf9f9;
+  --baseD0: #b25424;
+  --baseD1: #cb5c25;
+  --baseD2: #dd672c;
+  --baseD3: #e66e33;
+  --baseD4: #ec7336;
+  --baseD5: #f37b3f;
+  --baseD6: #f88349;
+  --baseD7: #fe8c52;
+}
+
+/* Customised colour theme for Simple.css */
+
+/* Default (light) theme */
+:root:has(h1.v1) {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:has(h1.v1) {
+    --bg: var(--baseC7);
+    --accent-bg: var(--baseB7);
+    --text: var(--baseA0);
+    --text-light: var(--baseA4);
+    --border: var(--baseB5);
+    --accent: var(--baseB0);
+    --accent-hover: var(--baseB3);
+    --accent-text: var(--bg);
+    --code: var(--baseD0);
+    --preformatted: var(--baseD2);
+    --marked: #ffdd33;
+    --disabled: var(--baseA7);
+  }
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root:has(h1.v1) {
+    --bg: var(--baseA0);
+    --accent-bg: var(--baseA1);
+    --text: var(--baseC6);
+    --text-light: var(--baseC1);
+    --border: var(--baseA2);
+    --accent: var(--baseB5);
+    --accent-hover: var(--baseB7);
+    --accent-text: var(--bg);
+    --code: var(--baseD5);
+    --preformatted: var(--baseD7);
+    --disabled: var(--baseA2);
+  }
+}
+
+/* Customised colour theme for GitHub colors */
+:root:has(h1.v1) {
+  --color-tip: var(--baseB0);
+  --color-note: var(--baseB0);
+  --color-warning: var(--baseD4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:has(h1.v1) {
+    color-scheme: dark;
+    --color-tip: var(--baseB3);
+    --color-note: var(--baseB3);
+    --color-warning: var(--baseD7);
+  }
+}

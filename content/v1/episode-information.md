@@ -46,8 +46,8 @@ And here's a detailed description of the information you can supply here.
 | field | value |
 | ----- | ----- |
 | `episode.filename` | The filename of the episode's audio file. **Podcaster** can work this out for you, if you have a local directory full of your podcast's MP3 files, and if you give **Podcaster** a path to that directory and a regular expression specifying the format of your episode filenames. [Read more about that here](filename-size-and-duration.md). |
-| `episode.size` | The size of the episode's audio file in bytes. [**Podcaster** can calculate this for you](filename-size-and-duration.md).  |
-| `episode.duration` | The duration of the episode as a number of seconds. [**Podcaster** can calculate this for you](filename-size-and-duration.md)|
+| `episode.size` | The size of the episode's audio file in bytes. [**Podcaster** can calculate this for you](filename-size-and-duration.md). |
+| `episode.duration` | The duration of the episode as a number of seconds. [**Podcaster** can calculate this for you](filename-size-and-duration.md) |
 | `episode.title` | The title of the episode if it's different from the title of the post, above. If omitted, `title` is used instead. |
 | `episode.itunesTitle` | A specific episode title for use in Apple Podcasts only. (Apple Podcasts doesn't allow episode numbers in titles, so if you want to include episode numbers elsewhere, you need to specify a separate episode title for Apple Podcasts.) **(New in version 1.1.0)** |
 | `episode.description` | A short textual description of the episode. If omitted, the `content` of the post, truncated to about 800 characters, will be used instead. |
@@ -55,8 +55,8 @@ And here's a detailed description of the information you can supply here.
 | `episode.image` | The path or URL for an image specific to this episode. |
 | `episode.explicit` | If the value here is `true` (or truthy), listeners are warned that this episode contains explicit language. Should be used for a single episode in a podcast that isn't itself marked as explicit. |
 | `episode.type` | The type of episode. Defaults to `full`, meaning a full episode of the podcast. Other valid types are `trailer` and `bonus`. |
-| `episode.transcript` |  The path or URL for a file containing a transcript of this episode. It should be a file in VTT or SRT format. |
-| `episode.block` |  If the value here is `true` (or truthy), the episode will be blocked from appearing in the Apple Podcasts Directory. |
+| `episode.transcript` | The path or URL for a file containing a transcript of this episode. It should be a file in VTT or SRT format. |
+| `episode.block` | If the value here is `true` (or truthy), the episode will be blocked from appearing in the Apple Podcasts Directory. |
 | `guid` | A unique ID for the post. Normally this will be the post's URL, in which case there is no need to provide it here. It's should really only be necessary to provide it if you're importing the podcast from some other system that has assigned a guid to each post. |
 | `excerpt` | A shorter version of the content of the post, written in Markdown. For use in lists of episodes where the show notes are long. For other ways of providing excerpts to **Podcaster**, check out its [optional excerpts feature][excerpts]. |
 

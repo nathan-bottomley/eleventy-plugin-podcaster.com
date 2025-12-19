@@ -9,7 +9,7 @@ Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 
 code[class*="language-"],
 pre[class*="language-"] {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: ui-monospace, monospace;
   /* font-size: 14px; */
   line-height: 1.375;
   direction: ltr;
@@ -26,20 +26,20 @@ pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: #fbfaf8;
-  color: #4cb946;
+  background: var(--baseC7);
+  color: var(--baseB3);
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: #fbfaf8;
+  background: var(--baseC7);
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
-  background: #fbfaf8;
+  background: var(--baseC7);
 }
 
 /* Code blocks */
@@ -47,6 +47,11 @@ pre[class*="language-"] {
   padding: 1em;
   margin: .5em 0;
   overflow: auto;
+}
+
+/* Markdown */
+code[class*="language-markdown"] {
+  text-wrap-mode: wrap;
 }
 
 /* Inline code */
@@ -59,11 +64,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #c7bcb2;
+  color: var(--baseC4);
 }
 
 .token.punctuation {
-  color: #c7bcb2;
+  color: var(--baseC4);
 }
 
 .token.namespace {
@@ -73,23 +78,23 @@ pre[class*="language-"] {
 .token.tag,
 .token.operator,
 .token.number {
-  color: #1c8217;
+  color: var(--baseB0);
 }
 
 .token.property,
 .token.function {
-  color: #d97726;
+  color: var(--baseD2);
 }
 
 .token.tag-id,
 .token.selector,
 .token.atrule-id {
-  color: #bd5d0f;
+  color: var(--baseB0);
 }
 
 code.language-javascript,
 .token.attr-name {
-  color: #d97726;
+  color: var(--baseD2);
 }
 
 code.language-css,
@@ -109,7 +114,7 @@ code.language-scss,
 .token.statement,
 .token.regex,
 .token.atrule {
-  color: #3fac39;
+  color: var(--baseB2);
 }
 
 .token.placeholder,
@@ -122,7 +127,7 @@ code.language-scss,
 }
 
 .token.inserted {
-  border-bottom: 1px dotted #bd5d0f;
+  border-bottom: 1px dotted var(--baseB0);
   text-decoration: none;
 }
 
@@ -136,7 +141,7 @@ code.language-scss,
 }
 
 .token.important {
-  color: #d97726;
+  color: var(--baseD2);
 }
 
 .token.entity {
@@ -144,31 +149,9 @@ code.language-scss,
 }
 
 pre > code.highlight {
-  outline: .4em solid #d97726;
+  outline: .4em solid var(--baseD2);
   outline-offset: .4em;
 }
-
-/* overrides color-values for the Line Numbers plugin
- * http://prismjs.com/plugins/line-numbers/
- */
-.line-numbers .line-numbers-rows {
-  border-right-color: #ece5df;
-}
-
-.line-numbers-rows > span:before {
-  color: #dbd0c7;
-}
-
-/* overrides color-values for the Line Highlight plugin
- * http://prismjs.com/plugins/line-highlight/
- * alpha transparency in 8 digits hex notation coming to a browser near you soon:
- * https://drafts.csswg.org/css-color/#hex-notation
- */
-.line-highlight {
-  background: #bd5d0f33;
-  background: linear-gradient(to right, #bd5d0f33 70%, #bd5d0f00);
-}
-
 
 /* Dark theme */
 
@@ -201,20 +184,20 @@ pre > code.highlight {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    background: #1e1f1e;
-    color: #4cb946;
+    background: var(--baseA0);
+    color: var(--baseB3);
   }
 
   pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
   code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
     text-shadow: none;
-    background: #1c8217;
+    background: var(--baseB0);
   }
 
   pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
   code[class*="language-"]::selection, code[class*="language-"] ::selection {
     text-shadow: none;
-    background: #1c8217;
+    background: var(--baseB0);
   }
 
   /* Code blocks */
@@ -234,11 +217,11 @@ pre > code.highlight {
   .token.prolog,
   .token.doctype,
   .token.cdata {
-    color: #5d605c;
+    color: var(--baseA3);
   }
 
   .token.punctuation {
-    color: #5d605c;
+    color: var(--baseA3);
   }
 
   .token.namespace {
@@ -248,23 +231,23 @@ pre > code.highlight {
   .token.tag,
   .token.operator,
   .token.number {
-    color: #d97726;
+    color: var(--baseD2);
   }
 
   .token.property,
   .token.function {
-    color: #4cb946;
+    color: var(--baseB3);
   }
 
   .token.tag-id,
   .token.selector,
   .token.atrule-id {
-    color: #dcf0db;
+    color: var(--baseB7);
   }
 
   code.language-javascript,
   .token.attr-name {
-    color: #90d98c;
+    color: var(--baseB5);
   }
 
   code.language-css,
@@ -284,12 +267,12 @@ pre > code.highlight {
   .token.statement,
   .token.regex,
   .token.atrule {
-    color: #e0cab8;
+    color: var(--baseD7);
   }
 
   .token.placeholder,
   .token.variable {
-    color: #e0cab8;
+    color: var(--baseD7);
   }
 
   .token.deleted {
@@ -297,7 +280,7 @@ pre > code.highlight {
   }
 
   .token.inserted {
-    border-bottom: 1px dotted #dcf0db;
+    border-bottom: 1px dotted var(--baseB7);
     text-decoration: none;
   }
 
@@ -311,7 +294,7 @@ pre > code.highlight {
   }
 
   .token.important {
-    color: #90d98c;
+    color: var(--baseB5);
   }
 
   .token.entity {
@@ -319,28 +302,7 @@ pre > code.highlight {
   }
 
   pre > code.highlight {
-    outline: .4em solid #3fac39;
+    outline: .4em solid var(--baseB2);
     outline-offset: .4em;
-  }
-
-  /* overrides color-values for the Line Numbers plugin
-  * http://prismjs.com/plugins/line-numbers/
-  */
-  .line-numbers .line-numbers-rows {
-    border-right-color: #2b2c2a;
-  }
-
-  .line-numbers-rows > span:before {
-    color: #2b2c2a;
-  }
-
-  /* overrides color-values for the Line Highlight plugin
-  * http://prismjs.com/plugins/line-highlight/
-  * alpha transparency in 8 digits hex notation coming to a browser near you soon:
-  * https://drafts.csswg.org/css-color/#hex-notation
-  */
-  .line-highlight {
-    background: #d9772633;
-    background: linear-gradient(to right, #d9772633 70%, #d9772600);
   }
 }

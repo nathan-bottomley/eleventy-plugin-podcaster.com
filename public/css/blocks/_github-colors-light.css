@@ -4,5 +4,5 @@
   --color-warning: #9a6700;
   --color-severe: #bc4c00;
   --color-caution: #d1242f;
-  --color-important: #8250df;
+  --color-important: var(--baseA4);
 }
