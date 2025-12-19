@@ -20,7 +20,7 @@ Using that collection, we can write a Liquid template that presents a list of po
 title: Maximum Power
 layout: layouts/base.html
 ---
-{% for post in collections.podcastEpisode | reverse %}
+{% for post in collections.podcastEpisode reversed %}
 <article>
   <h2>{{ post.data.title }}</h2>
   <p class="episode-number">{{ post.data.episode.episodeNumber }}</p>
