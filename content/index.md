@@ -1,6 +1,9 @@
 ---
 title: Podcaster
 numberOfLatestPostsToShow: 5
+eleventyNavigation:
+  order: 1
+  parent: ~
 ---
 `eleventy-plugin-podcaster` — or **Podcaster**, as we will call it from now on — is an Eleventy plugin which lets you create a podcast and its accompanying website. You provide **Podcaster** with information about your podcast and its episodes, and it creates the podcast feed that you submit to Apple Podcasts, Spotify or any other podcast directory. And you can use the information you have provided to create pages for individual episodes, guests, topics, seasons or anything else at all.
 

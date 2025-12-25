@@ -2,7 +2,7 @@
 layout: 'layouts/base.njk'
 ---
 
-{% if eleventyNavigation.key !== 'Documentation' %}{% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true }) %}{% endif %}
+{% if eleventyNavigation.key !== 'Documentation' %}{% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}{% endif %}
 <ol class="breadcrumbs">
   {% for link in breadcrumbs %}
   {% if link.url == page.url %}

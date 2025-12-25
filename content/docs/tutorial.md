@@ -1,8 +1,9 @@
 ---
 title: Tutorial
 eleventyNavigation:
-  key: Documentation
-  order: 1
+  key: Tutorial
+  parent: ~
+  order: 2
 ---
 
 This tutorial will guide you through the process of creating a podcast site with Eleventy and **Podcaster**.

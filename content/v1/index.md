@@ -2,8 +2,8 @@
 title: 'eleventy-plugin-podcaster'
 eleventyNavigation:
   parent: Documentation
-  key: Version 1 Documentation
-  order: 1
+  key: Version 1
+  order: 4
 ---
 
 ## Installation

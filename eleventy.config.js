@@ -33,10 +33,10 @@ export default async function(eleventyConfig) {
       return false
     }
   })
-	
+
 	// Markdown
 
-	const markdownLibrary = MarkdownIt({    
+	const markdownLibrary = MarkdownIt({
 		html: true,
     typographer: true
   }).use(MarkdownItGitHubAlerts).use(MarkdownItAttrs)
@@ -82,7 +82,7 @@ export default async function(eleventyConfig) {
 		templateData: {
 			eleventyNavigation: {
 				key: "Feed",
-				order: 4
+				order: 6
 			}
 		},
 		collection: {

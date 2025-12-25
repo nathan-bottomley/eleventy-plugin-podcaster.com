@@ -3,9 +3,9 @@ export default {
   eleventyComputed: {
     'eleventyNavigation': {
       parent: (data) => {
-        if (data.eleventyNavigation?.key !== 'Documentation') {
-          return 'Documentation'
-        }
+        if (data.eleventyNavigation?.parent === null) return null
+
+        return 'Documentation'
       },
       key: (data) => {
         if (!data.eleventyNavigation?.key) return data.title
