@@ -1,6 +1,6 @@
 export default {
-  "layout": "layouts/docs.v1.njk",
-  permalink(data) {
+  layout: "layouts/docs.v1.njk",
+  permalink (data) {
     if (data.page.fileSlug === 'v1') {
       return `/docs/v1/`;
     } else {

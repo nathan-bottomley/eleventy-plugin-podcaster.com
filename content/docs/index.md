@@ -1,4 +1,5 @@
 ---
+title: Documentation
 eleventyNavigation:
   key: "Documentation"
   parent: ~

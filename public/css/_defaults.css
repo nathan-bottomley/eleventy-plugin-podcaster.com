@@ -181,7 +181,8 @@ nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 1em;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
   padding: 0;
   margin: 0;
 }
@@ -237,7 +238,7 @@ pre {
 /* Markdown alerts */
 
 .markdown-alert {
-  margin-block-start: var(--space-m); 
+  margin-block-start: var(--space-m);
 }
 
 /* pre */
