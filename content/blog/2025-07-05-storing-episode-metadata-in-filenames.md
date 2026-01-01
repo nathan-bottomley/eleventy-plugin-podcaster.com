@@ -1,6 +1,10 @@
 ---
 title: Storing episode metadata in filenames
+v1note: |
+  > [!important]
+  > This blog post was written for Version 1 of **Podcaster**. The feature described here has been included in Version 2 — in fact it's now the default. You can find out more about it [here](/docs/naming-episode-files.md).
 ---
+
 <!---excerpt-->
 Each podcast episode in **Podcaster** is represented by a template with the tag `podcastEpisode`. On my podcast websites, I put all the podcast episode templates in a `/src/posts` folder, and I give each template the `podcastEpisode` tag by using a directory data file.
 <!---endexcerpt-->

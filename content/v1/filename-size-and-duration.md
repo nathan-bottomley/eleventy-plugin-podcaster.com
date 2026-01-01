@@ -1,7 +1,5 @@
 ---
 title: Working out episodes' filenames, sizes and durations
-eleventyNavigation:
-  key: Filename, size and duration
 ---
 ## A folder full of MP3 files
 

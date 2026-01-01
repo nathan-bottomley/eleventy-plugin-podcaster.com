@@ -121,6 +121,7 @@ body > header {
   align-items: center;
   padding: var(--space-m);
   gap: var(--space-xs);
+  margin-block-end: var(--size-l);
 
   > * {
     margin-block: 0;
@@ -150,23 +151,10 @@ header h1 a:hover {
 	text-decoration: underline;
 }
 
-/* Breadcrumbs */
+/* Headings */
 
-.breadcrumbs {
-  list-style-type: none;
-  padding-inline: 0;
-  display: flex;
-}
-
-.breadcrumbs li:not(:last-child)::after {
-  content: "\2192";
-  padding-inline: 0.5rem;
-}
-
-.breadcrumbs a[aria-current=true] {
-  text-decoration: none;
-  color: currentColor;
-  pointer-events: none;
+h1 strong, h2 strong, h3 strong {
+    font-weight: inherit;
 }
 
 /* Strapline */
@@ -281,7 +269,6 @@ table caption {
   margin-bottom: 0.5rem;
 }
 
-
 /* Footer */
 
 footer {
@@ -299,4 +286,31 @@ a {
 
 a:not(:is(:hover, :focus)) {
   text-decoration-color: color-mix(in srgb, currentColor, transparent 75%);
+}
+
+header nav a[aria-current="page"] {
+    text-decoration: none;
+    pointer-events: none;
+}
+
+/* Documentation index */
+
+.documentation-index {
+  margin-block-start: var(--space-m);
+}
+
+.documentation-index dt {
+  font-weight: bold;
+  margin-block-start: var(--space-m);
+  margin-block-end: var(--space-2xs);
+}
+
+.documentation-index dd {
+  margin-block-start: 0;
+  margin-inline-start: var(--space-s);
+
+  p
+  {
+    margin-block-start: var(--space2xs);
+  }
 }

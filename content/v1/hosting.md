@@ -1,7 +1,5 @@
 ---
 title: Hosting your podcast episode files
-eleventyNavigation:
-  key: Hosting episode files
 ---
 
 MP3 files can get big, and a long-running podcast will consist of quite a few of them, so you should probably host your podcast files separately from your website. You can do this by using a host that provides object storage — a kind of online bucket where you can put a number of media files, which the host can serve across the nextwork.

@@ -1,9 +1,11 @@
 ---
-title: Tutorial
+title: Creating a podcast site with Eleventy and Podcaster
 eleventyNavigation:
-  key: Tutorial
-  parent: ~
-  order: 2
+  key: Creating a podcast site
+  parent: Tutorials
+  excerpt: >-
+    Create a podcast website step-by-step and learn about its structure
+
 ---
 
 This tutorial will guide you through the process of creating a podcast site with Eleventy and **Podcaster**.

@@ -47,7 +47,7 @@ However, `eleventy-plugin-podcast` is quite customisable. He's another `podcast.
 
 And here's a detailed description of all of this information.
 
-### Required
+## Required
 
 | field | value |
 | ----- | ----- |
@@ -69,7 +69,7 @@ And here's a detailed description of all of this information.
 | `subcategory` | The subcategory for the podcast. Valid subcategories are also listed in [the Apple support document][categories]. You must choose a subcategory that belongs to your chosen category. |
 | `explicit` | Warns listeners that your podcast contains explicit language. In Apple Podcasts, if you include this with the value `true`, your podcast and its episodes will be badged with an 🄴 to indicate that they use explicit language. Some of the most popular podcast applications ignore this field. |
 | `type` | Two possible values: `episodic` and `serial`. Defaults to `episodic`, which means that the podcast can be listened to in no particular order. Narrative podcasts (like _Serial_) should be marked as `serial`. |
-| `block` |  If the value here is true or truthy, the podcast will be blocked from appearing in the Apple Podcasts Directory. |
+| `block` | If the value here is true or truthy, the podcast will be blocked from appearing in the Apple Podcasts Directory. |
 | `owner` | An optional object in the form `{ name, email }` You might want to omit this: Apple Podcasts has deprecated it, and an email in a podcast feed will attract some spam. However, some podcast directories, like Castbox, will use the email address to identify you when you try to claim ownership of a podcast in their directory. |
 | `complete` | Indicates that a podcast is complete and that no new episodes should be expected, in which case it should have the value `true`. Should be omitted otherwise. |
 | `episodeUrlBase` | If you store your podcast episodes on a CDN, or if you use a podcast analytics service, this is where you specify the base URL for them. If you don't specify this, it defaults to `https://{% raw %}{{ podcast.siteUrl }}{% endraw %}/episodes/`, which is [almost certainly not what you want][hosting]. |

@@ -1,7 +1,5 @@
 ---
 title: Using podcast and episode information in templates
-eleventyNavigation:
-  key: Information in templates
 ---
 All of the information you provide to Podcaster is available as part of the data cascade, and so you can refer to it in your templates like this {% raw %}`{{ poscast.siteUrl }}`{% endraw %} or {% raw %}`{{ episode.episodeNumber }}`{% endraw %}.
 

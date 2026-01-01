@@ -1,5 +1,10 @@
 ---
 title: Readable filters
+eleventyNavigation:
+  key: Readable filters
+  parent: Reference
+  excerpt: >-
+    A description of the filters **Podcaster** provides for formatting dates, durations and file sizes
 ---
 
 **Podcaster** provides three filters that you can use to format dates, durations and file sizes. These filters help you present information about your podcast episodes in a readable format.
@@ -37,7 +42,7 @@ The default format is useful for specifying the durations of podcast episodes, a
 {% raw %}
 
 | number of seconds | output |
-|---|---|
+| --- | --- |
 | `{{ 30 \| readableDuration }}` | 0:30 |
 | `{{ 1800 \| readableDuration }}` | 30:00 |
 | `{{ 3540 \| readableDuration }}` | 59:00 |
@@ -50,7 +55,7 @@ The long format includes days and uses the full English names for units of time.
 {% raw %}
 
 | number of seconds | output |
-|---|---|
+| --- | --- |
 | `{{ 86399 \| readableDuration: "long" }}` | 0 days, 23 hours, 59 minutes, 59 seconds |
 | `{{ 86400 \| readableDuration: "long" }}` | 1 day, 0 hours, 0 minutes, 0 seconds |
 | `{{ 90000 \| readableDuration: "long" }}` | 1 day, 1 hour, 0 minutes, 0 seconds |
@@ -67,7 +72,7 @@ The `readableSize` filter formats a number of bytes as a human-readable size in 
 {% raw %}
 
 | number of bytes | output |
-|---|---|
+| --- | --- |
 | `{{ 1024 \| readableSize }}` | 1.0 kB |
 | `{{ 28683178 \| readableSize` | 28.7 MB |
 | `{{ 32004399 \| readableSize }}` | 32.0 MB |
@@ -80,7 +85,7 @@ If you want to specify a different precision for the number, provide the filter 
 {% raw %}
 
 | number of bytes | output |
-|---|---|
+| --- | --- |
 | `{{ 1024 \| readableSize: 2 }}` | 1.02 kB |
 | `{{ 28683178 \| readableSize: 2 }}` | 28.68 MB |
 | `{{ 32004399 \| readableSize: 2 }}` | 32.00 MB |

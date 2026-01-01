@@ -1,8 +1,9 @@
 ---
 title: Podcaster Blog
 eleventyNavigation:
-  key: "Blog"
-  order: 3
+  key: blog
+  title: Blog
+  order: 2
 ---
 <h1>Podcaster Blog</h1>
 
@@ -10,6 +11,9 @@ eleventyNavigation:
 <article>
   <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
   <p class="post-date"><time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time></p>
+  {% if post.data.v1note %}
+  {{ post.data.v1note | renderContent("md") | safe }}
+  {% endif %}
   {% if loop.index < 3 %}
   {{ post.content | safe }}
   {% else %}

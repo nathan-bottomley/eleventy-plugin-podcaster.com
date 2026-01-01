@@ -1,0 +1,22 @@
+---
+title: Documentation
+eleventyNavigation:
+  key: Documentation
+  order: 1
+navigationToMarkdownOptions:
+  showExcerpt: true
+---
+{% set navigationData = collections.all | eleventyNavigation("Documentation") %}
+{% for heading in navigationData %}
+<h2>{{ heading.title }}</h2>
+<dl class="documentation-index">
+{% for child in heading.children %}
+    <dt><a href="{{ child.url }}">{{ child.title }}</a></dt>
+    {% if child.excerpt %}
+        <dd>{{ child.excerpt | renderContent("md") | safe}}</dd>
+    {% else %}
+        <dd></dd>
+    {% endif %}
+{% endfor %}
+</dl>
+{% endfor %}

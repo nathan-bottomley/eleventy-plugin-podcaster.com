@@ -5,6 +5,10 @@ layout: layouts/base.njk
 
 <p class="post-date"><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
 
+{% if v1note %}
+{{ v1note | renderContent("md") | safe }}
+{% endif %}
+
 {{ content | safe }}
 
 {%- if collections.post %}

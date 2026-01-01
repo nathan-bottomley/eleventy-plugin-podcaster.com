@@ -1,5 +1,8 @@
 ---
 title: Episode information
+eleventyNavigation:
+  key: Episode information (v1)
+  parent: Version 1
 ---
 Each episode of your podcast should have an associated Eleventy template, with a `podcastEpisode` tag. The front matter of this template will contain the necessary information about the episode, and the content of the template will be the show notes.
 
