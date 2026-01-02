@@ -7,7 +7,7 @@ import { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 import MarkdownIt from 'markdown-it'
 import MarkdownItGitHubAlerts from 'markdown-it-github-alerts'
 import MarkdownItAttrs from 'markdown-it-attrs'
-
+import MarkdownItFootnote from 'markdown-it-footnote'
 import cssPlugin from './_config/css-plugin.js'
 import pluginFilters from './_config/filters.js'
 
@@ -41,7 +41,7 @@ export default async function (eleventyConfig) {
   const markdownLibrary = MarkdownIt({
     html: true,
     typographer: true
-  }).use(MarkdownItGitHubAlerts).use(MarkdownItAttrs)
+  }).use(MarkdownItGitHubAlerts).use(MarkdownItAttrs).use(MarkdownItFootnote)
   eleventyConfig.setLibrary('md', markdownLibrary)
 
   // Copy the contents of the `public` folder to the output folder
