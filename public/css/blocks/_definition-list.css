@@ -1,0 +1,8 @@
+dl {
+    dt {
+        font-weight: bold;
+    }
+    dd :first-child {
+        margin-top: 0.5rem;
+    }
+}

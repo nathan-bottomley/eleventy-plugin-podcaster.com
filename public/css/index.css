@@ -1,10 +1,9 @@
-@import "_reset.css";
-@import "_colours.css";
-@import "_prism-theme.css";
+@import "_simple.min.css" layer(reset);
+
+@import "_colors.css";
 @import "_defaults.css";
-@import "blocks/_copy-buttons.css";
-@import "blocks/_message-box.css";
-@import "blocks/_github-base.css";
-@import "blocks/_github-colors-light.css";
-@import "blocks/_github-colors-dark-media.css";
-@import "blocks/_github-base.css";
+@import "blocks/_block-header.css";
+@import "blocks/_markdown-alert.css";
+@import "blocks/_definition-list.css";
+@import "blocks/_link-underlines.css";
+@import "blocks/_breadcrumbs.css";

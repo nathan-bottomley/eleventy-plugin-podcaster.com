@@ -1,0 +1,15 @@
+a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    &:not(:is(:hover, :focus)) {
+      text-decoration-color: color-mix(in srgb, currentColor, transparent 50%);
+    }
+
+    &:hover, &:active {
+        color: var(--accent-hover);
+    }
+
+    header h1 & {
+        text-decoration: none;
+    }
+}

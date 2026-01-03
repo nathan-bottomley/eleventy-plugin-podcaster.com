@@ -1,0 +1,18 @@
+.breadcrumbs
+{
+    list-style-type: none;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: row;
+
+    li:not(:last-child)::after {
+        content: " → ";
+        color: var(--text-light);
+        padding-inline: 0.5rem;
+    }
+    a[aria-current="page"] {
+        color: inherit;
+        text-decoration: none;
+        pointer-events: none;
+    }
+}
