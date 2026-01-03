@@ -1,7 +1,7 @@
 ---
-title: Explanations
+title: Topics
 eleventyNavigation:
-  key: Explanations
+  key: Topics
   parent: Documentation
   order: 3
 permalink: false

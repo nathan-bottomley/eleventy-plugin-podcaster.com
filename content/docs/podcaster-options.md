@@ -29,15 +29,14 @@ When you add **Podcaster** to your Eleventy configuration file, you can use pass
 Here's an excerpt from an Eleventy Configuration File with most of these options set.
 
 ```javascript
-
 import Podcaster from 'eleventy-plugin-podcaster'
 
 export default function(eleventyConfig) {
   .
   .
   eleventyConfig.addPlugin(Podcaster, {
-  episodeFilesDirectory: '../episodes',
-  episodePostsDirectory: 'posts',
+    episodeFilesDirectory: '../episodes',
+    episodePostsDirectory: 'posts',
     handleDrafts: true,
     handleExcerpts: true,
     handlePageTitles: true,
@@ -53,5 +52,4 @@ export default function(eleventyConfig) {
   .
   .
 })
-  
 ```

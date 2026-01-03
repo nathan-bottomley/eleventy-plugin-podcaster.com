@@ -3,7 +3,7 @@ title: Working out episodes' filenames, sizes and durations
 ---
 ## A folder full of MP3 files
 
-**Podcaster** can work out the filename, size and duration of your podcast episode files if you give it access to a local folder full of your podcast's episode files.
+**Podcaster** can work out the filename, size and duration of your podcast episode files if you give it access to a local directory full of your podcast's episode files.
 
 You do this when you add **Podcaster** to your config file, by supplying a relative or absolute path to the `episodesDir` option. By default, **Podcaster** assumes that this directory is called `episodes` and that it is at the top level of your project directory.
 

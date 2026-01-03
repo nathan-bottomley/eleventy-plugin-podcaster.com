@@ -1,7 +1,7 @@
 ---
-title: Creating a podcast site with Eleventy and Podcaster
+title: Getting started
 eleventyNavigation:
-  key: Creating a podcast site
+  key: Getting started
   parent: Tutorials
   excerpt: >-
     Create a podcast website step-by-step and learn about its structure
@@ -90,8 +90,8 @@ date: 2021-11-04
 episode:
   episodeNumber: 1
   filename: "USTP 1, Yesterday's Enterprise.mp3"
-  size: 58747007
-  duration: 3601.293
+  size: 58747007 # in bytes
+  duration: 3601.293 # in seconds
 ---
 After the _Enterprise-C_ emerges from a mysteriously swirly space anomaly, Joe and Nathan find themselves in an alternate timeline where _Star Trek: The Next Generation_ is dramatically and impractically lit, full of incident, and sceptical about the 1990s belief in the End of History. _Star Trek: Discovery_ Series 1 arrives nearly 30 years too early, in _Yesterday’s Enterprise_.
 ```

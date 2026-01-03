@@ -24,7 +24,7 @@ export default function (eleventyConfig) {
   .
   .
   eleventyConfig.addPlugin(Podcaster, {
-    readableDateLocale: 'en-GB'
+    readableDateLocale: 'en-GB' // Wednesday, 8 August 2025
   })
   .
   .

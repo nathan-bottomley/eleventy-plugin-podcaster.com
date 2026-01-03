@@ -6,10 +6,10 @@ v1note: |
 ---
 
 <!---excerpt-->
-Each podcast episode in **Podcaster** is represented by a template with the tag `podcastEpisode`. On my podcast websites, I put all the podcast episode templates in a `/src/posts` folder, and I give each template the `podcastEpisode` tag by using a directory data file.
+Each podcast episode in **Podcaster** is represented by a template with the tag `podcastEpisode`. On my podcast websites, I put all the podcast episode templates in a `/src/posts` directory, and I give each template the `podcastEpisode` tag by using a directory data file.
 <!---endexcerpt-->
 
-So my `/src/posts` folder looks like this:
+So my `/src/posts` directory looks like this:
 
 ```tree
 # /src/posts

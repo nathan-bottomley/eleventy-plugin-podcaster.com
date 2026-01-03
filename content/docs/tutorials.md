@@ -7,4 +7,3 @@ eleventyNavigation:
   order: 1
 permalink: false
 ---
-{{ collections.all | eleventyNavigation("Tutorials") | eleventyNavigationToMarkdown }}

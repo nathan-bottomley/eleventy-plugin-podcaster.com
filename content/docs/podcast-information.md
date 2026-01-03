@@ -7,7 +7,7 @@ eleventyNavigation:
   excerpt: >-
     A detailed list of the information about your podcast that **Podcaster** can use to generate your podcast feed
 ---
-Here's a detailed list of the information about your podcast that **Podcaster** can use to generate your podcast feed. This will normally be specified in a `podcast.json` file in your Eleventy project's data directory, but it can be specified in the data cascade in other ways as well.
+Here's a list of the information about your podcast that **Podcaster** can use to generate your podcast feed. You will normally specify this in a `podcast.json` file in your Eleventy project's data directory, but it can be specified in the data cascade in other ways as well.
 
 ## Required fields
 
@@ -34,11 +34,10 @@ Here's a detailed list of the information about your podcast that **Podcaster** 
 | `block` | If the value here is true or truthy, the podcast will be blocked from appearing in the Apple Podcasts Directory. |
 | `owner` | An optional object in the form `{ name, email }` You might want to omit this: Apple Podcasts has deprecated it, and an email in a podcast feed will attract some spam. However, some podcast directories, like Castbox, will use the email address to identify you when you try to claim ownership of a podcast in their directory. |
 | `complete` | Indicates that a podcast is complete and that no new episodes should be expected, in which case it should have the value `true`. Should be omitted otherwise. |
-| `episodeUrlBase` | If you store your podcast episodes on a CDN, or if you use a podcast analytics service, this is where you specify the base URL for them. If you don't specify this, it defaults to `https://{% raw %}{{ podcast.siteUrl }}{% endraw %}/episodes/`, which is [almost certainly not what you want][hosting]. |
+| `episodeUrlBase` | If you store your podcast episodes on a CDN, or if you use a podcast analytics service, this is where you specify the base URL for them. If you don't specify this, it defaults to `https://{% raw %}{{ podcast.siteUrl }}{% endraw %}/episodes/`. |
 
 [categories]: https://podcasters.apple.com/support/1691-apple-podcasts-categories
 [lang]: https://www.rssboard.org/rss-language-codes
-[hosting]: docs/hosting.md
 
 ## Feed episode templates
 
