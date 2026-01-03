@@ -10,33 +10,33 @@
   --step-4: clamp(1.4016rem, 0.8276rem + 2.8699vw, 3.0518rem);
   --step-5: clamp(1.5768rem, 0.7984rem + 3.892vw, 3.8147rem);
 }
-/* @link https://utopia.fyi/space/calculator?c=320,14,1.125,1240,20,1.25,5,2,&s=0.75,1.5|1.5|1.5|1.5|1.5,s-l&g=s,l,xl,12 */
+
+/* @link https://utopia.fyi/space/calculator?c=320,14,1.125,1240,20,1.25,5,2,&s=0.75|0.5,1.5|2|2.5|3,s-l&g=s,l,xl,12 */
 
 :root {
+  --space-2xs: clamp(0.4375rem, 0.3723rem + 0.3261vw, 0.625rem);
   --space-xs: clamp(0.6875rem, 0.6005rem + 0.4348vw, 0.9375rem);
   --space-s: clamp(0.875rem, 0.7446rem + 0.6522vw, 1.25rem);
   --space-m: clamp(1.3125rem, 1.1168rem + 0.9783vw, 1.875rem);
-  --space-l: clamp(1.3125rem, 1.1168rem + 0.9783vw, 1.875rem);
-  --space-xl: clamp(1.3125rem, 1.1168rem + 0.9783vw, 1.875rem);
-  --space-2xl: clamp(1.3125rem, 1.1168rem + 0.9783vw, 1.875rem);
-  --space-3xl: clamp(1.3125rem, 1.1168rem + 0.9783vw, 1.875rem);
+  --space-l: clamp(1.75rem, 1.4891rem + 1.3043vw, 2.5rem);
+  --space-xl: clamp(2.1875rem, 1.8614rem + 1.6304vw, 3.125rem);
+  --space-2xl: clamp(2.625rem, 2.2337rem + 1.9565vw, 3.75rem);
 
   /* One-up pairs */
+  --space-2xs-xs: clamp(0.4375rem, 0.2636rem + 0.8696vw, 0.9375rem);
   --space-xs-s: clamp(0.6875rem, 0.4918rem + 0.9783vw, 1.25rem);
   --space-s-m: clamp(0.875rem, 0.5272rem + 1.7391vw, 1.875rem);
-  --space-m-l: clamp(1.3125rem, 1.1168rem + 0.9783vw, 1.875rem);
-  --space-l-xl: clamp(1.3125rem, 1.1168rem + 0.9783vw, 1.875rem);
-  --space-xl-2xl: clamp(1.3125rem, 1.1168rem + 0.9783vw, 1.875rem);
-  --space-2xl-3xl: clamp(1.3125rem, 1.1168rem + 0.9783vw, 1.875rem);
+  --space-m-l: clamp(1.3125rem, 0.8995rem + 2.0652vw, 2.5rem);
+  --space-l-xl: clamp(1.75rem, 1.2717rem + 2.3913vw, 3.125rem);
+  --space-xl-2xl: clamp(2.1875rem, 1.644rem + 2.7174vw, 3.75rem);
 
   /* Custom pairs */
-  --space-s-l: clamp(0.875rem, 0.5272rem + 1.7391vw, 1.875rem);
+  --space-s-l: clamp(0.875rem, 0.3098rem + 2.8261vw, 2.5rem);
 }
 
 :root {
-	font-size: 16px;
-	font-family: system-ui, sans-serif;
-
+  font-size: 16px;
+  font-family: system-ui, sans-serif;
   --standard-border-radius: 5px;
   --border-width: 1px;
 }
@@ -46,9 +46,16 @@ pre, code {
 }
 
 body {
-	font-size: var(--step-0);
+  font-size: var(--step-0);
   line-height: 1.5;
   margin: 0;
+  color: light-dark(var(--baseA0), var(--baseC6));
+  background-color: light-dark(var(--baseC6), var(--baseA0));
+}
+
+main {
+  padding-block-start: var(--space-2xl);
+  padding-block-end: var(--space-2xl);
 }
 
 h1, h2, h3 {
@@ -56,31 +63,36 @@ h1, h2, h3 {
 }
 
 h1, header h1 * {
-	font-size: var(--step-3);
+    font-size: var(--step-3);
 }
 
 h2, h2 * {
-	font-size: var(--step-2);
+    font-size: var(--step-2);
 }
 
 h3, h3 * {
-	font-size: var(--step-1);
+    font-size: var(--step-1);
+}
+
+h3, h3 * {
+    color: light-dark(var(--baseA4), var(--baseA5));
 }
 
 header *, footer * {
-	font-size: var(--step--1);
+    font-size: var(--step--1);
 }
 
 pre, pre * {
-	font-size: var(--step--1);
+    font-size: var(--step--1);
 }
 
 /* spacing */
 
 h1, h2, h3 {
-  margin-block-start: var(--space-l);
+  margin-block-start: var(--space-xl);
   margin-block-end: var(--space-s);
 }
+
 p {
   margin-block: var(--space-s);
 }
@@ -90,21 +102,21 @@ article + article {
 }
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 /* Page size */
 
 body {
-	display: flex;
-	flex-direction: column;
-	min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-block-size: 100vh;
 }
 
 body > header, body > footer {
@@ -134,19 +146,19 @@ body > footer {
 }
 
 main {
-	flex-grow: 1;
-	inline-size: min(80ch, 100vw - 2rem);
-	margin-inline: auto;
+  flex-grow: 1;
+  inline-size: min(80ch, 100vw - 2rem);
+  margin-inline: auto;
 }
 
 /* Main heading link */
 
 header h1 a:not(:hover) {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 header h1 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Headings */
@@ -158,7 +170,7 @@ h1 strong, h2 strong, h3 strong {
 /* Strapline */
 
 .strapline {
-	text-wrap: balance;
+    text-wrap: balance;
 }
 
 /* Nav */
@@ -193,20 +205,20 @@ samp {
 /* Blog next/previous links */
 
 .links-nextprev {
-	display: flex;
-	justify-content: space-between;
-	gap: .5em 1em;
-	list-style: "";
-	border-top: 1px dashed var(--color-gray-20);
-	padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    gap: .5em 1em;
+    list-style: "";
+    border-top: 1px dashed var(--color-gray-20);
+    padding: 1em 0;
 }
 
 .links-nextprev > * {
-	flex-grow: 1;
+    flex-grow: 1;
 }
 
 .links-nextprev-next {
-	text-align: right;
+    text-align: right;
 }
 
 /* Post date */
@@ -218,7 +230,7 @@ samp {
 /* Code block */
 
 pre {
-	font-size: 1rem;
+    font-size: 1rem;
 }
 
 /* Markdown alerts */
@@ -239,12 +251,11 @@ pre {
 table {
   border-collapse: collapse;
   margin: 1.5rem 0;
+  max-inline-size: 100vw - 2rem;
+  display: block;
+  overflow-x: scroll;
 }
 
-figure > table {
-  width: max-content;
-  margin: 0;
-}
 
 td,
 th {
@@ -319,5 +330,32 @@ header nav a[aria-current="page"] {
 hr {
     margin-inline: var(--space-3xl);
     margin-block: var(--space-xl);
-    border: 0.5px solid var(--baseB0);
+    border: 0.5px solid var(--border);
+}
+
+/* footnotes */
+
+sup {
+    font-size: var(--step--1)
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs
+{
+    list-style-type: none;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: row;
+
+    li:not(:last-child)::after {
+        content: " → ";
+        color: var(--baseA5);
+        padding-inline: var( --space-2xs);
+    }
+    a[aria-current="page"] {
+        color: inherit;
+        text-decoration: none;
+        pointer-events: none;
+    }
 }
