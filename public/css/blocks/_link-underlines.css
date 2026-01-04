@@ -12,4 +12,10 @@ a {
     header h1 & {
         text-decoration: none;
     }
+
+    @media only screen and (width > 720px) {
+      header nav & {
+        text-decoration: none;
+      }
+    }
 }
