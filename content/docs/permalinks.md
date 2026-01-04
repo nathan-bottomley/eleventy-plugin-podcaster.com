@@ -31,7 +31,7 @@ Here are some example patterns for a hypothetical Season 2, Episode 1 called _Da
 | `/season/{seasonNumber}/episode/{episodeNumber}/` | /season/2/episode/1/ |
 | `/{episodeNumber}-{titleSlug}/` | /1-daleks-daleks/ |
 
-And here's a list of placeholders you can use in your permalink patterns:
+And here's the list of placeholders you can use in your permalink patterns:
 
 | placeholder | description |
 | --- | --- |

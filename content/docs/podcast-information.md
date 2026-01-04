@@ -35,9 +35,11 @@ Here's a list of the information about your podcast that **Podcaster** can use t
 | `owner` | An optional object in the form `{ name, email }` You might want to omit this: Apple Podcasts has deprecated it, and an email in a podcast feed will attract some spam. However, some podcast directories, like Castbox, will use the email address to identify you when you try to claim ownership of a podcast in their directory. |
 | `complete` | Indicates that a podcast is complete and that no new episodes should be expected, in which case it should have the value `true`. Should be omitted otherwise. |
 | `episodeUrlBase` | If you store your podcast episodes on a CDN, or if you use a podcast analytics service, this is where you specify the base URL for them. If you don't specify this, it defaults to `https://{% raw %}{{ podcast.siteUrl }}{% endraw %}/episodes/`. |
+| `episodePermalinkPattern` | This specifies the pattern for the permalink for each episode post. It can include placeholders like `{episodeNumber}` and `{seasonNumber}`. The pattern is [described in detail here][episode-permalink-pattern]. |
 
 [categories]: https://podcasters.apple.com/support/1691-apple-podcasts-categories
 [lang]: https://www.rssboard.org/rss-language-codes
+[episode-permalink-pattern]: /docs/permalinks.md#customising-permalinks
 
 ## Feed episode templates
 

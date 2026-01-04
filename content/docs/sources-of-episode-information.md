@@ -1,7 +1,7 @@
 ---
 title: Where does Podcaster get episode information from?
 eleventyNavigation:
-  key: Where does Podcaster get episode information from?
+  key: Where does Podcaster's information come from?
   parent: Topics
   order: 1
   excerpt: >-
@@ -37,7 +37,6 @@ Here are some examples of correctly named episode posts:
 ```tree
 # /src/episode-posts
 
-.
 ├── 2021-11-04-ep1-yesterdays-enterprise.md
 ├── 2021-11-12-ep2-the-house-of-quark.md
 ├── 2021-11-19-ep3-lineage.md
@@ -49,7 +48,6 @@ And here are some examples with season numbers:
 ```tree
 # /src/episode-posts
 
-.
 ├── 2024-04-14-s1e1-the-power-of-the-daleks.md
 ├── 2024-04-21-s1e2-spearhead-from-space.md
 ├── 2024-04-28-s1e3-terror-of-the-autons.md
