@@ -34,7 +34,7 @@ If you name your episode posts correctly, **Podcaster** can work out the episode
 
 Here are some examples of correctly named episode posts:
 
-```tree
+```plaintext
 # /src/episode-posts
 
 ├── 2021-11-04-ep1-yesterdays-enterprise.md
@@ -45,7 +45,7 @@ Here are some examples of correctly named episode posts:
 
 And here are some examples with season numbers:
 
-```tree
+```plaintext
 # /src/episode-posts
 
 ├── 2024-04-14-s1e1-the-power-of-the-daleks.md

@@ -53,7 +53,6 @@ export default function (eleventyConfig) {
   "category": "TV & Film",
   "author": "Joe and Nathan"
 }
-
 ```
 
 ## 3. Provide an image for your podcast
