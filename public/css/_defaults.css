@@ -124,3 +124,22 @@ article {
     border: none;
     padding: 0;
 }
+
+article + article {
+    margin-block-start: 4rem;
+}
+
+.post-date {
+    font-size: var(--step--1);
+    color: var(--text-light);
+}
+
+/* lists */
+
+ul ul {
+    list-style-type: "–\00a0\00a0";
+}
+
+::marker {
+    color: var(--accent);
+}

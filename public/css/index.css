@@ -7,3 +7,5 @@
 @import "blocks/_definition-list.css";
 @import "blocks/_link-underlines.css";
 @import "blocks/_breadcrumbs.css";
+@import "blocks/_links-nextprev.css";
+@import "blocks/_syntax-highlighting.css";

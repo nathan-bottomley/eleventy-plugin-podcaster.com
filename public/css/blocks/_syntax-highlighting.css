@@ -1,0 +1,16 @@
+.token.punctuation,
+.token.comment {
+    color: var(--text-light);
+}
+
+.token.string {
+    color: var(--accent);
+}
+
+.token.keyword {
+    font-style: italic;
+}
+
+.token.italic {
+    font-style: italic;
+}

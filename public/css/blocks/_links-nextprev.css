@@ -1,0 +1,8 @@
+.links-nextprev {
+    list-style-type: none;
+    padding-inline-start: 0;
+    font-size: var(--step--1);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
