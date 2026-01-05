@@ -92,6 +92,9 @@ export default async function (eleventyConfig) {
       base: 'https://eleventy-plugin-podcaster.com/',
       author: {
         name: 'Nathan Bottomley'
+      },
+      eleventyImport: {
+        collections: 'post'
       }
     }
   })
