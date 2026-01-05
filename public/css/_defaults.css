@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
 }
 
-code:not(pre code) {
+code:not(pre code):not(table code) {
     white-space: nowrap;
 }
 
