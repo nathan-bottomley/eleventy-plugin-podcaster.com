@@ -143,3 +143,12 @@ ul ul {
 ::marker {
     color: var(--accent);
 }
+
+/* filename headings */
+
+.filename {
+    font-size: var(--step--1);
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--text-light);
+}

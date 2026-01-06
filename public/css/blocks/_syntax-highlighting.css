@@ -14,3 +14,11 @@
 .token.italic {
     font-style: italic;
 }
+
+.token.prefix.inserted {
+    color: transparent;
+}
+
+.token.inserted {
+    font-weight: bold;
+}

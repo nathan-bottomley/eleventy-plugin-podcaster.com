@@ -12,7 +12,10 @@ if (navigator.clipboard) {
     block.parentElement.insertBefore(header, block)
 
     const label = document.createElement('span')
-    label.innerText = blockLanguage.replace('language-', '')
+    label.innerText = blockLanguage
+      .replace('diff-', '')
+      .replace('language-', '')
+
     header.appendChild(label)
 
     const button = document.createElement('button')

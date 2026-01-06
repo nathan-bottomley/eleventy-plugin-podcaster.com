@@ -12,21 +12,21 @@ This tutorial will guide you through the process of creating a podcast site with
 
 The tutorial doesn't cover all of **Podcaster**'s features, but it will show the basics and familiarise you with the structure of an Eleventy podcast project.
 
-This tutorial doesn't include deploying your site or submitting your podcast to Apple Podcasts, Google Podcasts, Spotify, or other podcast directories.
+This tutorial doesn't include deploying your site or submitting your podcast to Apple Podcasts, Spotify, or other podcast directories.
 
 ## 1. Create your Eleventy site and install **Podcaster**
 
 - Create a new Eleventy site, following the procedure described in the [Eleventy documentation](https://www.11ty.dev/docs/).
 
-- Install **Podcaster**'s npm package, by typing this at the command line:
+- Install **Podcaster**'s npm package by typing this at the command line:
 
 ```shell
 npm install --save-dev eleventy-plugin-podcaster
 ```
 
-- And then add the plugin in your Eleventy configuration file, like this:
+- And then add the plugin to your Eleventy configuration file, like this:
 
-### eleventy.config.js
+### eleventy.config.js {.filename}
 
 ```javascript
 import Podcaster from 'eleventy-plugin-podcaster'
@@ -59,12 +59,17 @@ export default function (eleventyConfig) {
 
 - Create an `img` directory inside [your project's input directory][input-directory].
 - Put your podcast's image file in this directory. **Podcaster** will expect your image file to be called `podcast-logo.jpg`. (The image should be square and at least 1400x1400 pixels, but preferably 3000x3000 pixels.)
-- Add this line to your Eleventy configuration file, immediately after the line `eleventyConfig.addPlugin(Podcaster)`.
+- Add this line to your Eleventy configuration file, immediately after the line `eleventyConfig.addPlugin(Podcaster)`:
 
-### eleventy.config.js
+### eleventy.config.js { .filename }
 
-```js
-  eleventyConfig.addPassthroughCopy('img')
+```diff-javascript
+import Podcaster from 'eleventy-plugin-podcaster'
+
+export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(Podcaster)
++ eleventyConfig.addPassthroughCopy('img')
+}
 ```
 
 [input-directory]: https://www.11ty.dev/docs/config/#input-directory
@@ -80,7 +85,7 @@ export default function (eleventyConfig) {
 - Create an `episode-posts` directory inside [your project's input directory][input-directory].
 - For each episode, create a template in this directory. These templates will include information about the episode in their front matter, such as its publication date, its episode number, the name of its audio file, the size of its audio file in bytes, and the duration of its audio file in seconds. The content of the template will be used as the episode's description or show notes, like this:
 
-### yesterdays-enterprise.md
+### yesterdays-enterprise.md { .filename }
 
 ```markdown
 ---
@@ -92,7 +97,11 @@ episode:
   size: 58747007 # in bytes
   duration: 3601.293 # in seconds
 ---
-After the _Enterprise-C_ emerges from a mysteriously swirly space anomaly, Joe and Nathan find themselves in an alternate timeline where _Star Trek: The Next Generation_ is dramatically and impractically lit, full of incident, and sceptical about the 1990s belief in the End of History. _Star Trek: Discovery_ Series 1 arrives nearly 30 years too early, in _Yesterday’s Enterprise_.
+After the _Enterprise-C_ emerges from a mysteriously swirly space anomaly, Joe and
+Nathan find themselves in an alternate timeline where _Star Trek: The Next
+Generation_ is dramatically and impractically lit, full of incident, and sceptical
+about the 1990s belief in the End of History. _Star Trek: Discovery_ Series 1
+arrives nearly 30 years too early, in _Yesterday’s Enterprise_.
 ```
 
 > [!note]
@@ -106,7 +115,7 @@ After the _Enterprise-C_ emerges from a mysteriously swirly space anomaly, Joe a
 
 Here's an example:
 
-### base.liquid
+### base.liquid { .filename }
 
 {% raw %}
 
@@ -131,7 +140,7 @@ Here's an example:
 
 {% raw %}
 
-### episode-post.liquid
+### episode-post.liquid { .filename }
 
 ```liquid
 ---
@@ -150,7 +159,7 @@ layout: layouts/base.liquid
 
 - Create a JSON file called `episode-posts.json` in your `episode-posts` directory with the following content:
 
-### episode-posts.json
+### episode-posts.json { .filename }
 
 ```json
 {
@@ -158,11 +167,11 @@ layout: layouts/base.liquid
 }
 ```
 
-## 7. Create an index page for the podcast
+## 7. Create an index page as the home page
 
 - Create a template in [your project's input directory][input-directory] called `index.liquid`. This template will loop through the `episodePost` collection and display information about each episode. Like this:
 
-### index.liquid
+### index.liquid { .filename }
 
 {% raw %}
 
@@ -188,3 +197,18 @@ permalink: "/"
 
 > [!note]
 > Once you've completed this step, you have provided **Podcaster** with enough information to generate your podcast's website. Run `npx @11ty/eleventy --serve` in your project directory and check out your new site.
+
+## Conclusion
+
+If you've followed these steps, you have created a podcast website using **Podcaster**.
+
+Here are the ideas introduced in this tutorial:
+
+- how to install **Podcaster**
+- how to provide information about your podcast in `podcast.json`
+- putting your episode audio files in the `episode-files` directory
+- how to provide information about each episode in the templates in the `episode-posts` directory
+- how to create an episode page for each episode
+- how to create an episode index as the home page
+
+You will find more detailed coverage of these topics in [the rest of the **Podcaster** documentation](/docs).
