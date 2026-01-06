@@ -5,14 +5,14 @@ eleventyNavigation:
   parent: How-to guides
   order: 3
   excerpt: >-
-    How to create an index page to create a list of podcast episodes
+    How to create an index page to display a list of podcast episodes
 ---
 This guide shows you how to create an index page to display a list of podcast episodes.
 
 There are a few assumptions here:
 
 - You have read and understand the guide [How to create episode pages](/docs/how-to-create-episode-pages.md)
-- You have a `layouts/base.njk` layout in your includes directory, which includes elements common to all of the pages on your website — the `<head>`, the `<header>`, the `<footer>` and so on
+- You have a `layouts/base.liquid` layout in your includes directory, which includes elements common to all of the pages on your website — the `<head>`, the `<header>`, the `<footer>` and so on
 - You are familiar with Eleventy [layouts][] and [collections][].
 
 [layouts]: https://www.11ty.dev/docs/layouts/
@@ -20,22 +20,24 @@ There are a few assumptions here:
 
 ## Creating an index page
 
-Our first step is to create a page that loops through the episode post collection and displays each episode.
+To do this, we need to create a page that loops through the episode post collection and displays each episode. We do this in reverse, so that the most recent episode is displayed first.
 
-Here's a simple example:
+Here's an example:
+
+### index.liquid { .filename }
 
 {% raw %}
 
-```nunjucks
+```liquid
 ---
-layout: layouts/base.njk
+layout: layouts/base.liquid
 ---
-{% for post in collections.episodePost | reverse %}
+{% for post in collections.episodePost reversed %}
 <article class="episode">
-  <h1><a href="{{ post.page.url }}">{{ post.data.title | safe }}</a></h1>
+  <h1><a href="{{ post.page.url }}">{{ post.data.title }}</a></h1>
   <p class="episode-metadata">Episode {{ post.data.episode.episodeNumber }}
     <br>{{ post.page.date | readableDate }}</p>
-  {{ post.data.excerpt | safe }}
+  {{ post.data.excerpt }}
   <figure class="audio">
     <audio controls preload="metadata" src="{{ post.data.episode.url }}"></audio>
     <figcaption>
@@ -51,13 +53,13 @@ layout: layouts/base.njk
 
 {% endraw %}
 
-You can save this file as `index.njk` in your project's source directory, so that it becomes your site's home page.
+You can save this file as `index.liquid` in your project's source directory, so that it becomes your site's home page.
 
-You'll notice that it's very similar to the episode page template from the guide [How to create episode pages](/docs/how-to-create-episode-pages.md). There are a few differences though.
+You'll notice that it's very similar to the episode page layout from the guide [How to create episode pages](/docs/how-to-create-episode-pages.md). But there are a few differences.
 
-- The `title` is now a link to the episode page
-- The `content` is now an [excerpt][] of the episode page
-- We're looping through a collection, and so each `post` is a [collection item][], which means that its data is accessible through the `post.page` and `post.data` objects.
+- The `title` is a link to the episode page
+- The page [excerpt][] replaces the full content of the page
+- We're looping through a collection, and so each `post` is a [collection item][], which means that its data is only accessible through the `post.page` and `post.data` objects.
 
 [excerpt]: /docs/optional-features.md#excerpts
 [collection item]: https://www.11ty.dev/docs/collections/#collection-item-data-structure

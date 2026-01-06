@@ -9,7 +9,7 @@
     flex-wrap: wrap;
 
     li:not(:last-child)::after {
-        content: " → ";
+        content: " \23F5 ";
         color: var(--text-light);
         padding-inline: 0.5rem;
     }

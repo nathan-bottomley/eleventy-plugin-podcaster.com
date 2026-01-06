@@ -1,6 +1,6 @@
 .token.punctuation,
 .token.comment {
-    color: var(--text-light);
+    color: color-mix(in srgb, currentColor, transparent 40%);
 }
 
 .token.string {
