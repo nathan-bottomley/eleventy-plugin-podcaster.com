@@ -1,7 +1,7 @@
 ---
 title: Podcaster
 ---
-`eleventy-plugin-podcaster` — or **Podcaster**, as we will call it from now on — is an Eleventy plugin that helps you create a podcast and a website to accompany it. You provide **Podcaster** with information about your podcast and its episodes, and it creates a podcast feed for you to submit to podcast directories like Apple Podcasts or Spotify. And you can use all the information you have provided to create your site, with pages for individual episodes, guests, topics, seasons or anything else at all.
+`eleventy-plugin-podcaster` — or **Podcaster**, as we will call it from now on — is an Eleventy plugin that helps you create a podcast and a website to accompany it. You provide **Podcaster** with information about your podcast and its episodes, and it creates a feed for you to submit to podcast directories like Apple Podcasts or Spotify. And you can use all the information you have provided to create your site, with pages for individual episodes, guests, topics, seasons or anything else at all.
 
 Plenty of services exist to host your podcast online — [Spotify][], [Acast][], [Podbean][], [Buzzsprout][], [Blubrry][]. But none of these will allow you to own and control your podcast's presence on the web, and none of them will give you the freedom to create a site that presents your podcast in a way that reflects its premise, tone and style.
 
@@ -15,7 +15,7 @@ But Eleventy and **Podcaster** will.
 
 ## Usage
 
-Specific information about how to install and use **Podcaster** can be found in [the Documentation section](/docs) of the site, but here's a quick summary.
+Specific information about how to install and use **Podcaster** can be found in [the Documentation section](https://eleventy-plugin-podcaster.com/docs) of the site, but here's a quick summary.
 
 ### 1. Install Podcaster
 
@@ -50,7 +50,7 @@ Here's the list:
 - [500 Year Diary](https://500yeardiary.com), another _Doctor Who_ podcast, where we look at the show's themes and ideas and some of the people involved in its creation.
 - [The Second Great and Bountiful Human Empire](https://thesecondgreatandbountifulhumanempire.com), a _Doctor Who_ flashcast, where we give our initial reactions to each episode of the post-2023 era of the show.
 - [Startling Barbara Bain](https://startlingbarbarabain.com), a commentary podcast on _Space: 1999_, a lavish and generally ridiculous British scifi show from the 1970s.
-- [Maximum Power](https://maximumpowerpodcast.com), a podcast about _Blakes 7_, a less lavish but more ridiculous British scifi show from the 1970s.
+- [Maximum Power](https://maximumpowerpodcast.com), a podcast about _Blake's 7_, a less lavish but more ridiculous British scifi show from the 1970s.
 - [Bondfinger](https://bondfinger.com), a James Bond commentary podcast that soon ran out of James Bond films and ended up spending its time drinking and watching terrible TV shows from the 1960s.
 - [Jodie into Terror](https://jodieintoterror.com), our original _Doctor Who_ flashcast, where we gave our initial reactions to each episode of _Doctor Who_’s Jodie Whittaker Era.
 
