@@ -1,9 +1,9 @@
 ---
 title: Podcaster
 ---
-`eleventy-plugin-podcaster` — or **Podcaster**, as we will call it from now on — is an Eleventy plugin which lets you create a podcast and its accompanying website. You provide **Podcaster** with information about your podcast and its episodes, and it creates the podcast feed that you submit to Apple Podcasts, Spotify or any other podcast directory. And you can use the information you have provided to create pages for individual episodes, guests, topics, seasons or anything else at all.
+`eleventy-plugin-podcaster` — or **Podcaster**, as we will call it from now on — is an Eleventy plugin that helps you create a podcast and a website to accompany it. You provide **Podcaster** with information about your podcast and its episodes, and it creates a podcast feed for you to submit to podcast directories like Apple Podcasts or Spotify. And you can use all the information you have provided to create your site, with pages for individual episodes, guests, topics, seasons or anything else at all.
 
-Plenty of services exist that will host your podcast online — [Spotify][], [Acast][], [Podbean][], [Buzzsprout][], [Blubrry][]. But none of these will allow you to own your podcast's presence on the web, and none of them will give you the freedom to create a site that presents your podcast in a way that reflects its premise, tone and style.
+Plenty of services exist to host your podcast online — [Spotify][], [Acast][], [Podbean][], [Buzzsprout][], [Blubrry][]. But none of these will allow you to own and control your podcast's presence on the web, and none of them will give you the freedom to create a site that presents your podcast in a way that reflects its premise, tone and style.
 
 But Eleventy and **Podcaster** will.
 
@@ -15,7 +15,7 @@ But Eleventy and **Podcaster** will.
 
 ## Usage
 
-Detailed and specific information about how to install and use **Podcaster** can be found in [the Documentation section](/docs) of the site, but here's a quick summary.
+Specific information about how to install and use **Podcaster** can be found in [the Documentation section](/docs) of the site, but here's a quick summary.
 
 ### 1. Install Podcaster
 
@@ -27,15 +27,15 @@ Detailed and specific information about how to install and use **Podcaster** can
 
 - In the input directory, create an `episode-posts` directory. This directory will contain a post for each episode, a post which includes information about the episode, including its title, date, episode number and show notes.
 
-- Optionally, in the input directory, create an `episode-files` directory for your episode MP3 files.
+- Optionally, in the input directory, create an `episode-files` directory for your episode audio files.
 
 ### 3. Create the website pages
 
-A podcast website will usually have an index page or pages, which list and describe all the episodes as well as pages for individual episodes. You can use the information you've provided — including the posts you've made for each episode — to create these pages and many more.
+The posts you have created in the `episode-posts` directory will be turned into pages for the individual episodes. You can also create an index page or pages, which list and describe all the episodes. And you can create whatever other pages you like, including tag pages, topic pages, guestbooks and about pages.
 
 ### 4. Host the website
 
-You can host a **Podcaster** site wherever you host an Eleventy site. But your podcast episode files will need to be hosted on a CDN, and you will need to include a URL prefix for that CDN in your `podcast.json` data file.
+You can host a **Podcaster** site wherever you host an Eleventy site. But you will probably want to host your podcast episode files on an external CDN. **Podcaster** works well with a range of different setups.
 
 ## Podcaster in action
 
