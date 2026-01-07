@@ -13,21 +13,19 @@ eleventyNavigation:
 
 The `readableDate` filter formats a date object as a localised full date, including the weekday.
 
-The default format is **Wednesday 8 August 2025**. However, you can specify a locale for the filter when you add the plugin to your Eleventy config file.
+The default format is **Thursday 8 January 2026**. However, you can specify a locale for the filter when you add the plugin to your Eleventy config file.
+
+### eleventy.config.js { .filename }
 
 ```js
-// eleventy.config.js
-
 import Podcaster from 'eleventy-plugin-podcaster'
 
 export default function (eleventyConfig) {
-  .
-  .
+  …
   eleventyConfig.addPlugin(Podcaster, {
-    readableDateLocale: 'en-GB' // Wednesday, 8 August 2025
+    readableDateLocale: 'en-GB' // Thursday, 8 January 2026
   })
-  .
-  .
+  …
 }
 ```
 
@@ -35,7 +33,7 @@ In English, the two most common locale strings are `'en-GB'` and `'en-US'`.
 
 ## `readableDuration`
 
-The `readableDuration` filter formats a number of seconds in one of two formats — a default format, and a long format.
+The `readableDuration` filter formats a number of seconds in one of two formats — a default format, and a long format.
 
 The default format is useful for specifying the durations of podcast episodes, and is used for that purpose in the podcast feed. It's `mm:ss` for durations of less than an hour, and `h:mm:ss` for longer durations.
 
@@ -80,7 +78,7 @@ The `readableSize` filter formats a number of bytes as a human-readable size in 
 
 {% endraw %}
 
-If you want to specify a different precision for the number, provide the filter with the number of decimal places you want. In Liquid, that will look like this: {% raw %}`{{ 1024 | readableSize: 2 }}`{% endraw %}. In Nunjucks, it will look like this: {% raw %}`{{ 1024 | readableSize(2) }}`{% endraw %}.
+If you want to specify a different precision for the number, specify the number of decimal places you want. In Liquid, that will look like this: {% raw %}`{{ 1024 | readableSize: 2 }}`{% endraw %}. In Nunjucks, it will look like this: {% raw %}`{{ 1024 | readableSize(2) }}`{% endraw %}.
 
 {% raw %}
 

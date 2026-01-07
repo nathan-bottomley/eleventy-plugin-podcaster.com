@@ -8,12 +8,12 @@ navigationToMarkdownOptions:
 ---
 {% set navigationData = collections.all | eleventyNavigation("Documentation") %}
 {% for heading in navigationData %}
-<h2>{{ heading.title }}</h2>
+<h2><a href="{{ heading.url }}">{{ heading.title }}</a></h2>
 <dl class="documentation-index">
 {% for child in heading.children %}
     <dt><a href="{{ child.url }}">{{ child.title }}</a></dt>
     {% if child.excerpt %}
-        <dd>{{ child.excerpt | renderContent("md") | safe}}</dd>
+        <dd>{{ child.excerpt | renderContent("md") | safe }}</dd>
     {% else %}
         <dd></dd>
     {% endif %}

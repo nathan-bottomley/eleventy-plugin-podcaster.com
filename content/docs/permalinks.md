@@ -7,9 +7,9 @@ eleventyNavigation:
   excerpt: >-
     How **Podcaster** creates permalinks for your episode posts and how they can be overridden
 ---
-**Podcaster** assigns permalinks to your episode posts, which means that they can have their own pages and their own unique URLs.
+**Podcaster** assigns permalinks to your episode posts, which means that they each produce an individual episode page with a unique URL.
 
-For episodes without season numbers, the permalink will be `/{episodeNumber}/`. For episodes with season numbers, the permalink will be `/s{seasonNumber}/e{episodeNumber}/`.
+For episodes without season numbers, the permalink for the page will be `/{episodeNumber}/`. For episodes with season numbers, the permalink will be `/s{seasonNumber}/e{episodeNumber}/`.
 
 ```plaintext
 https://flightthroughentirety.com/297/

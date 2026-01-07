@@ -3,6 +3,7 @@
   margin-bottom: 16px;
   color: inherit;
   border-left: .25em solid #888;
+  font-size: var(--step--1);
 
   & > :first-child {
     margin-top: 0;

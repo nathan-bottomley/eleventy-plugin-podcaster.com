@@ -1,0 +1,19 @@
+---
+title: How-to guides
+eleventyNavigation:
+  key: How-to guides
+  parent: Documentation
+  order: 2
+permalink: /docs/how-to-guides/
+---
+{% set navigationData = collections.all | eleventyNavigation("How-to guides") %}
+<dl>
+{% for item in navigationData %}
+    <dt><a href="{{ item.url }}">{{ item.title }}</a></dt>
+    {% if item.excerpt %}
+        <dd>{{ item.excerpt | renderContent("md") | safe }}</dd>
+    {% else %}
+        <dd></dd>
+    {% endif %}
+{% endfor %}
+</dl>

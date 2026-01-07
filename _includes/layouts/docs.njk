@@ -6,8 +6,12 @@ layout: 'layouts/base.njk'
 {% if navigationPages.length > 1 %}
 <ul class="breadcrumbs">
     <li><a href="{{ navigationPages[0].url }}">{{ navigationPages[0].title }}</li>
-    <li>{{ navigationPages[1].title }}</li>
-    <li><a aria-current="page" href="{{ navigationPages[2].url }}">{{ navigationPages[2].title }}</a></li>
+    {% if navigationPages.length == 2 %}
+        <li><a aria-current="page" href="{{ navigationPages[1].url }}">{{ navigationPages[1].title }}</a></li>
+    {% elseif navigationPages.length > 2 %}
+        <li><a href="{{ navigationPages[1].url }}">{{ navigationPages[1].title }}</a></li>
+        <li><a aria-current="page" href="{{ navigationPages[2].url }}">{{ navigationPages[2].title }}</a></li>
+    {% endif %}
 </ul>
 {% endif %}
 

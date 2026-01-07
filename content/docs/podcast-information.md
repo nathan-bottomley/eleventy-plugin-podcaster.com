@@ -14,7 +14,7 @@ Here's a list of the information about your podcast that **Podcaster** can use t
 | field | value |
 | ----- | ----- |
 | `title` | The title of your podcast. |
-| `siteUrl` | The URL of your podcast website. The most popular podcast applications use this to provide a link to your website. It's also used by this plugin to convert relative links to absolute links in your feed. (If `podcast.siteUrl` isn't provided, the feed template will use `site.url` instead.) |
+| `siteUrl` | The URL of your podcast website. The most popular podcast applications use this to specify a link to your website. It's also used by **Podcaster** to convert relative links to absolute links in your feed. (If `podcast.siteUrl` isn't provided, the feed template will use `site.url` instead.) |
 | `description` | A short description of your podcast. The most popular podcast applications prominently display this information. |
 | `language` | A code that specifies the language of the feed (rather than the podcast). You can find [a list of permissible codes][lang] at the RSS Advisory Board's website. |
 | `category` | The category for the podcast. Describes he kind of show it is. Valid categories are listed in [this Apple support document][categories]. Used by podcast directories to help listeners find the podcast. |
@@ -26,12 +26,12 @@ Here's a list of the information about your podcast that **Podcaster** can use t
 | ----- | ----- |
 | `feedPath` | The path where the podcast feed will be located. Defaults to `/feed/podcast.xml`. |
 | `copyright` | The copyright owner of the podcast. If omitted, the value supplied for `author` is used instead. |
-| `startingYear` | The year your podcast started. Used to express the copyright date as a range (_"© 2014–2024 Flight Through Entirety"_). If this is omitted, the copyright date will just be the current year. |
+| `startingYear` | The year your podcast started. Used to express the copyright date as a range (_"© 2014–2026 Flight Through Entirety"_). If this is omitted, the copyright date will just be the current year. |
 | `imagePath` | The path to your podcast logo, which should be a JPEG or PNG file 3000 × 3000 pixels in size. (You can find more detailed specifications in [this Apple support document](https://podcasters.apple.com/support/896-artwork-requirements#shows).) Defaults to `/img/podcast-logo.jpg`. |
 | `subcategory` | The subcategory for the podcast. Valid subcategories are also listed in [the Apple support document][categories]. You must choose a subcategory that belongs to your chosen category. (**Podcaster** will not enforce this.) |
 | `explicit` | Warns listeners that your podcast contains explicit language. In Apple Podcasts, if you include this with the value `true`, your podcast and its episodes will be badged with an 🄴 to indicate that they use explicit language. Some of the most popular podcast applications ignore this field. |
-| `type` | Two possible values: `episodic` and `serial`. Defaults to `episodic`, which means that the podcast can be listened to in no particular order. Narrative podcasts (like _Serial_) should be marked as `serial`. |
-| `block` | If the value here is true or truthy, the podcast will be blocked from appearing in the Apple Podcasts Directory. |
+| `type` | Two possible values: `episodic` and `serial`. Defaults to `episodic`, which means that the podcast can be listened to in no particular order. Narrative podcasts (like [_Serial_](https://serialpodcast.org/home)) should be marked as `serial`. |
+| `block` | If the value here is `true` or truthy, the podcast will be blocked from appearing in the Apple Podcasts Directory. |
 | `owner` | An optional object in the form `{ name, email }` You might want to omit this: Apple Podcasts has deprecated it, and an email in a podcast feed will attract some spam. However, some podcast directories, like Castbox, will use the email address to identify you when you try to claim ownership of a podcast in their directory. |
 | `complete` | Indicates that a podcast is complete and that no new episodes should be expected, in which case it should have the value `true`. Should be omitted otherwise. |
 | `episodeUrlBase` | If you store your podcast episodes on a CDN, or if you use a podcast analytics service, this is where you specify the base URL for them. If you don't specify this, it defaults to `https://{% raw %}{{ podcast.siteUrl }}{% endraw %}/episodes/`. |
@@ -66,7 +66,9 @@ These templates must be Nunjucks templates, and the post for the episode must be
 
 ## Example `podcast.json` file
 
-Here's a sample `podcast.json` file, specifying all of the fields outlined above.
+Here's a sample `podcast.json` file, specifying most of the fields outlined above.
+
+### podcast.json { .filename }
 
 ```json
 {
@@ -89,6 +91,7 @@ Here's a sample `podcast.json` file, specifying all of the fields outlined above
     "name": "Nathan Bottomley",
     "email": "nathan@example.com"
   },
+  "episodePermalinkPattern": "/episode/{episodeNumber}",
   "episodeUrlBase": "https://example.fte-cdn.com/",
   "episodeContentTemplate": "episode-content.njk",
   "episodeDescriptionTemplate": "episode-description.njk"

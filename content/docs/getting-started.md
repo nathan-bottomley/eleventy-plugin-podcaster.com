@@ -55,10 +55,10 @@ export default function (eleventyConfig) {
 }
 ```
 
-## 3. Provide an image for your podcast
+## 3. Specify an image for your podcast
 
 - Create an `img` directory inside [your project's input directory][input-directory].
-- Put your podcast's image file in this directory. **Podcaster** will expect your image file to be called `podcast-logo.jpg`. (The image should be square and at least 1400x1400 pixels, but preferably 3000x3000 pixels.)
+- Put your podcast's image file in this directory. **Podcaster** will expect your image file to be called `podcast-logo.jpg`. (The image should be square and at least 1400 × 1400 pixels, but preferably 3000 × 3000 pixels.)
 - Add this line to your Eleventy configuration file, immediately after the line `eleventyConfig.addPlugin(Podcaster)`:
 
 ### eleventy.config.js { .filename }
@@ -104,16 +104,13 @@ about the 1990s belief in the End of History. _Star Trek: Discovery_ Series 1
 arrives nearly 30 years too early, in _Yesterday’s Enterprise_.
 ```
 
-> [!note]
-> Once you've completed this step, you have provided **Podcaster** with enough information to generate your podcast's RSS feed. Build your site by running `npx @11ty/eleventy` in your project directory, and your podcast feed will be created at `/_site/feed/podcast.xml`.
+Once you've completed this step, you have supplied **Podcaster** with enough information to generate your podcast's RSS feed. Build your site by running `npx @11ty/eleventy` in your project directory, and your podcast feed will be created at `/_site/feed/podcast.xml`.
 
 ## 6. Create an episode page for each episode
 
-- Create a base layout called `base.liquid` in [your project's layouts directory][layouts-directory].
+- Create a base layout called `base.liquid` in [your project's layouts directory][layouts-directory]. Here's an example:
 
 [layouts-directory]: https://www.11ty.dev/docs/config/#directory-for-layouts-optional
-
-Here's an example:
 
 ### base.liquid { .filename }
 
@@ -134,9 +131,7 @@ Here's an example:
 
 {% endraw %}
 
-- Create an episode post layout called `episode-post.liquid` in [your project's layouts directory][layouts-directory].
-
-Here's an example:
+- Create an episode post layout called `episode-post.liquid` in [your project's layouts directory][layouts-directory]. Here's an example:
 
 {% raw %}
 
@@ -195,8 +190,7 @@ permalink: "/"
 
 {% endraw %}
 
-> [!note]
-> Once you've completed this step, you have provided **Podcaster** with enough information to generate your podcast's website. Run `npx @11ty/eleventy --serve` in your project directory and check out your new site.
+Once you've completed this step, you have supplied **Podcaster** with enough information to generate your podcast's website. Run `npx @11ty/eleventy --serve` in your project directory and check out your new site.
 
 ## Conclusion
 
@@ -205,9 +199,9 @@ If you've followed these steps, you have created a podcast website using **Podca
 Here are the ideas introduced in this tutorial:
 
 - how to install **Podcaster**
-- how to provide information about your podcast in `podcast.json`
+- how to specify information about your podcast in `podcast.json`
 - putting your episode audio files in the `episode-files` directory
-- how to provide information about each episode in the templates in the `episode-posts` directory
+- how to specify information about each episode in the templates in the `episode-posts` directory
 - how to create an episode page for each episode
 - how to create an episode index as the home page
 
