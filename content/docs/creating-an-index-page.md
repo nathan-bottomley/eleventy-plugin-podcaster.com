@@ -11,7 +11,7 @@ This guide shows you how to create an index page to display a list of podcast ep
 
 There are a few assumptions here:
 
-- You have read and understand the guide [How to create episode pages](/docs/how-to-create-episode-pages.md)
+- You have read and understand the guide [How to create episode pages](/docs/creating-episode-pages.md)
 - You have a `layouts/base.liquid` layout in your includes directory, which includes elements common to all of the pages on your website — the `<head>`, the `<header>`, the `<footer>` and so on
 - You are familiar with Eleventy [layouts][] and [collections][].
 
@@ -55,7 +55,7 @@ layout: layouts/base.liquid
 
 You can save this file as `index.liquid` in your project's source directory, so that it becomes your site's home page.
 
-You'll notice that it's very similar to the episode page layout from the guide [How to create episode pages](/docs/how-to-create-episode-pages.md). But there are a few differences.
+You'll notice that it's very similar to the episode page layout from the guide [How to create episode pages](/docs/creating-episode-pages.md). But there are a few differences.
 
 - The `title` is a link to the episode page
 - The page [excerpt][] replaces the full content of the page

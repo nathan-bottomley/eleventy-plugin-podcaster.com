@@ -5,7 +5,7 @@ date: 2025-02-16
 <!---excerpt-->
 In my first post a few weeks ago, I showed you [a simple way to create a home page][last-post] for your podcast — by creating a template which loops through the `podcastEpisode` collection and renders some HTML containing the information for each episode.
 
-[last-post]: 2025-01-06-creating-a-home-page.md
+[last-post]: blog/2025-01-06-creating-a-home-page.md
 
 Today, I'm going to show you an include file which presents more extensive detail about an episode. This include file can be used by itself on the episode's dedicated page, but it can also be used as part of a list of episodes — like an index page or a tag page, for example.
 

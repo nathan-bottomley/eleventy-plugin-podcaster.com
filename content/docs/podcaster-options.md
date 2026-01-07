@@ -20,11 +20,11 @@ When you add **Podcaster** to your Eleventy configuration file, you can use pass
 | `s3Storage` | undefined | If you want **Podcaster** to calculate the sizes and durations of your episode audio files and those files are stored in S3-compatible object storage, here's where you supply **Podcaster** with the information to access that storage, in the format `{ accessKey, secretKey, bucket, region, endpoint }`. Read more [about storing your episode audio files in S3-compatible object storage here][s3-storage]. |
 | `readableDateLocale` | `'en-AU'` | **Podcaster** supplies a `readableDate` filter to format dates in your templates as localised full dates, including the weekday. You can customize the locale used for formatting by setting this option: the most common locale strings in English are `'en-US'` and `'en-GB'`. Read more [about readable dates here][readable-dates]. |
 
-[drafts]: /docs/drafts/
-[excerpts]: /docs/drafts/
-[page-titles]: /docs/page-titles/
-[s3-storage]: /docs/s3-storage/
-[readable-dates]: /docs/readable-filters/#readabledate
+[drafts]: /docs/optional-features.md#drafts
+[excerpts]: /docs/optional-features.md#excerpts
+[page-titles]: /docs/optional-features.md#page-titles
+[s3-storage]: /docs/sources-of-episode-information.md#telling-podcaster-where-your-episode-files-are-stored
+[readable-dates]: /docs/readable-filters.md#readabledate
 
 Here's an excerpt from an Eleventy Configuration File with most of these options set.
 

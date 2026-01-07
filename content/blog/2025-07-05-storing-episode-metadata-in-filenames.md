@@ -110,8 +110,8 @@ export default {
 
 The [episode data documentation][] makes it seem like you need to provide a lot of information in the front matter of your podcast episode templates. But using the technique I just described, as well as [**Podcaster's** automatic calculation of episode size and duration][size-and-duration] and the defaults **Podcaster** provides, you can get the front matter data down to nearly nothing. Here's an example from _500 Year Diary_, with no **Podcaster**-specific front matter at all.
 
-[episode data documentation]: docs/episode-information.md
-[size-and-duration]: docs/filename-size-and-duration.md
+[episode data documentation]: /v1/docs/episode-information/
+[size-and-duration]: /v1/docs/filename-size-and-duration/
 
 ```yaml
 ---

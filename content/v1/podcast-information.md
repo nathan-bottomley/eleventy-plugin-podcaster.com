@@ -76,7 +76,7 @@ And here's a detailed description of all of this information.
 
 [categories]: https://podcasters.apple.com/support/1691-apple-podcasts-categories
 [lang]: https://www.rssboard.org/rss-language-codes
-[hosting]: docs/hosting.md
+[hosting]: content/v1/hosting.md
 
 ## Feed episode templates
 

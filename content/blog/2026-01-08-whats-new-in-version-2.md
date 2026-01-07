@@ -1,6 +1,5 @@
 ---
 title: What’s new in version 2
-draft: true
 ---
 Version 1.0.0 of **Podcaster** was released on 8 January 2025. Today, a year later, I'm happy to announce the release of Version 2.0.0.
 

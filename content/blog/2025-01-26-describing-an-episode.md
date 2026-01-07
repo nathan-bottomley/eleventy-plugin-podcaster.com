@@ -9,7 +9,7 @@ And so **Podcaster** lets you provide all three of those.
 
 I've [posted about titles already][titles] — so let's talk about the short and long descriptions.
 
-[titles]: 2025-01-15-three-titles.md
+[titles]: content/blog/2025-01-15-three-titles.md
 <!---endexcerpt-->
 ## Short description
 
