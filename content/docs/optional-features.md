@@ -40,11 +40,19 @@ An excerpt is a short summary of an episode post, usually the first paragraph. E
 
 Here's how **Podcaster** calculates a post's excerpt.
 
-- if a Markdown excerpt is explicitly specified in front matter as `excerpt`, that is converted to HTML and returned
-- if an excerpt is explicitly specified using the delimiters `<!---excerpt-->` and `<!---endexcerpt-->`, that is converted to HTML, if necessary, and returned
+- if a Markdown excerpt is explicitly specified in front matter as `excerpt`, then that is converted to HTML and returned
+- if an excerpt is explicitly specified using the delimiters `<!---excerpt-->` and `<!---endexcerpt-->`, then that is converted to HTML, if necessary, and returned
 - the first paragraph not in a blockquote is returned
 
-You can use excerpts in your templates. They are particularly useful in lists of episodes with long show notes.
+{% raw %}
+
+You can use excerpts in your templates by including them as `{{ excerpt }}`, or as `{{ post.data.excerpt }}` when you're looping through a collection. They are particularly useful in lists of episodes with long show notes, and they can also be used to provide the Open Graph description of an episode post.
+
+```liquid
+<meta property="og:description" content="{{ excerpt | strip_html | truncatewords: 50 }}">
+```
+
+{% endraw %}
 
 ## Page titles
 
