@@ -19,6 +19,8 @@ When you add **Podcaster** to your Eleventy configuration file, you can use pass
 | `optionalFeatures` | undefined | When this is set to `true`, **Podcaster** will set `handleDrafts`, `handleExcerpts`, and `handlePageTitles` to `true`. |
 | `s3Storage` | undefined | If you want **Podcaster** to calculate the sizes and durations of your episode audio files and those files are stored in S3-compatible object storage, here's where you supply **Podcaster** with the information to access that storage, in the format `{ accessKey, secretKey, bucket, region, endpoint }`. Read more [about storing your episode audio files in S3-compatible object storage here][s3-storage]. |
 | `readableDateLocale` | `'en-AU'` | **Podcaster** supplies a `readableDate` filter to format dates in your templates as localised full dates, including the weekday. You can customize the locale used for formatting by setting this option: the most common locale strings in English are `'en-US'` and `'en-GB'`. Read more [about readable dates here][readable-dates]. |
+| `feedScript` | undefined | If you supply the path to a JavaScript file here, **Podcaster** will include a `<script>` tag in the feed, which you can use to style the feed when it is viewed in the browser. |
+| `feedStylesheet` | undefined | If you supply the path to an XSL file here, **Podcaster** will include an `<?xml-stylesheet?>` processing instruction in the feed, which you can use to style the feed when it is viewed in the browser. |
 
 [drafts]: /docs/optional-features.md#drafts
 [excerpts]: /docs/optional-features.md#excerpts
