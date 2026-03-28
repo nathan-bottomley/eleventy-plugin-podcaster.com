@@ -52,7 +52,7 @@
   --color-important: var(--baseB1);
   --color-warning: var(--baseD1);
   --color-tip: var(--baseA3);
-  --colour-caution: var(--baseD1);
+  --color-caution: var(--baseD1);
 }
 
 /* Dark theme */
@@ -75,7 +75,7 @@
         --color-important: var(--baseB1);
         --color-warning: var(--baseD1);
         --color-tip: var(--baseA4);
-        --colour-caution: var(--baseD1);
+        --color-caution: var(--baseD1);
     }
 }
 
@@ -135,7 +135,7 @@
   --color-important: var(--baseB1);
   --color-warning: var(--baseD1);
   --color-tip: var(--baseA3);
-  --colour-caution: var(--baseD1);
+  --color-caution: var(--baseD1);
 }
 
 /* Dark theme */
@@ -158,6 +158,6 @@
         --color-important: var(--baseB1);
         --color-warning: var(--baseD1);
         --color-tip: var(--baseA4);
-        --colour-caution: var(--baseD1);
+        --color-caution: var(--baseD1);
     }
 }

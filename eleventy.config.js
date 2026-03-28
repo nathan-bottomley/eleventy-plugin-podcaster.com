@@ -58,6 +58,9 @@ export default async function (eleventyConfig) {
   // Watch content images for the image pipeline.
   eleventyConfig.addWatchTarget('content/**/*.{svg,webp,png,jpeg}')
 
+  // Watch content CSS for the CSS pipeline.
+  eleventyConfig.addWatchTarget('public/css/')
+
   // Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
   // Adds the {% css %} paired shortcode
   eleventyConfig.addBundle('css', {
@@ -131,7 +134,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addGlobalData('eleventyComputed.pageTitle', () => {
     return data => {
       if (data.title && data.title.length > 0 && data.title !== data.site.title) {
-        return `${data.title} &middot ${data.site.title}`
+        return `${data.title} &middot; ${data.site.title}`
       } else {
         return data.site.title
       }
@@ -140,6 +143,10 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addShortcode('currentBuildDate', () => {
     return (new Date()).toISOString()
+  })
+
+  eleventyConfig.addGlobalData('thisYear', () => {
+    return String((new Date()).getFullYear())
   })
 
   eleventyConfig.addPassthroughCopy('content/_redirects')

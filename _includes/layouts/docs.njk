@@ -5,7 +5,7 @@ layout: 'layouts/base.njk'
 {% set navigationPages = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true, allowMissing: true }) %}
 {% if navigationPages.length > 1 %}
 <ul class="breadcrumbs">
-    <li><a href="{{ navigationPages[0].url }}">{{ navigationPages[0].title }}</li>
+    <li><a href="{{ navigationPages[0].url }}">{{ navigationPages[0].title }}</a></li>
     {% if navigationPages.length == 2 %}
         <li><a aria-current="page" href="{{ navigationPages[1].url }}">{{ navigationPages[1].title }}</a></li>
     {% elseif navigationPages.length > 2 %}

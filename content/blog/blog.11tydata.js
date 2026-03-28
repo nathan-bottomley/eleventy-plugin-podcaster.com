@@ -1,5 +1,7 @@
 import MarkdownIt from 'markdown-it'
 
+// A separate MarkdownIt instance is used here for rendering excerpts.
+// Excerpts should be plain prose — alerts, attributes, and footnotes are not supported.
 const md = MarkdownIt({
   html: true,
   typographer: true
