@@ -1,41 +1,41 @@
 :root {
-    --baseA0: #1d262f;
-    --baseA1: #27323f;
-    --baseA2: #405368;
-    --baseA3: #4a5f78;
-    --baseA4: #738191;
-    --baseA5: #8a96a3;
-    --baseA6: #a1aab5;
-    --baseA7: #b8bfc7;
-    --baseB0: #004a9e;
-    --baseB1: #1757a1;
-    --baseB2: #34659d;
-    --baseB3: #57718e;
-    --baseB4: #6e9bcf;
-    --baseB5: #7eb6f6;
-    --baseB6: #afd4fe;
-    --baseB7: #ebf4ff;
-    --baseC0: #717a77;
-    --baseC1: #818d89;
-    --baseC2: #939f9b;
-    --baseC3: #a6b0ad;
-    --baseC4: #b7c2be;
-    --baseC5: #cbd7d3;
-    --baseC6: #e1eae7;
-    --baseC7: #f9fbfa;
-    --baseD0: #067953;
-    --baseD1: #088c60;
-    --baseD2: #0aa370;
-    --baseD3: #0db57d;
-    --baseD4: #0fc78a;
-    --baseD5: #14e19d;
-    --baseD6: #2aeaaa;
-    --baseD7: #47ebb4;
+  --baseA0: #1d262f;
+  --baseA1: #27323f;
+  --baseA2: #405368;
+  --baseA3: #4a5f78;
+  --baseA4: #738191;
+  --baseA5: #8a96a3;
+  --baseA6: #a1aab5;
+  --baseA7: #b8bfc7;
+  --baseB0: #004a9e;
+  --baseB1: #1757a1;
+  --baseB2: #34659d;
+  --baseB3: #57718e;
+  --baseB4: #6e9bcf;
+  --baseB5: #7eb6f6;
+  --baseB6: #afd4fe;
+  --baseB7: #ebf4ff;
+  --baseC0: #717a77;
+  --baseC1: #818d89;
+  --baseC2: #939f9b;
+  --baseC3: #a6b0ad;
+  --baseC4: #b7c2be;
+  --baseC5: #cbd7d3;
+  --baseC6: #e1eae7;
+  --baseC7: #f9fbfa;
+  --baseD0: #067953;
+  --baseD1: #088c60;
+  --baseD2: #0aa370;
+  --baseD3: #0db57d;
+  --baseD4: #0fc78a;
+  --baseD5: #14e19d;
+  --baseD6: #2aeaaa;
+  --baseD7: #47ebb4;
 }
 
 /* Default (light) theme */
 :root {
-  --bg: white;
+  --bg: var(--baseC7);
   --accent-bg: var(--baseC7);
   --text: var(--baseA0);
   --text-light: var(--baseA3);
@@ -44,7 +44,7 @@
   --accent-hover: var(--baseB2);
   --accent-text: var(--bg);
   --code: var(--baseD0);
-  --preformatted:var(--baseD0);
+  --preformatted: var(--baseD0);
   --marked: var(--baseD6);
   --disabled: var(--baseD7);
 
@@ -57,26 +57,26 @@
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
-    :root {
-        --bg: var(--baseA0);
-        --accent-bg: var(--baseA1);
-        --text: var(--baseC6);
-        --text-light: var(--baseA4);
-        --border: var(--baseA2);
-        --accent: var(--baseB5);
-        --accent-hover: var(--baseB7);
-        --accent-text: var(--bg);
-        --code: var(--baseD5);
-        --preformatted:var(--baseD5);
-        --marked: var(--baseD6);
-        --disabled: var(--baseD7);
+  :root {
+    --bg: var(--baseA0);
+    --accent-bg: var(--baseA1);
+    --text: var(--baseC6);
+    --text-light: var(--baseA4);
+    --border: var(--baseA2);
+    --accent: var(--baseB5);
+    --accent-hover: var(--baseB7);
+    --accent-text: var(--bg);
+    --code: var(--baseD5);
+    --preformatted: var(--baseD5);
+    --marked: var(--baseD6);
+    --disabled: var(--baseD7);
 
-        --color-note: var(--baseA4);
-        --color-important: var(--baseB1);
-        --color-warning: var(--baseD1);
-        --color-tip: var(--baseA4);
-        --color-caution: var(--baseD1);
-    }
+    --color-note: var(--baseA4);
+    --color-important: var(--baseB1);
+    --color-warning: var(--baseD1);
+    --color-tip: var(--baseA4);
+    --color-caution: var(--baseD1);
+  }
 }
 
 /* version 1 */
@@ -127,7 +127,7 @@
   --accent-hover: var(--baseB2);
   --accent-text: var(--bg);
   --code: var(--baseD0);
-  --preformatted:var(--baseD0);
+  --preformatted: var(--baseD0);
   --marked: var(--baseD6);
   --disabled: var(--baseD7);
 
@@ -140,24 +140,24 @@
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
-    :root:has(h1.v1) {
-        --bg: var(--baseA0);
-        --accent-bg: var(--baseA1);
-        --text: var(--baseC6);
-        --text-light: var(--baseA4);
-        --border: var(--baseA2);
-        --accent: var(--baseB5);
-        --accent-hover: var(--baseB7);
-        --accent-text: var(--bg);
-        --code: var(--baseD5);
-        --preformatted:var(--baseD5);
-        --marked: var(--baseD6);
-        --disabled: var(--baseD7);
+  :root:has(h1.v1) {
+    --bg: var(--baseA0);
+    --accent-bg: var(--baseA1);
+    --text: var(--baseC6);
+    --text-light: var(--baseA4);
+    --border: var(--baseA2);
+    --accent: var(--baseB5);
+    --accent-hover: var(--baseB7);
+    --accent-text: var(--bg);
+    --code: var(--baseD5);
+    --preformatted: var(--baseD5);
+    --marked: var(--baseD6);
+    --disabled: var(--baseD7);
 
-        --color-note: var(--baseA4);
-        --color-important: var(--baseB1);
-        --color-warning: var(--baseD1);
-        --color-tip: var(--baseA4);
-        --color-caution: var(--baseD1);
-    }
+    --color-note: var(--baseA4);
+    --color-important: var(--baseB1);
+    --color-warning: var(--baseD1);
+    --color-tip: var(--baseA4);
+    --color-caution: var(--baseD1);
+  }
 }

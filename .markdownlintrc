@@ -1,5 +1,6 @@
 {
   "line-length": false,
   "table-column-style": "compact",
-  "no-duplicate-heading": false
+  "no-duplicate-heading": false,
+  "no-inline-html": false
 }

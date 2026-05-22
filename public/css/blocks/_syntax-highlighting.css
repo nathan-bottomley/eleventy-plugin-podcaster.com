@@ -1,24 +1,32 @@
 .token.punctuation,
 .token.comment {
-    color: color-mix(in srgb, currentColor, transparent 40%);
+  color: color-mix(in srgb, currentColor, transparent 40%);
 }
 
 .token.string {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .token.keyword {
-    font-style: italic;
+  font-style: italic;
 }
 
 .token.italic {
-    font-style: italic;
-}
-
-.token.prefix.inserted {
-    color: transparent;
+  font-style: italic;
 }
 
 .token.inserted {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.token.prefix.inserted {
+  color: transparent;
 }
