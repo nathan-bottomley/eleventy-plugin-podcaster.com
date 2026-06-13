@@ -1,5 +1,7 @@
 ---
-title: Creating a home page
+title: Creating a home page for your podcast site
+description: >-
+  How to create a homepage for your podcast site — a list of episodes in reverse chronological order.
 ---
 <!---excerpt-->
 

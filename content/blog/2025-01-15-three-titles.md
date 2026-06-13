@@ -1,6 +1,7 @@
 ---
-title: Three titles
-date: 2025-01-15
+title: Three titles for each podcast episode
+description: >-
+  How to provide episode titles for your podcast episodes — in the feed, on your site and in Apple Podcasts.
 ---
 
 ```yaml

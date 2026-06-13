@@ -1,5 +1,7 @@
 ---
-title: Creating interactive transcripts
+title: Creating interactive podcast transcripts
+description: >-
+  How to add interactive transcripts to the episode pages of your podcast website.
 ---
 So, I'm currently going through my podcast websites and adding interactive transcripts to the episode pages. Here's what a transcript looks like on the page for [Episode 19 of _The Second Great and Bountiful Human Empire_][2GAB19].
 

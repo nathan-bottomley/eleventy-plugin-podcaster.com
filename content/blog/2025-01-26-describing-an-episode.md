@@ -1,9 +1,10 @@
 ---
 title: Describing a podcast episode
-date: 2025-01-26
+description: >-
+  How to provide episode descriptions for your podcast episodes, both in plain text and in HTML.
 ---
 <!---excerpt-->
-Podcasts are an audio medium, of course, but your listeners' podcast players  describe each of your episodes using text — a title, a short description and a long description.
+Podcasts are an audio medium, of course, but your listeners' podcast players describe each of your episodes using text — a title, a short description and a long description.
 
 And so **Podcaster** lets you provide all three of those.
 

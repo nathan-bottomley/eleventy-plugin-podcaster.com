@@ -1,7 +1,11 @@
 ---
-title: What’s new in version 2
+title: What's new in version 2 of Podcaster
+description: >-
+  A list of the new features and improvements in version 2.0.0 of Podcaster.
 ---
+<!---excerpt-->
 Version 1.0.0 of **Podcaster** was released on 8 January 2025. Today, a year later, I'm happy to announce the release of Version 2.0.0.
+<!---endexcerpt-->
 
 ## New documentation
 

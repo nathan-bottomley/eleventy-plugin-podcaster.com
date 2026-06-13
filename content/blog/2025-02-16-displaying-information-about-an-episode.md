@@ -1,6 +1,8 @@
 ---
-title: Presenting an episode on your site
-date: 2025-02-16
+title: Presenting a podcast episode on your site
+description: >-
+  How to create a partial which presents more extensive detail about an episode for use on your home page
+  or on an individual episode page.
 ---
 <!---excerpt-->
 In my first post a few weeks ago, I showed you [a simple way to create a home page][last-post] for your podcast — by creating a template which loops through the `podcastEpisode` collection and renders some HTML containing the information for each episode.

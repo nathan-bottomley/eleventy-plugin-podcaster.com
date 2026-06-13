@@ -3,6 +3,8 @@ title: Storing episode metadata in filenames
 v1note: |
   > [!important]
   > This blog post was written for Version 1 of **Podcaster**. The feature described here has been included in Version 2 — in fact it's now the default. You can find out more about it [here](/docs/sources-of-episode-information/#naming-your-episode-posts-correctly).
+description: >-
+  How to use the episode post filename to specify episode data like publication date, season number and episode number.
 ---
 
 <!---excerpt-->
