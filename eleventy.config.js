@@ -150,6 +150,7 @@ export default async function (eleventyConfig) {
   })
 
   eleventyConfig.addPassthroughCopy('content/_redirects')
+  eleventyConfig.addPassthroughCopy({ icons: '/' })
 
   // Features to make your build faster (when you need them)
 
