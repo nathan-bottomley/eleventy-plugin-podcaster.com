@@ -1,5 +1,5 @@
 ---
-title: Adding a transcript word count to your podcast about page
+title: Adding a transcript word count to your podcast About page
 description: >-
   How to add a total word count of all your podcast transcripts to your about page.
 ---
