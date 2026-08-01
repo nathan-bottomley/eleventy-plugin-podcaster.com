@@ -3,11 +3,13 @@ title: Creating interactive podcast transcripts
 description: >-
   How to add interactive transcripts to the episode pages of your podcast website.
 ---
+<!---excerpt-->
 So, I'm currently going through my podcast websites and adding interactive transcripts to the episode pages. Here's what a transcript looks like on the page for [Episode 19 of _The Second Great and Bountiful Human Empire_][2GAB19].
 
-![Screenshot depicting a browser window showing an episode page with an interactive transcript, including the episode title and blurb, an audio player and the transcript itself below that](/img/wish-world-transcript.png)
-
 [2GAB19]: https://thesecondgreatandbountifulhumanempire.com/19
+<!---endexcerpt-->
+
+![Screenshot depicting a browser window showing an episode page with an interactive transcript, including the episode title and blurb, an audio player and the transcript itself below that](/img/wish-world-transcript.png)
 
 This transcript is interactive because it's linked to the audio player on the page. If you click on the transcript, the audio starts playing from that point. And as the audio plays, the transcript highlights the phrase that you're currently hearing, like the song lyrics in Spotify or Apple Music.
 

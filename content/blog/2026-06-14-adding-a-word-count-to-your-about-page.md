@@ -3,6 +3,7 @@ title: Adding a transcript word count to your podcast About page
 description: >-
   How to add a total word count of all your podcast transcripts to your about page.
 ---
+<!---excerpt-->
 If you have [told **Podcaster** where to find your podcast audio files][], it can provide you with some fun facts about your podcast that you can include in your podcast templates.
 
 [told **Podcaster** where to find your podcast audio files]: docs/sources-of-episode-information.md#telling-podcaster-where-your-episode-files-are-stored
@@ -12,6 +13,7 @@ If you have [told **Podcaster** where to find your podcast audio files][], it ca
 | `podcastData.numberOfEpisodes` | The number of episodes in the podcast |
 | `podcastData.totalSize` | The total size in bytes of all of the episode files |
 | `podcastData.totalDuration` | The total duration in seconds of all of the episode files |
+<!---endexcerpt-->
 
 A good place to include this data is on your About page. Here's an example from the [_500 Year Diary_][] website's [about page] template.
 

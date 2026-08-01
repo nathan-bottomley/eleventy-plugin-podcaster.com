@@ -14,7 +14,7 @@ eleventyNavigation:
   {% if post.data.v1note %}
   {{ post.data.v1note | renderContent("md") | safe }}
   {% endif %}
-  {% if loop.index < 3 %}
+  {% if loop.index == 1 %}
   {{ post.content | safe }}
   {% else %}
   {{ post.data.excerpt | safe }}

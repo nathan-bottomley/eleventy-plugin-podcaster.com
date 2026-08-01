@@ -19,14 +19,14 @@
   font-weight: bold;
 }
 
+.token.deleted {
+  color: color-mix(in srgb, currentColor, transparent 40%);
+}
+
 /* Make the + and - characters unselectable for copy/paste */
 .token.prefix.unchanged,
 .token.prefix.inserted,
 .token.prefix.deleted {
   -webkit-user-select: none;
   user-select: none;
-}
-
-.token.prefix.inserted {
-  color: transparent;
 }
